@@ -1,0 +1,61 @@
+---
+title: "Course Slides, Code, and Practice Materials"
+execute:
+  freeze: auto
+---
+
+<!--
+- Anatomical - signal source, image type utility (anatomy, parcellate, volume)
+- DICOM - structure, interacting, source
+- NIfTI - structure, creating, interacting (mango, afni, fsl)
+- Inhomogeneity - signal distribution (and source), intensity vs anatomy, correcting
+- Brain extraction - bet, 3dskullstrip, ants
+- Tissue segmentation - ants
+- Transformation - rigid, affine, diffeomorphic, templates and atlases (Talairach, MNI)
+- Parcellation
+- ANTs - registration based segmentation, template construction
+- FreeSurfer - pipeline, prep, execution, output files
+- fMRIPrep - https://fmriprep.org/en/stable/workflows.html#preprocessing-of-structural-mri
+-->
+
+
+<details>
+
+<summary> Module 1: Signal and Files </summary>
+
+| Topic | Slides | Code | Exercises |
+|---------------|--------|--------|---------|------|-----------|
+| 1. Magnetic Resonant Imaging | [Slides](lectures/mri_overview/mri_overview.qmd) | Code | Practice |
+| 1. T1-weighted signal | Slides | Code | Practice |
+| 1. DICOM | Slides | Code | Practice |
+| 1. NIfTI | Slides | Code | Practice |
+
+</details>
+
+
+<details>
+
+<summary> Module 2: Pipeline Steps </summary>
+
+| Topic | Slides | Code | Exercises |
+|---------------|--------|--------|---------|------|-----------|
+| 1. Bias correction | Slides | Code | Practice |
+| 1. Brain extraction | Slides | Code | Practice |
+| 1. Tissue segmentation | Slides | Code | Practice |
+| 1. Transformation | Slides | Code | Practice |
+
+</details>
+
+
+<details>
+
+<summary> Module 3: Software Packages </summary>
+
+| Topic | Slides | Code | Exercises |
+|---------------|--------|--------|---------|------|-----------|
+| 1. ITK-snap | Slides | Code | Practice |
+| 1. ANTs | Slides | Code | Practice |
+| 1. FreeSurfer | Slides | Code | Practice |
+| 1. fMRIPrep | Slides | Code | Practice |
+
+</details>

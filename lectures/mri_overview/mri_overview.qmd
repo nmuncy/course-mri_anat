@@ -1,0 +1,38 @@
+---
+title: "Magnetic Resonant Imaging: Basics"
+author: Nathan M. Muncy
+date: today
+format:
+  revealjs:
+    footer: "MRI: basics"
+    logo: ../../media/nd_logo.png
+    transition: slide
+    slide-number: true
+engine: knitr
+---
+
+## Purpose
+::: {style="font-size: 65%;"}
+- **Knowledge**: Coordinate development
+- **Skill**:
+    - Develop on branches
+    - Send and manage pull requests
+- **Why**:
+    - Foundational skillset for research and industry
+    - Protect your code, facilitate maintenance and simultaneous development
+    - Organize development for yourself, a team
+:::
+
+## Efforts to image
+<!-- https://academic.oup.com/brain/article-abstract/137/2/621/280970?redirectedFrom=fulltext&login=false -->
+<!-- https://www.researchgate.net/publication/281682917_Dull_Brains_Mountaineers_and_Mosso_Hypoxic_Words_from_on_High -->
+<!-- https://pmc.ncbi.nlm.nih.gov/articles/PMC494289/ -->
+<!-- https://en.wikipedia.org/wiki/History_of_neuroimaging -->
+<!-- https://en.wikipedia.org/wiki/Pneumoencephalography -->
+## What is MRI
+## Magnetic field
+## Precession
+## Gradient
+## Excitation
+## Recovery
+## Signal

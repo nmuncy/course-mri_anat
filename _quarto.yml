@@ -1,0 +1,90 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - "code/*.sh"
+    - "figures/*.png"
+  render:
+    - "*.qmd"
+    - "*.Rmd"
+
+website:
+  title: "Bash Esssentials"
+  navbar:
+    title: false
+    logo: media/nd_logo.png
+    right:
+      - href: index.qmd
+        text: Home
+      - text: Course materials
+        menu:
+        - href: materials.qmd
+          text: Slides, Code, and Practices
+  page-footer:
+    background: light
+    center: "&copy; 2025 Nathan M. Muncy. Powered by <a href='https://www.quarto.org'>Quarto</a>."
+
+
+format:
+  html:
+    # backgroundcolor: "#D3D3D3"
+    fontcolor: "#0c2340"
+    linkcolor: "#ae9142"
+    css: styles.css
+    toc: true
+    theme:
+      - cosmo
+      - brand
+
+
+
+# project:
+#   type: website
+#   output-dir: docs
+#   resources:
+#     - "code/*.Rmd"
+#     - "data/*"
+#     - "decks/*"
+#     - "slides/*.pdf"
+#     - "slides/*.R"
+#     - "slides/*.Rmd"
+#   render:
+#     - "*.qmd"
+#     - "*.Rmd"
+#     - "!checkins/"
+#     - "!exercises/"
+#     - "!plotting_challenge.Rmd"
+
+# website:
+#   title: "Data Processing and Visualization in R"
+#   favicon: "logo/dpavir_icon.ico"
+#   navbar:
+#     right:
+#       - href: index.qmd
+#         text: Home
+#       - text: Course information
+#         menu:
+#         - href: syllabus.qmd
+#           text: Syllabus
+#         - href: schedule.qmd
+#           text: Schedule
+#       - text: Course materials
+#         menu:
+#         - href: meetings.qmd
+#           text: Class meetings
+#         - href: materials.qmd
+#           text: Readings, slides, code, exercises
+#         - href: resources.qmd
+#           text: Resources
+
+#   page-footer:
+#     background: light
+#     left: "&copy; 2025 Jeffrey R. Stevens. Powered by <a href='https://www.quarto.org'>Quarto</a>."
+
+# format:
+#   html:
+#     css: styles.css
+#     toc: true
+# theme:
+#   dark: darkly
+#   light: flatly

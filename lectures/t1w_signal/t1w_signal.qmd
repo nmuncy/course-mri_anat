@@ -1,0 +1,35 @@
+---
+title: "T1-Weighted Signal"
+author: Nathan M. Muncy
+date: today
+format:
+  revealjs:
+    footer: "MRI: T1w"
+    logo: ../../media/nd_logo.png
+    transition: slide
+    slide-number: true
+engine: knitr
+---
+
+## Purpose
+::: {style="font-size: 65%;"}
+- **Knowledge**: Coordinate development
+- **Skill**:
+    - Develop on branches
+    - Send and manage pull requests
+- **Why**:
+    - Foundational skillset for research and industry
+    - Protect your code, facilitate maintenance and simultaneous development
+    - Organize development for yourself, a team
+:::
+
+## MRI data types
+## Protocols and contrast
+## Gray and white matter
+## Precession
+## Excitation - Transverse Plane
+## Signal
+## Longitudinal recovery
+## Timescale (T1w)
+## Rates of recovery
+## Tissue contrast

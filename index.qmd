@@ -1,0 +1,28 @@
+---
+title: "MRI Analyses: anatomic"
+author:
+  name: "Nathan Muncy"
+  email: "nmuncy@nd.edu"
+# date: today
+toc: false
+execute:
+  freeze: auto
+---
+
+## About
+TODO
+
+
+## Course Materials
+- [Slides, Code, and Practices](materials.qmd)
+- Software
+- Resources
+- Data
+
+
+## (Tentative) Lesson Schedule
+
+| Lesson | Date | Material |
+|--------|------|-----------|
+| 1. MRI signal | TBD | TBD |
+
