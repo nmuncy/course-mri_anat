@@ -11,77 +11,77 @@
     "href": "lectures/mri_overview/mri_overview.html#studying-the-brain-is-hard",
     "title": "Magnetic Resonance Imaging: Basics",
     "section": "Studying the brain is hard",
-    "text": "Studying the brain is hard\n\n\n\n\n\n\n\n\nImaging the brain is hard\n\nSoft tissue surrounded by bone\n\nOpening the skull is discouraged\nAngelo Mosso (and this article)\nSee here for history\n\n\n \n\n\n\n1882 Angelo Mosso invented ‘human circulation balance’\nIdea: Balance body at rest, then provide"
+    "text": "Studying the brain is hard\n\n\n\n\n\n\n\n\nSoft tissue surrounded by bone\nOpening the skull is discouraged\nAngelo Mosso (and this article)\n122 years of Neuroimaging History\n\n\n\n\n\n\n\n\n\n1882 Angelo Mosso invented ‘human circulation balance’\nIdea: Balance body at rest, then test\nLow replication, idea persisted"
   },
   {
-    "objectID": "lectures/mri_overview/mri_overview.html#previous-methods",
-    "href": "lectures/mri_overview/mri_overview.html#previous-methods",
+    "objectID": "lectures/mri_overview/mri_overview.html#first-efforts",
+    "href": "lectures/mri_overview/mri_overview.html#first-efforts",
     "title": "Magnetic Resonance Imaging: Basics",
-    "section": "Previous methods",
-    "text": "Previous methods\n\n\n\nX-ray\nPneumoencephalography\nLimitations:\n\nResolution\nHealth risks\n\n\n\n \n\n\n\nX-ray useful for visualizing bone, not helpful with tissue\nPneumo:\n\ninvert person\nextract 35-50 ML CSF from lumbar\nreorient person - air bubble rises\nadjust orientation to visualize different regions"
+    "section": "First Efforts",
+    "text": "First Efforts\n\n\n\nX-ray\nPneumoencephalography\nLimitations:\n\nResolution\nHealth risks\n\n\n\n\n\n\n\n\n\n\n\nX-ray useful for visualizing bone, not helpful with tissue\nPneumo:\n\ninvert person\nextract 35-50 ML CSF from lumbar\nreorient person - air bubble rises\nadjust orientation to visualize different regions"
   },
   {
     "objectID": "lectures/mri_overview/mri_overview.html#what-is-mri",
     "href": "lectures/mri_overview/mri_overview.html#what-is-mri",
     "title": "Magnetic Resonance Imaging: Basics",
-    "section": "What is MRI",
-    "text": "What is MRI\n\n\n\n\nNuclear Magnetic Resonance Imaging\n\nCertain nuclei (H+) align with magnetic field\nRespond to secondary field\nEmit electromagnetic signal\n\nNumber of scientific discoveries:\n\nRabi - NMR (molecular beams)\nBloch and Purcell - NMR (liquids, solids)\nLauterbur and Mansfield - MRI\n\nIntersection of engineering and quantum mechanics\nFun, hard\n\nPhysics\nComputer Science\nNeuroscience\nPsychology\n\n\n\n \n\n\n\nIsidor Rabi (1938) first described NMR; Nobel Prize 1944\nFelix Bloch, Edward Purcell extended to liquids, solids; Nobel Prize 1952\nLauterbur, Mansfield; biologically useful MRI, EPI; Nobel Prize 2003"
+    "section": "What is MRI?",
+    "text": "What is MRI?\n\n\n\nNuclear Magnetic Resonance Imaging:\n\nCertain nuclei (H+) align with magnetic field\nRespond to secondary field\nEmit electromagnetic signal\n\nNumber of discoveries:\n\nRabi - NMR (molecular beams)\nBloch and Purcell - NMR (liquids, solids)\nLauterbur and Mansfield - MRI\n\nIntersection: Physics, Engineering, CompSci, Neuroscience, Psychology\n\n\n\n\n\n\n\n\n\nIsidor Rabi (1938) first described NMR; Nobel Prize 1944\nFelix Bloch, Edward Purcell extended to liquids, solids; Nobel Prize 1952\nLauterbur, Mansfield; biologically useful MRI, EPI; Nobel Prize 2003"
   },
   {
     "objectID": "lectures/mri_overview/mri_overview.html#magnetic-field",
     "href": "lectures/mri_overview/mri_overview.html#magnetic-field",
     "title": "Magnetic Resonance Imaging: Basics",
     "section": "Magnetic Field",
-    "text": "Magnetic Field\n\n\n\n\nElectromagnetic\nSuperconductivity\n\nCopper\nLiquid He+\n\n3 Tesla (2000+ lbs attraction)\n\nSmooth, consistent field\nAlways ON!\n\n\n\n   \n\n\n\nMRI based on simple"
+    "text": "Magnetic Field\n\n\n\nPrinciples of electromagnetism\nSuperconductivity\n\nCopper\nLiquid He+\n\n3 Tesla (2000+ lbs attraction)\n\nSmooth, consistent field\nAlways ON!"
   },
   {
-    "objectID": "lectures/mri_overview/mri_overview.html#safety",
-    "href": "lectures/mri_overview/mri_overview.html#safety",
+    "objectID": "lectures/mri_overview/mri_overview.html#safety-considerations",
+    "href": "lectures/mri_overview/mri_overview.html#safety-considerations",
     "title": "Magnetic Resonance Imaging: Basics",
-    "section": "Safety",
-    "text": "Safety\n\n\n\n\nRoom is fatal\nAcceleration\nInjuries\nFatalities"
+    "section": "Safety Considerations",
+    "text": "Safety Considerations\n\n\n\nRarely are rooms fatal\nStrict Zoning helps\nDiligence: avoid complacency and survivorship bias\nMagnetic field has significant acceleration\nInjuries are more common than they should be"
   },
   {
-    "objectID": "lectures/mri_overview/mri_overview.html#precession",
-    "href": "lectures/mri_overview/mri_overview.html#precession",
+    "objectID": "lectures/mri_overview/mri_overview.html#proton-precession",
+    "href": "lectures/mri_overview/mri_overview.html#proton-precession",
     "title": "Magnetic Resonance Imaging: Basics",
-    "section": "Precession",
-    "text": "Precession\n\n\n\n\nProton Spin\nProton Alignment\nPrecession\nLarmor Frequency"
+    "section": "Proton Precession",
+    "text": "Proton Precession\n\n\n\nSpin: fundamental property\n\nNot classical rotation\nStressful\n\nMagnetic Alignment\nLarmor Frequency"
   },
   {
-    "objectID": "lectures/mri_overview/mri_overview.html#gradient",
-    "href": "lectures/mri_overview/mri_overview.html#gradient",
+    "objectID": "lectures/mri_overview/mri_overview.html#field-gradients",
+    "href": "lectures/mri_overview/mri_overview.html#field-gradients",
     "title": "Magnetic Resonance Imaging: Basics",
-    "section": "Gradient",
-    "text": "Gradient\n\n\n\n\nControl precession\n3 dimensions\nProvide resolution"
+    "section": "Field Gradients",
+    "text": "Field Gradients\n\n\n\nMicro adjustments to magentic field\n\nControl precession!\n\n3 dimensions\n\nProvide resolution\n\nLarmor frequency - ability to target specific regions"
   },
   {
-    "objectID": "lectures/mri_overview/mri_overview.html#contrast",
-    "href": "lectures/mri_overview/mri_overview.html#contrast",
+    "objectID": "lectures/mri_overview/mri_overview.html#t1-contrast",
+    "href": "lectures/mri_overview/mri_overview.html#t1-contrast",
     "title": "Magnetic Resonance Imaging: Basics",
-    "section": "Contrast",
-    "text": "Contrast\n\n\n\nHead composed of multiple materials\n\nSkull\nCSF\nBrain\n\nDiffering magnetic properties\nIdentify useful tissue contrast"
+    "section": "T1 Contrast",
+    "text": "T1 Contrast\n\n\n\nHead composed of multiple materials\n\nSkull\nCSF\nBrain\n\nDiffering magnetic properties\nIdentify useful tissue contrast"
   },
   {
-    "objectID": "lectures/mri_overview/mri_overview.html#bold",
-    "href": "lectures/mri_overview/mri_overview.html#bold",
+    "objectID": "lectures/mri_overview/mri_overview.html#t2-contrast",
+    "href": "lectures/mri_overview/mri_overview.html#t2-contrast",
     "title": "Magnetic Resonance Imaging: Basics",
-    "section": "BOLD",
-    "text": "BOLD\n\n\n\nHemoglobin\n\nOxygenated (Hb): Diamagnetic\nDeoxgenated (dHb): Paramagentic\n\nContrast: Hb/dHb ratio\nAll brain tissue always active\n\nIncreased neural metabolism: change in Hb/dHb\n\nFunctional MRI\n\nBlood Oxygen Level Dependent (BOLD) signal"
+    "section": "T2* Contrast",
+    "text": "T2* Contrast\n\n\n\nHemoglobin\n\nOxygenated (Hb): Diamagnetic\nDeoxgenated (dHb): Paramagentic\n\nContrast: Hb/dHb ratio\nAll brain tissue always active\n\nIncreased neural metabolism: change in Hb/dHb\n\nFunctional MRI\n\nBlood Oxygen Level Dependent (BOLD) signal"
   },
   {
     "objectID": "lectures/mri_overview/mri_overview.html#design",
     "href": "lectures/mri_overview/mri_overview.html#design",
     "title": "Magnetic Resonance Imaging: Basics",
     "section": "Design",
-    "text": "Design\n\n\n\n\nContrast: neural or cognitive operations\n\nOcular dominance in humans and cats\nPoor vs Successful memory\n\nThink deeply about contrast\n\nMemory + color, shape, label, use, experience\n\n\n\n\n\n\nhttps://www.cell.com/action/showPdf?pii=S1364-6613%2819%2930204-9\n\n\n\n\nGroup differences - Miami and alligators"
+    "text": "Design\n\n\n\nContrast: neural or cognitive operations\n\nOcular dominance in humans and cats\nPoor vs Successful memory\n\nThink deeply about contrast\n\nMemory + color, shape, label, use, experience\n\n\n\n\n\n\nGroup differences - Miami and alligators"
   },
   {
     "objectID": "lectures/mri_overview/mri_overview.html#limitations",
     "href": "lectures/mri_overview/mri_overview.html#limitations",
     "title": "Magnetic Resonance Imaging: Basics",
     "section": "Limitations",
-    "text": "Limitations\n\n\n\n\nMultiple levels removed from neural processes\nSpeed of cognition (ms) vs haemodynamic response (s)\nCost\n\nFunding difficulties\nPower issues\nHardware, compute infrastructure\n\nCompatibility\nLaboratory effect"
+    "text": "Limitations\n\n\n\nMultiple levels removed from neural processes\nSpeed of cognition (ms) vs haemodynamic response (s)\nCost\n\nFunding difficulties\nPower issues\nHardware, compute infrastructure\n\nCompatibility\nLaboratory effect"
   },
   {
     "objectID": "lectures/mri_overview/mri_overview.html#topologic-results",
@@ -96,6 +96,13 @@
     "title": "Magnetic Resonance Imaging: Basics",
     "section": "Diffusion Results",
     "text": "Diffusion Results"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#sources",
+    "href": "lectures/mri_overview/mri_overview.html#sources",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Sources",
+    "text": "Sources\n\nTrepanation\nLeeds\nMosso\nMosso\nWhite\nPneumoencephalography\nRabi\nBloch\nLauterbur\nFatalities\nInaguma\nCat Paper (https://journals.sagepub.com/doi/10.1097/00004647-200208000-00002)\nHuman Paper (https://www.cell.com/action/showPdf?pii=S1364-6613%2819%2930204-9)\nStark paper\nXKCD 1: https://imgs.xkcd.com/comics/fmri.png\nXKCD 2: https://imgs.xkcd.com/comics/fmri_billboard.png"
   },
   {
     "objectID": "index.html",
