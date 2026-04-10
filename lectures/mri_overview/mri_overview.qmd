@@ -1,5 +1,5 @@
 ---
-title: "Magnetic Resonant Imaging: Basics"
+title: "Magnetic Resonance Imaging: Basics"
 author: Nathan M. Muncy
 date: today
 format:
@@ -11,28 +11,280 @@ format:
 engine: knitr
 ---
 
-## Purpose
-::: {style="font-size: 65%;"}
-- **Knowledge**: Coordinate development
-- **Skill**:
-    - Develop on branches
-    - Send and manage pull requests
-- **Why**:
-    - Foundational skillset for research and industry
-    - Protect your code, facilitate maintenance and simultaneous development
-    - Organize development for yourself, a team
-:::
-
-## Efforts to image
+## Studying the brain is hard
 <!-- https://academic.oup.com/brain/article-abstract/137/2/621/280970?redirectedFrom=fulltext&login=false -->
 <!-- https://www.researchgate.net/publication/281682917_Dull_Brains_Mountaineers_and_Mosso_Hypoxic_Words_from_on_High -->
 <!-- https://pmc.ncbi.nlm.nih.gov/articles/PMC494289/ -->
 <!-- https://en.wikipedia.org/wiki/History_of_neuroimaging -->
 <!-- https://en.wikipedia.org/wiki/Pneumoencephalography -->
+:::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- Imaging the brain is hard
+    - Soft tissue surrounded by bone
+- Opening the skull is discouraged
+- [Angelo Mosso](../../articles/mosso_weigh.pdf) (and [this](../../articles/mosso_dull_brains.pdf) article)
+- See [here](../../articles/leeds_imaging_1904_1999.pdf) for history
+:::
+
+::: {.column width="\"50%"}
+![https://www.historyextra.com/period/prehistoric/what-trepanning-ancient-surgical-procedure-skulls-when-first/](trepan_1.png)
+![](mosso_1.png)
+:::
+::::
+
+::: {.notes}
+- 1882 Angelo Mosso invented 'human circulation balance'
+- Idea: Balance body at rest, then provide
+:::
+
+
+## Previous methods
+:::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- X-ray
+- [Pneumoencephalography](../../articles/white_pneumo_sequelae.pdf)
+- Limitations:
+    - Resolution
+    - Health risks
+:::
+
+::: {.column width="\"50%"}
+![](xray_1.jpeg)
+![](pneumo_1.png)
+:::
+::::
+
+::: {.notes}
+- X-ray useful for visualizing bone, not helpful with tissue
+- Pneumo:
+    - invert person
+    - extract 35-50 ML CSF from lumbar
+    - reorient person - air bubble rises
+    - adjust orientation to visualize different regions
+:::
+
+
 ## What is MRI
-## Magnetic field
+<!-- Definition (Nuclear, Magnetic)
+History
+Engineering and Quantum Mechanics
+Fun, hard
+Computer science, physics, neuroscience, psychology -->
+:::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- Nuclear Magnetic Resonance Imaging
+    - Certain nuclei (H+) align with magnetic field
+    - Respond to secondary field
+    - Emit electromagnetic signal
+- Number of scientific discoveries:
+    - [Rabi](../../articles/rabi_1938.pdf) - NMR (molecular beams)
+    - [Bloch](../../articles/bloch_1946.pdf) and Purcell - NMR (liquids, solids)
+    - [Lauterbur](../../articles/lauterbur_1973_mri.pdf) and Mansfield - MRI
+- Intersection of engineering and quantum mechanics
+- Fun, hard
+    - Physics
+    - Computer Science
+    - Neuroscience
+    - Psychology
+:::
+
+::: {.column width="\"50%"}
+![](mri_1.jpg)
+![](nmr_1.png)
+:::
+::::
+
+
+::: {.notes}
+- Isidor Rabi (1938) first described NMR; Nobel Prize 1944
+- Felix Bloch, Edward Purcell extended to liquids, solids; Nobel Prize 1952
+- Lauterbur, Mansfield; biologically useful MRI, EPI; Nobel Prize 2003
+:::
+
+
+## Magnetic Field
+<!-- Copper
+Super cold properties
+Super conductivity
+Liquid Helium
+Strength -->
+
+:::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- Electromagnetic
+- Superconductivity
+    - Copper
+    - Liquid He+
+- 3 Tesla ([2000+](https://www.youtube.com/watch?v=6BBx8BwLhqg) lbs attraction)
+    - Smooth, consistent field
+    - Always ON!
+:::
+
+::: {.column width="\"50%"}
+![](cold_1.png)
+![](coil_1.png)
+![](coil_2.jpg)
+![](coil_3.png)
+:::
+::::
+
+::: {.notes}
+- MRI based on simple
+:::
+
+## Safety
+<!-- Fatalities -->
+:::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- Room is [fatal](https://smithchason.edu/mri-safety-lessons-1980-2001-2025/)
+- [Acceleration](https://www.youtube.com/watch?v=IF6CMrjGNN4)
+- Injuries
+- Fatalities
+:::
+
+::: {.column width="\"50%"}
+![](zones_2.png)
+![](zones_1.png)
+:::
+::::
+
 ## Precession
+<!-- Protons properties
+Precession
+Larmor Frequency -->
+
+:::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- Proton Spin
+- Proton Alignment
+- Precession
+- Larmor Frequency
+:::
+
+::: {.column width="\"50%"}
+![](precess_2.png)
+![](precess_1.png)
+:::
+::::
+
+
 ## Gradient
-## Excitation
+<!-- Finetune precession -->
+
+:::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- Control precession
+- 3 dimensions
+- Provide resolution
+:::
+
+::: {.column width="\"50%"}
+![](gradient_1.gif)
+![](nmr_2.jpg)
+:::
+::::
+
+
+<!-- ## Excitation
+Pulse
+Energy states
+
 ## Recovery
-## Signal
+Longitudinal decay
+Transverse recovery
+
+## Signal -->
+
+
+## Contrast
+:::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- Head composed of multiple materials
+    - Skull
+    - CSF
+    - Brain
+- Differing magnetic properties
+- Identify useful tissue contrast
+:::
+
+::: {.column width="\"50%"}
+![](long_recov_1.jpg)
+![](t1_1.png)
+:::
+::::
+
+
+## BOLD
+:::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- Hemoglobin
+    - Oxygenated (Hb): Diamagnetic
+    - Deoxgenated (dHb): Paramagentic
+- Contrast: Hb/dHb ratio
+- All brain tissue always active
+    - Increased neural metabolism: change in Hb/dHb
+- Functional MRI
+    - Blood Oxygen Level Dependent (BOLD) signal
+:::
+
+::: {.column width="\"50%"}
+![](bold_1.gif)
+![https://journals.sagepub.com/doi/10.1097/00004647-200208000-00002](bold_2.png)
+:::
+::::
+
+
+## Design
+<!-- Subtraction
+Stimulus delivery
+Behavioral response -->
+
+:::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- Contrast: neural or cognitive operations
+    - Ocular dominance in [humans](../../articles/cheng_2001_human.pdf) and [cats](../../articles/zhang_2010_cat.pdf)
+    - Poor vs Successful memory
+- Think deeply about contrast
+    - Memory + color, shape, label, use, experience
+:::
+
+::: {.column width="\"50%"}
+![https://www.cell.com/action/showPdf?pii=S1364-6613%2819%2930204-9](design_1.png)
+:::
+::::
+
+::: {.notes}
+Group differences - Miami and alligators
+:::
+
+## Limitations
+<!-- Cost
+Compatibility -->
+
+::: columns
+::: {.column width="50%" style="font-size: 65%;"}
+- Multiple levels removed from neural processes
+- Speed of cognition (ms) vs haemodynamic response (s)
+- Cost
+    - Funding difficulties
+    - Power issues
+    - Hardware, compute infrastructure
+- Compatibility
+- Laboratory effect
+:::
+
+::: {.column width="\"50%"}
+![https://imgs.xkcd.com/comics/fmri.png](limit_1.png)
+![https://imgs.xkcd.com/comics/fmri_billboard.png](limit_2.png)
+:::
+::::
+
+
+## Topologic Results
+
+<iframe src="topo_strength.html" style="width: 100%; height: 100%;" scrolling="no" allowfullscreen></iframe>
+
+
+## Diffusion Results
+
+<iframe src="dwi_tracts.html" style="width: 100%; height: 100%;" scrolling="no" allowfullscreen></iframe>

@@ -1,0 +1,205 @@
+[
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Course Slides, Code, and Practice Materials",
+    "section": "",
+    "text": "Module 1: Signal and Files\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Magnetic Resonance Imaging\nSlides\nCode\nPractice\n\n\n\n\n1. T1-weighted signal\nSlides\nCode\nPractice\n\n\n\n\n1. DICOM\nSlides\nCode\nPractice\n\n\n\n\n1. NIfTI\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\n1. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\n1. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\n1. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\n1. ANTs\nSlides\nCode\nPractice\n\n\n\n\n1. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\n1. fMRIPrep\nSlides\nCode\nPractice"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#studying-the-brain-is-hard",
+    "href": "lectures/mri_overview/mri_overview.html#studying-the-brain-is-hard",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Studying the brain is hard",
+    "text": "Studying the brain is hard\n\n\n\n\n\n\n\n\nImaging the brain is hard\n\nSoft tissue surrounded by bone\n\nOpening the skull is discouraged\nAngelo Mosso (and this article)\nSee here for history\n\n\n \n\n\n\n1882 Angelo Mosso invented ‘human circulation balance’\nIdea: Balance body at rest, then provide"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#previous-methods",
+    "href": "lectures/mri_overview/mri_overview.html#previous-methods",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Previous methods",
+    "text": "Previous methods\n\n\n\nX-ray\nPneumoencephalography\nLimitations:\n\nResolution\nHealth risks\n\n\n\n \n\n\n\nX-ray useful for visualizing bone, not helpful with tissue\nPneumo:\n\ninvert person\nextract 35-50 ML CSF from lumbar\nreorient person - air bubble rises\nadjust orientation to visualize different regions"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#what-is-mri",
+    "href": "lectures/mri_overview/mri_overview.html#what-is-mri",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "What is MRI",
+    "text": "What is MRI\n\n\n\n\nNuclear Magnetic Resonance Imaging\n\nCertain nuclei (H+) align with magnetic field\nRespond to secondary field\nEmit electromagnetic signal\n\nNumber of scientific discoveries:\n\nRabi - NMR (molecular beams)\nBloch and Purcell - NMR (liquids, solids)\nLauterbur and Mansfield - MRI\n\nIntersection of engineering and quantum mechanics\nFun, hard\n\nPhysics\nComputer Science\nNeuroscience\nPsychology\n\n\n\n \n\n\n\nIsidor Rabi (1938) first described NMR; Nobel Prize 1944\nFelix Bloch, Edward Purcell extended to liquids, solids; Nobel Prize 1952\nLauterbur, Mansfield; biologically useful MRI, EPI; Nobel Prize 2003"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#magnetic-field",
+    "href": "lectures/mri_overview/mri_overview.html#magnetic-field",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Magnetic Field",
+    "text": "Magnetic Field\n\n\n\n\nElectromagnetic\nSuperconductivity\n\nCopper\nLiquid He+\n\n3 Tesla (2000+ lbs attraction)\n\nSmooth, consistent field\nAlways ON!\n\n\n\n   \n\n\n\nMRI based on simple"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#safety",
+    "href": "lectures/mri_overview/mri_overview.html#safety",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Safety",
+    "text": "Safety\n\n\n\n\nRoom is fatal\nAcceleration\nInjuries\nFatalities"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#precession",
+    "href": "lectures/mri_overview/mri_overview.html#precession",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Precession",
+    "text": "Precession\n\n\n\n\nProton Spin\nProton Alignment\nPrecession\nLarmor Frequency"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#gradient",
+    "href": "lectures/mri_overview/mri_overview.html#gradient",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Gradient",
+    "text": "Gradient\n\n\n\n\nControl precession\n3 dimensions\nProvide resolution"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#contrast",
+    "href": "lectures/mri_overview/mri_overview.html#contrast",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Contrast",
+    "text": "Contrast\n\n\n\nHead composed of multiple materials\n\nSkull\nCSF\nBrain\n\nDiffering magnetic properties\nIdentify useful tissue contrast"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#bold",
+    "href": "lectures/mri_overview/mri_overview.html#bold",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "BOLD",
+    "text": "BOLD\n\n\n\nHemoglobin\n\nOxygenated (Hb): Diamagnetic\nDeoxgenated (dHb): Paramagentic\n\nContrast: Hb/dHb ratio\nAll brain tissue always active\n\nIncreased neural metabolism: change in Hb/dHb\n\nFunctional MRI\n\nBlood Oxygen Level Dependent (BOLD) signal"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#design",
+    "href": "lectures/mri_overview/mri_overview.html#design",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Design",
+    "text": "Design\n\n\n\n\nContrast: neural or cognitive operations\n\nOcular dominance in humans and cats\nPoor vs Successful memory\n\nThink deeply about contrast\n\nMemory + color, shape, label, use, experience\n\n\n\n\n\n\nhttps://www.cell.com/action/showPdf?pii=S1364-6613%2819%2930204-9\n\n\n\n\nGroup differences - Miami and alligators"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#limitations",
+    "href": "lectures/mri_overview/mri_overview.html#limitations",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Limitations",
+    "text": "Limitations\n\n\n\n\nMultiple levels removed from neural processes\nSpeed of cognition (ms) vs haemodynamic response (s)\nCost\n\nFunding difficulties\nPower issues\nHardware, compute infrastructure\n\nCompatibility\nLaboratory effect"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#topologic-results",
+    "href": "lectures/mri_overview/mri_overview.html#topologic-results",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Topologic Results",
+    "text": "Topologic Results"
+  },
+  {
+    "objectID": "lectures/mri_overview/mri_overview.html#diffusion-results",
+    "href": "lectures/mri_overview/mri_overview.html#diffusion-results",
+    "title": "Magnetic Resonance Imaging: Basics",
+    "section": "Diffusion Results",
+    "text": "Diffusion Results"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MRI Analyses: anatomic",
+    "section": "",
+    "text": "TODO"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "MRI Analyses: anatomic",
+    "section": "",
+    "text": "TODO"
+  },
+  {
+    "objectID": "index.html#course-materials",
+    "href": "index.html#course-materials",
+    "title": "MRI Analyses: anatomic",
+    "section": "Course Materials",
+    "text": "Course Materials\n\nSlides, Code, and Practices\nSoftware\nResources\nData"
+  },
+  {
+    "objectID": "index.html#tentative-lesson-schedule",
+    "href": "index.html#tentative-lesson-schedule",
+    "title": "MRI Analyses: anatomic",
+    "section": "(Tentative) Lesson Schedule",
+    "text": "(Tentative) Lesson Schedule\n\n\n\nLesson\nDate\nMaterial\n\n\n\n\n1. MRI signal\nTBD\nTBD"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#purpose",
+    "href": "lectures/t1w_signal/t1w_signal.html#purpose",
+    "title": "T1-Weighted Signal",
+    "section": "Purpose",
+    "text": "Purpose\n\n\nKnowledge: Coordinate development\nSkill:\n\nDevelop on branches\nSend and manage pull requests\n\nWhy:\n\nFoundational skillset for research and industry\nProtect your code, facilitate maintenance and simultaneous development\nOrganize development for yourself, a team"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#mri-data-types",
+    "href": "lectures/t1w_signal/t1w_signal.html#mri-data-types",
+    "title": "T1-Weighted Signal",
+    "section": "MRI data types",
+    "text": "MRI data types"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#protocols-and-contrast",
+    "href": "lectures/t1w_signal/t1w_signal.html#protocols-and-contrast",
+    "title": "T1-Weighted Signal",
+    "section": "Protocols and contrast",
+    "text": "Protocols and contrast"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#gray-and-white-matter",
+    "href": "lectures/t1w_signal/t1w_signal.html#gray-and-white-matter",
+    "title": "T1-Weighted Signal",
+    "section": "Gray and white matter",
+    "text": "Gray and white matter"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#precession",
+    "href": "lectures/t1w_signal/t1w_signal.html#precession",
+    "title": "T1-Weighted Signal",
+    "section": "Precession",
+    "text": "Precession"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#excitation---transverse-plane",
+    "href": "lectures/t1w_signal/t1w_signal.html#excitation---transverse-plane",
+    "title": "T1-Weighted Signal",
+    "section": "Excitation - Transverse Plane",
+    "text": "Excitation - Transverse Plane"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#signal",
+    "href": "lectures/t1w_signal/t1w_signal.html#signal",
+    "title": "T1-Weighted Signal",
+    "section": "Signal",
+    "text": "Signal"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#longitudinal-recovery",
+    "href": "lectures/t1w_signal/t1w_signal.html#longitudinal-recovery",
+    "title": "T1-Weighted Signal",
+    "section": "Longitudinal recovery",
+    "text": "Longitudinal recovery"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#timescale-t1w",
+    "href": "lectures/t1w_signal/t1w_signal.html#timescale-t1w",
+    "title": "T1-Weighted Signal",
+    "section": "Timescale (T1w)",
+    "text": "Timescale (T1w)"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#rates-of-recovery",
+    "href": "lectures/t1w_signal/t1w_signal.html#rates-of-recovery",
+    "title": "T1-Weighted Signal",
+    "section": "Rates of recovery",
+    "text": "Rates of recovery"
+  },
+  {
+    "objectID": "lectures/t1w_signal/t1w_signal.html#tissue-contrast",
+    "href": "lectures/t1w_signal/t1w_signal.html#tissue-contrast",
+    "title": "T1-Weighted Signal",
+    "section": "Tissue contrast",
+    "text": "Tissue contrast"
+  }
+]

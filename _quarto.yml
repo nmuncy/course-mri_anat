@@ -4,12 +4,13 @@ project:
   resources:
     - "code/*.sh"
     - "figures/*.png"
+    - "articles/*.pdf"
   render:
     - "*.qmd"
     - "*.Rmd"
 
 website:
-  title: "Bash Esssentials"
+  title: "Anatomic MRI"
   navbar:
     title: false
     logo: media/nd_logo.png

@@ -25,7 +25,7 @@ execute:
 
 | Topic | Slides | Code | Exercises |
 |---------------|--------|--------|---------|------|-----------|
-| 1. Magnetic Resonant Imaging | [Slides](lectures/mri_overview/mri_overview.qmd) | Code | Practice |
+| 1. Magnetic Resonance Imaging | [Slides](lectures/mri_overview/mri_overview.qmd) | Code | Practice |
 | 1. T1-weighted signal | Slides | Code | Practice |
 | 1. DICOM | Slides | Code | Practice |
 | 1. NIfTI | Slides | Code | Practice |
