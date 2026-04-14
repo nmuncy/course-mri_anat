@@ -305,19 +305,67 @@ Group differences - Miami and alligators
 
 
 ## Sources
+:::: {.columns}
+::: {.column width="50%" style="font-size: 25%"}
+Study is hard
+
 - [Trepanation](https://www.historyextra.com/period/prehistoric/what-trepanning-ancient-surgical-procedure-skulls-when-first)
-- Leeds
-- Mosso
-- Mosso
-- White
+- Sandrone, S., Bacigaluppi, M., Galloni, M. R., Cappa, S. F., Moro, A., Catani, M., ... & Martino, G. (2014). Weighing brain activity with the balance: Angelo Mosso’s original manuscripts come to light. Brain, 137(2), 621-633.
+- Lankford, H. V. (2015). Dull brains, mountaineers, and Mosso: hypoxic words from on high. High Altitude Medicine & Biology, 16(4), 363-370.
+- Leeds, N. E., & Kieffer, S. A. (2000). Evolution of diagnostic neuroradiology from 1904 to 1999. Radiology, 217(2), 309-318.
+
+First Efforts
+
 - [Pneumoencephalography](https://www.americanscientist.org/article/the-early-years-of-brain-imaging)
-- Rabi
-- Bloch
-- Lauterbur
-- [Fatalities](https://smithchason.edu/mri-safety-lessons-1980-2001-2025/)
-- Inaguma
-- Cat Paper (https://journals.sagepub.com/doi/10.1097/00004647-200208000-00002)
-- Human Paper (https://www.cell.com/action/showPdf?pii=S1364-6613%2819%2930204-9)
-- Stark paper
-- XKCD 1: https://imgs.xkcd.com/comics/fmri.png
-- XKCD 2: https://imgs.xkcd.com/comics/fmri_billboard.png
+- White, Y. S., Bell, D. S., & Mellick, R. (1973). Sequelae to pneumoencephalography. Journal of Neurology, Neurosurgery & Psychiatry, 36(1), 146-151.
+
+What is MRI
+
+- [Siemens](https://www.siemens-healthineers.com/en-us/magnetic-resonance-imaging/3t-mri-scanner/magnetom-cima-x)
+- Rabi, I. I., Zacharias, J. R., Millman, S., & Kusch, P. (1938). A new method of measuring nuclear magnetic moment. Physical review, 53(4), 318.
+- Bloch, F. (1946). Nuclear induction. Physical review, 70(7-8), 460.
+- Lauterbur, P. C. (1973). Image formation by induced local interactions: examples employing nuclear magnetic resonance. nature, 242(5394), 190-191.
+- TODO: nmr_1
+
+Magnetic Field
+
+- TODO: electromagnetism
+- [Superconductivity](https://mriquestions.com/superconductivity.html), [Superconducting Coil](https://www.sciencedirect.com/topics/engineering/superconducting-coil), [Magnet](https://mriquestions.com/superconductive-design.html)
+
+Safety Considerations
+
+- [Fatalities](https://smithchason.edu/mri-safety-lessons-1980-2001-2025/), [Purdue](https://www.purdue.edu/hhs/mri/MR%20Safety/MR%20Safety.html), [Zoning](https://mriquestions.com/acr-safety-zones.html)
+- Inaguma, K., Kotani, T., Kishida, S., Sakuma, T., Ueno, K., Iijima, Y., ... & Ohtori, S. (2023). Medical accidents related to ferromagnetic objects brought into the MRI room: analysis of the national multicenter database by orthopedic surgeons. Spine surgery and related research, 7(1), 96-102.
+
+:::
+::: {.column width="\"50%" style="font-size: 25%"}
+
+Proton Precession
+
+- [Fundamental Property](https://www.quantumdiaries.org/2016/02/01/spun-out-of-proportion-the-proton-spin-crisis/), [Not Rotation](https://photonics101.com/magnetostatics-currents-and-fields/spin-is-not-a-rotation.html), [Proton Crisis](https://en.wikipedia.org/wiki/Proton_spin_crisis)
+- [diagram](https://www.semanticscholar.org/paper/Partial-Volume-Segmentation-in-Magnetic-Resonance-%28-Grande-Barreto/46b9cb055318c9cbd40a878ddd04112de4c429b5/figure/2), [equation](https://x.com/NMRConcepts/status/978624450013868033)
+
+Field Gradients
+
+- [gradient](https://mri-q.com/gradient-advanced.html)
+
+T1 Contrast
+
+- [recovery](https://mri-2010.blogspot.com/2010/10/october-lecture-notes-1-image-density.html), [axial brain](https://mrimaster.com/index-2/)
+
+T2* Contrast
+
+- [Hb/dHb](https://mriquestions.com/bold-contrast.html)
+- Harel, N., Lee, S. P., Nagaoka, T., Kim, D. S., & Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow & metabolism, 22(8), 908-917.
+
+Design
+
+- Stark, S. M., Kirwan, C. B., & Stark, C. E. (2019). Mnemonic similarity task: A tool for assessing hippocampal integrity. Trends in cognitive sciences, 23(11), 938-951.
+- Harel, N., Lee, S. P., Nagaoka, T., Kim, D. S., & Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow & metabolism, 22(8), 908-917.
+- Cheng, K., Waggoner, R. A., & Tanaka, K. (2001). Human ocular dominance columns as revealed by high-field functional magnetic resonance imaging. Neuron, 32(2), 359-374.
+
+Limitations
+
+- [XKCD 1](https://imgs.xkcd.com/comics/fmri.png), [XKCD 2](https://imgs.xkcd.com/comics/fmri_billboard.png)
+:::
+::::
