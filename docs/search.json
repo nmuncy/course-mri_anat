@@ -4,7 +4,7 @@
     "href": "materials.html",
     "title": "Course Slides, Code, and Practice Materials",
     "section": "",
-    "text": "Module 1: Signal and Files\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Magnetic Resonance Imaging\nSlides\nCode\nPractice\n\n\n\n\n1. T1-weighted signal\nSlides\nCode\nPractice\n\n\n\n\n1. DICOM\nSlides\nCode\nPractice\n\n\n\n\n1. NIfTI\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\n1. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\n1. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\n1. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\n1. ANTs\nSlides\nCode\nPractice\n\n\n\n\n1. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\n1. fMRIPrep\nSlides\nCode\nPractice"
+    "text": "Module 1: Signal and Files\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Magnetic Resonance Imaging\nSlides\nCode\nPractice\n\n\n\n\n2. T1-weighted signal\nSlides\nCode\nPractice\n\n\n\n\n3. DICOM\nSlides\nCode\nPractice\n\n\n\n\n4. NIfTI\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\n2. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\n3. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\n4. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\n2. ANTs\nSlides\nCode\nPractice\n\n\n\n\n3. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\n4. fMRIPrep\nSlides\nCode\nPractice"
   },
   {
     "objectID": "lectures/mri_overview/mri_overview.html#studying-the-brain-is-hard",
@@ -32,14 +32,14 @@
     "href": "lectures/mri_overview/mri_overview.html#magnetic-field",
     "title": "Magnetic Resonance Imaging: Basics",
     "section": "Magnetic Field",
-    "text": "Magnetic Field\n\n\n\nPrinciples of electromagnetism\nSuperconductivity\n\nCopper\nLiquid He+\n\n3 Tesla (2000+ lbs attraction)\n\nSmooth, consistent field\nAlways ON!"
+    "text": "Magnetic Field\n\n\n\nPrinciples of electromagnetism\nSuperconductivity\n\nCopper\nLiquid He+\n\n3 Tesla (2000+ lbs attraction)\n\nSmooth, consistent field\nAlways ON!\n\n\n\n\n\n\n\n\n\n\n\n(charge machine before strength)"
   },
   {
     "objectID": "lectures/mri_overview/mri_overview.html#safety-considerations",
     "href": "lectures/mri_overview/mri_overview.html#safety-considerations",
     "title": "Magnetic Resonance Imaging: Basics",
     "section": "Safety Considerations",
-    "text": "Safety Considerations\n\n\n\nRarely are rooms fatal\nStrict Zoning helps\nDiligence: avoid complacency and survivorship bias\nMagnetic field has significant acceleration\nInjuries are more common than they should be"
+    "text": "Safety Considerations\n\n\n\nRarely are rooms fatal\nStrict Zoning helps\nDiligence: avoid complacency and survivorship bias\nMagnetic field has significant acceleration\nInjuries are more common than they should be\n\n\n\n\n\n\n\n\n\nSurvivor bias: seatbelts, climbing (Rope on chair)"
   },
   {
     "objectID": "lectures/mri_overview/mri_overview.html#proton-precession",
@@ -102,35 +102,21 @@
     "href": "lectures/mri_overview/mri_overview.html#sources",
     "title": "Magnetic Resonance Imaging: Basics",
     "section": "Sources",
-    "text": "Sources\n\n\nStudy is hard\n\nTrepanation\nSandrone, S., Bacigaluppi, M., Galloni, M. R., Cappa, S. F., Moro, A., Catani, M., … & Martino, G. (2014). Weighing brain activity with the balance: Angelo Mosso’s original manuscripts come to light. Brain, 137(2), 621-633.\nLankford, H. V. (2015). Dull brains, mountaineers, and Mosso: hypoxic words from on high. High Altitude Medicine & Biology, 16(4), 363-370.\nLeeds, N. E., & Kieffer, S. A. (2000). Evolution of diagnostic neuroradiology from 1904 to 1999. Radiology, 217(2), 309-318.\n\nFirst Efforts\n\nPneumoencephalography\nWhite, Y. S., Bell, D. S., & Mellick, R. (1973). Sequelae to pneumoencephalography. Journal of Neurology, Neurosurgery & Psychiatry, 36(1), 146-151.\n\nWhat is MRI\n\nSiemens\nRabi, I. I., Zacharias, J. R., Millman, S., & Kusch, P. (1938). A new method of measuring nuclear magnetic moment. Physical review, 53(4), 318.\nBloch, F. (1946). Nuclear induction. Physical review, 70(7-8), 460.\nLauterbur, P. C. (1973). Image formation by induced local interactions: examples employing nuclear magnetic resonance. nature, 242(5394), 190-191.\nTODO: nmr_1\n\nMagnetic Field\n\nTODO: electromagnetism\nSuperconductivity, Superconducting Coil, Magnet\n\nSafety Considerations\n\nFatalities, Purdue, Zoning\nInaguma, K., Kotani, T., Kishida, S., Sakuma, T., Ueno, K., Iijima, Y., … & Ohtori, S. (2023). Medical accidents related to ferromagnetic objects brought into the MRI room: analysis of the national multicenter database by orthopedic surgeons. Spine surgery and related research, 7(1), 96-102.\n\n\nProton Precession\n\nFundamental Property, Not Rotation, Proton Crisis\ndiagram, equation\n\nField Gradients\n\ngradient\n\nT1 Contrast\n\nrecovery, axial brain\n\nT2* Contrast\n\nHb/dHb\nHarel, N., Lee, S. P., Nagaoka, T., Kim, D. S., & Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow & metabolism, 22(8), 908-917.\n\nDesign\n\nStark, S. M., Kirwan, C. B., & Stark, C. E. (2019). Mnemonic similarity task: A tool for assessing hippocampal integrity. Trends in cognitive sciences, 23(11), 938-951.\nHarel, N., Lee, S. P., Nagaoka, T., Kim, D. S., & Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow & metabolism, 22(8), 908-917.\nCheng, K., Waggoner, R. A., & Tanaka, K. (2001). Human ocular dominance columns as revealed by high-field functional magnetic resonance imaging. Neuron, 32(2), 359-374.\n\nLimitations\n\nXKCD 1, XKCD 2"
+    "text": "Sources\n\n\nStudy is hard\n\nTrepanation\nSandrone, S., Bacigaluppi, M., Galloni, M. R., Cappa, S. F., Moro, A., Catani, M., … & Martino, G. (2014). Weighing brain activity with the balance: Angelo Mosso’s original manuscripts come to light. Brain, 137(2), 621-633.\nLankford, H. V. (2015). Dull brains, mountaineers, and Mosso: hypoxic words from on high. High Altitude Medicine & Biology, 16(4), 363-370.\nLeeds, N. E., & Kieffer, S. A. (2000). Evolution of diagnostic neuroradiology from 1904 to 1999. Radiology, 217(2), 309-318.\n\nFirst Efforts\n\nX-ray\nPneumoencephalography\nWhite, Y. S., Bell, D. S., & Mellick, R. (1973). Sequelae to pneumoencephalography. Journal of Neurology, Neurosurgery & Psychiatry, 36(1), 146-151.\n\nWhat is MRI\n\nSiemens\nRabi, I. I., Zacharias, J. R., Millman, S., & Kusch, P. (1938). A new method of measuring nuclear magnetic moment. Physical review, 53(4), 318.\nBloch, F. (1946). Nuclear induction. Physical review, 70(7-8), 460.\nLauterbur, P. C. (1973). Image formation by induced local interactions: examples employing nuclear magnetic resonance. nature, 242(5394), 190-191.\nTODO: nmr_1\n\nMagnetic Field\n\nTODO: electromagnetism\nSuperconductivity, Superconducting Coil, Magnet\n\nSafety Considerations\n\nFatalities, Purdue, Zoning\nInaguma, K., Kotani, T., Kishida, S., Sakuma, T., Ueno, K., Iijima, Y., … & Ohtori, S. (2023). Medical accidents related to ferromagnetic objects brought into the MRI room: analysis of the national multicenter database by orthopedic surgeons. Spine surgery and related research, 7(1), 96-102.\n\n\nProton Precession\n\nFundamental Property, Not Rotation, Proton Crisis\ndiagram, equation\n\nField Gradients\n\ngradient\n\nT1 Contrast\n\nrecovery, axial brain\n\nT2* Contrast\n\nHb/dHb\nHarel, N., Lee, S. P., Nagaoka, T., Kim, D. S., & Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow & metabolism, 22(8), 908-917.\n\nDesign\n\nStark, S. M., Kirwan, C. B., & Stark, C. E. (2019). Mnemonic similarity task: A tool for assessing hippocampal integrity. Trends in cognitive sciences, 23(11), 938-951.\nHarel, N., Lee, S. P., Nagaoka, T., Kim, D. S., & Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow & metabolism, 22(8), 908-917.\nCheng, K., Waggoner, R. A., & Tanaka, K. (2001). Human ocular dominance columns as revealed by high-field functional magnetic resonance imaging. Neuron, 32(2), 359-374.\n\nLimitations\n\nXKCD 1, XKCD 2"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "MRI Analyses: anatomic",
     "section": "",
-    "text": "TODO"
-  },
-  {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
-    "title": "MRI Analyses: anatomic",
-    "section": "",
-    "text": "TODO"
+    "text": "Slides, Code, and Practices"
   },
   {
     "objectID": "index.html#course-materials",
     "href": "index.html#course-materials",
     "title": "MRI Analyses: anatomic",
-    "section": "Course Materials",
-    "text": "Course Materials\n\nSlides, Code, and Practices\nSoftware\nResources\nData"
-  },
-  {
-    "objectID": "index.html#tentative-lesson-schedule",
-    "href": "index.html#tentative-lesson-schedule",
-    "title": "MRI Analyses: anatomic",
-    "section": "(Tentative) Lesson Schedule",
-    "text": "(Tentative) Lesson Schedule\n\n\n\nLesson\nDate\nMaterial\n\n\n\n\n1. MRI signal\nTBD\nTBD"
+    "section": "",
+    "text": "Slides, Code, and Practices"
   },
   {
     "objectID": "lectures/t1w_signal/t1w_signal.html#purpose",

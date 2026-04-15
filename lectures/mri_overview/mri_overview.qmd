@@ -134,7 +134,7 @@ engine: knitr
 :::::
 
 ::: {.notes}
-
+(charge machine before strength)
 :::
 
 ## Safety Considerations
@@ -156,6 +156,11 @@ engine: knitr
 :::
 ::::
 :::::
+
+::: {.notes}
+- Survivor bias: seatbelts, climbing
+(Rope on chair)
+:::
 
 ## Proton Precession
 ::::: columns
@@ -316,6 +321,7 @@ Study is hard
 
 First Efforts
 
+- [X-ray](https://radiopaedia.org/cases/normal-skull-radiograph)
 - [Pneumoencephalography](https://www.americanscientist.org/article/the-early-years-of-brain-imaging)
 - White, Y. S., Bell, D. S., & Mellick, R. (1973). Sequelae to pneumoencephalography. Journal of Neurology, Neurosurgery & Psychiatry, 36(1), 146-151.
 

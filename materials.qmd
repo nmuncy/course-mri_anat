@@ -26,9 +26,9 @@ execute:
 | Topic | Slides | Code | Exercises |
 |---------------|--------|--------|---------|------|-----------|
 | 1. Magnetic Resonance Imaging | [Slides](lectures/mri_overview/mri_overview.qmd) | Code | Practice |
-| 1. T1-weighted signal | Slides | Code | Practice |
-| 1. DICOM | Slides | Code | Practice |
-| 1. NIfTI | Slides | Code | Practice |
+| 2. T1-weighted signal | Slides | Code | Practice |
+| 3. DICOM | Slides | Code | Practice |
+| 4. NIfTI | Slides | Code | Practice |
 
 </details>
 
@@ -40,9 +40,9 @@ execute:
 | Topic | Slides | Code | Exercises |
 |---------------|--------|--------|---------|------|-----------|
 | 1. Bias correction | Slides | Code | Practice |
-| 1. Brain extraction | Slides | Code | Practice |
-| 1. Tissue segmentation | Slides | Code | Practice |
-| 1. Transformation | Slides | Code | Practice |
+| 2. Brain extraction | Slides | Code | Practice |
+| 3. Tissue segmentation | Slides | Code | Practice |
+| 4. Transformation | Slides | Code | Practice |
 
 </details>
 
@@ -54,8 +54,8 @@ execute:
 | Topic | Slides | Code | Exercises |
 |---------------|--------|--------|---------|------|-----------|
 | 1. ITK-snap | Slides | Code | Practice |
-| 1. ANTs | Slides | Code | Practice |
-| 1. FreeSurfer | Slides | Code | Practice |
-| 1. fMRIPrep | Slides | Code | Practice |
+| 2. ANTs | Slides | Code | Practice |
+| 3. FreeSurfer | Slides | Code | Practice |
+| 4. fMRIPrep | Slides | Code | Practice |
 
 </details>
