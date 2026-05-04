@@ -11,25 +11,68 @@ format:
 engine: knitr
 ---
 
-## Purpose
-::: {style="font-size: 65%;"}
-- **Knowledge**: Coordinate development
-- **Skill**:
-    - Develop on branches
-    - Send and manage pull requests
-- **Why**:
-    - Foundational skillset for research and industry
-    - Protect your code, facilitate maintenance and simultaneous development
-    - Organize development for yourself, a team
-:::
 
 ## MRI data types
+
+<!-- https://radiopaedia.org/articles/mri-sequences-overview?lang=us -->
+T1w
+T2w
+PD
+MRS
+Perfusion
+Flair
+DWI
+SWI
+fMRI
+
+
 ## Protocols and contrast
-## Gray and white matter
+
+Calibrated protocol for tissue differences
+Contrast
+- Protons
+- Diffusion
+- Hb, dOHb
+Underlay - dynamics in field
+
+
 ## Precession
-## Excitation - Transverse Plane
-## Signal
+
+Spin
+Magnetic Alignment
+Larmor frequency
+Gradient
+
+
+## Excitation
+Radiofrequency Pulse
+Resonant Frequency
+Low -> High Energy
+Phase Alignment
+Bo and Mo
+
+
+
+
+## Signal - Transverse Plane
+
+Rotating B1 - induce current - MRI signal
+
 ## Longitudinal recovery
 ## Timescale (T1w)
 ## Rates of recovery
 ## Tissue contrast
+## Gray and white matter
+
+
+Proton align to Bo - Mz
+Known precession
+Resonant RF Pulse
+High energy state
+Phase alignment
+Oscillating signal in B1, Mxy
+T2 decay (dephase), decrease Mxy
+Tissue type in T2 decay (water slow, fat middle, muscle fast)
+180 Pulse - invert dephase -> rephase
+(Frequency encoding gradient, phase encoding gradient)
+Signal from fat (high), water (low)
