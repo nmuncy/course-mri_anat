@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.33">
 
   <meta name="author" content="Nathan M. Muncy">
-  <meta name="dcterms.date" content="2026-04-15">
+  <meta name="dcterms.date" content="2026-05-04">
   <title>Anatomic MRI – T1-Weighted Signal</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -138,56 +138,180 @@ Nathan M. Muncy
 </div>
 </div>
 
-  <p class="date">2026-04-15</p>
+  <p class="date">2026-05-04</p>
 </section>
-<section id="purpose" class="slide level2">
-<h2>Purpose</h2>
-<div style="font-size: 65%;">
+<section id="data-types" class="slide level2">
+<h2>Data Types</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<p>MRI ability to gather different types of data</p>
 <ul>
-<li><strong>Knowledge</strong>: Coordinate development</li>
-<li><strong>Skill</strong>:
+<li>Term: MRI sequence</li>
+<li>Callibrated for distinct tissue properties</li>
+</ul>
+<p>Examples:</p>
 <ul>
-<li>Develop on branches</li>
-<li>Send and manage pull requests</li>
-</ul></li>
-<li><strong>Why</strong>:
+<li>T1w: gray vs white matter</li>
+<li>T2w: fat vs water</li>
+<li>Flair: white matter lesions</li>
+<li>DWI: diffusion of water molecules</li>
+<li>SWI: compounds that distort magnetic field</li>
+</ul>
+<!-- Others:
+
+- PD: proton density
+- Perfusion: blood flow
+- fMRI: blood oxygenation -->
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="mri_t1w.jpg" class="fragment fade-in-then-out"></p>
+<p><img data-src="mri_t2w.jpg" class="fragment fade-in-then-out"></p>
+<p><img data-src="mri_flair.jpg" class="fragment fade-in-then-out"></p>
+<p><img data-src="mri_dwi.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="mri_swi.jpg" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
+</section>
+<section id="essentials-principles" class="slide level2">
+<h2>Essentials Principles</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
 <ul>
-<li>Foundational skillset for research and industry</li>
-<li>Protect your code, facilitate maintenance and simultaneous development</li>
-<li>Organize development for yourself, a team</li>
+<li>Typically capitalize on H<sup>+</sup> properties</li>
+<li>Fundamental to MRI sequences, control:
+<ul>
+<li>Pulse</li>
+<li>Orientation</li>
+<li>Phase</li>
+<li>Frequency</li>
+<li>Read time</li>
 </ul></li>
 </ul>
-</div>
-</section>
-<section id="mri-data-types" class="slide level2">
-<h2>MRI data types</h2>
-</section>
-<section id="protocols-and-contrast" class="slide level2">
-<h2>Protocols and contrast</h2>
-</section>
-<section id="gray-and-white-matter" class="slide level2">
-<h2>Gray and white matter</h2>
+</div><div class="column" style="width:&quot;50%;">
+<p><img data-src="mri_protocol.png"></p>
+</div></div>
 </section>
 <section id="precession" class="slide level2">
 <h2>Precession</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Protons - slightly positive (H<sup>+</sup>)</li>
+<li>Inherent spin
+<ul>
+<li>Precession</li>
+<li>Magnetic moment</li>
+</ul></li>
+<li>Align with magnetic field
+<ul>
+<li>Low, high energy states</li>
+<li>Net Magnetization</li>
+<li>Frequency (Larmor)</li>
+</ul></li>
+<li>Critical:
+<ul>
+<li>Known proton properties</li>
+<li>Control protons with field gradients</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="proton_spin.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="proton_B0_Mxyz.jpg" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
+<!-- TODO: Add interactive graphic -->
 </section>
-<section id="excitation---transverse-plane" class="slide level2">
-<h2>Excitation - Transverse Plane</h2>
+<section id="excitation" class="slide level2">
+<h2>Excitation</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Engage with protons
+<ul>
+<li>Provide resonant electromagnetic radiation</li>
+<li>Same frequency as known precession (Larmor)</li>
+<li>Radiofrequency Pulse (42.58 MHz/T)</li>
+</ul></li>
+<li>Protons flip from low to high energy state</li>
+<li>Energy lost as thermal over time
+<ul>
+<li>T1 recovery</li>
+<li>Differing rates</li>
+</ul></li>
+<li>Not sufficient for imaging
+<ul>
+<li>Collect data only in transverse plain</li>
+</ul></li>
+</ul>
+<!-- Radiofrequency Pulse
+Resonant Frequency
+Low -> High Energy
+Longitudinal recovery
+Tissue rates
+T1 time -->
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="t1_low_high.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="t1_recovery.jpg" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
 </section>
-<section id="signal" class="slide level2">
-<h2>Signal</h2>
+<section id="phase" class="slide level2">
+<h2>Phase</h2>
+<p>Signal in transverse plane Pulse - Phase Alignment Bo and Mz -&gt; Mxy Rotating Mxy - induce current - MRI signal</p>
 </section>
-<section id="longitudinal-recovery" class="slide level2">
-<h2>Longitudinal recovery</h2>
+<section id="decay" class="slide level2">
+<h2>Decay</h2>
+<p>Precess rates Spin-spin interactions Dephase - decrease Mxy (still B1) - T2 decay Tissue rates T2 time</p>
 </section>
-<section id="timescale-t1w" class="slide level2">
-<h2>Timescale (T1w)</h2>
+<section id="invert-pulse" class="slide level2">
+<h2>Invert Pulse</h2>
+<p>180 degree invert dephase Rephase - Fast catch up to slow Signal at TE spin vs gradient echo Tissue rates</p>
 </section>
-<section id="rates-of-recovery" class="slide level2">
-<h2>Rates of recovery</h2>
+<section id="recap" class="slide level2">
+<h2>Recap</h2>
+<p>T1 properties T2 properites</p>
 </section>
-<section id="tissue-contrast" class="slide level2">
-<h2>Tissue contrast</h2>
+<section id="t1-vs-t2-contrast" class="slide level2">
+<h2>T1 vs T2 contrast</h2>
+<!-- Proton align to Bo - Mz
+Known precession
+Resonant RF Pulse
+High energy state
+Phase alignment
+Oscillating signal in B1, Mxy
+T2 decay (dephase), decrease Mxy
+Tissue type in T2 decay (water slow, fat middle, muscle fast)
+180 Pulse - invert dephase -> rephase
+(Frequency encoding gradient, phase encoding gradient)
+Signal from fat (high), water (low) -->
+</section>
+<section id="sources" class="slide level2">
+<h2>Sources</h2>
+<div class="columns">
+<div class="column" style="font-size: 25%">
+<p>Data Types</p>
+<ul>
+<li><a href="https://radiopaedia.org/articles/mri-sequences-overview?lang=us">Radiopaedia</a></li>
+</ul>
+<p>Essential Principles</p>
+<ul>
+<li>McRobbie, D. W., Moore, E. A., Graves, M. J., &amp; Prince, M. R. (2017). MRI from Picture to Proton. Cambridge university press.</li>
+</ul>
+<p>Precession</p>
+<ul>
+<li><a href="https://www.researchgate.net/figure/Precession-of-protons-in-a-magnetic-field-B-0-one-with-spin-up-and-the-other-with_fig11_341098754">Research Gate</a> <!-- - [Precession](https://mriquestions.com/why-precession.html) --></li>
+<li>Radue, E. W., Weigel, M., Wiest, R., &amp; Urbach, H. (2016). Introduction to magnetic resonance imaging for neurologists. Continuum: Lifelong Learning in Neurology, 22(5, Neuroimaging), 1379-1398.</li>
+</ul>
+<p>Excitation</p>
+<ul>
+<li><p><a href="https://catalogimages.wiley.com/images/db/pdf/9781444337433.excerpt.pdf">T1 excitation</a></p></li>
+<li><p><a href="https://mri-2010.blogspot.com/2010/10/october-lecture-notes-1-image-density.html">T1 recovery</a></p></li>
+</ul>
+</div><div class="column" style="font-size: 25%">
+<p>Proton Precession</p>
+</div></div>
 
 
 </section>

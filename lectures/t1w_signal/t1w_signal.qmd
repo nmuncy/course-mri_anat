@@ -12,60 +12,164 @@ engine: knitr
 ---
 
 
-## MRI data types
+## Data Types
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+MRI ability to gather different types of data
 
-<!-- https://radiopaedia.org/articles/mri-sequences-overview?lang=us -->
-T1w
-T2w
-PD
-MRS
-Perfusion
-Flair
-DWI
-SWI
-fMRI
+- Term: MRI sequence
+- Callibrated for distinct tissue properties
+
+Examples:
+
+- T1w: gray vs white matter
+- T2w: fat vs water
+- Flair: white matter lesions
+- DWI: diffusion of water molecules
+- SWI: compounds that distort magnetic field
+
+<!-- Others:
+
+- PD: proton density
+- Perfusion: blood flow
+- fMRI: blood oxygenation -->
+::::
+
+:::: {.column width="\"50%"}
+::: {.r-stack}
+![](mri_t1w.jpg){.fragment .fade-in-then-out}
+
+![](mri_t2w.jpg){.fragment .fade-in-then-out}
+
+![](mri_flair.jpg){.fragment .fade-in-then-out}
+
+![](mri_dwi.png){.fragment .fade-in-then-out}
+
+![](mri_swi.jpg){.fragment .fade-in-then-out}
+:::
+::::
+:::::
 
 
-## Protocols and contrast
+## Essentials Principles
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- Typically capitalize on H^+^ properties
+- Fundamental to MRI sequences, control:
+  - Pulse
+  - Orientation
+  - Phase
+  - Frequency
+  - Read time
+::::
 
-Calibrated protocol for tissue differences
-Contrast
-- Protons
-- Diffusion
-- Hb, dOHb
-Underlay - dynamics in field
+:::: {.column width="\"50%"}
+
+![](mri_protocol.png)
+
+::::
+:::::
 
 
 ## Precession
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- Protons - slightly positive (H^+^)
+- Inherent spin
+  - Precession
+  - Magnetic moment
+- Align with magnetic field
+  - Low, high energy states
+  - Net Magnetization
+  - Frequency (Larmor)
+- Critical:
+  - Known proton properties
+  - Control protons with field gradients
 
-Spin
-Magnetic Alignment
-Larmor frequency
-Gradient
+::::
+
+:::: {.column width="\"50%"}
+::: {.r-stack}
+
+![](proton_spin.png){.fragment .fade-in-then-out}
+
+![](proton_B0_Mxyz.jpg){.fragment .fade-in-then-out}
+
+:::
+::::
+:::::
+
+
+<!-- TODO: Add interactive graphic -->
 
 
 ## Excitation
-Radiofrequency Pulse
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- Engage with protons
+  - Provide resonant electromagnetic radiation
+  - Same frequency as known precession (Larmor)
+  - Radiofrequency Pulse (42.58 MHz/T)
+- Protons flip from low to high energy state
+- Energy lost as thermal over time
+  - T1 recovery
+  - Differing rates
+- Not sufficient for imaging
+  - Collect data only in transverse plain
+
+<!-- Radiofrequency Pulse
 Resonant Frequency
 Low -> High Energy
-Phase Alignment
-Bo and Mo
+Longitudinal recovery
+Tissue rates
+T1 time -->
+
+::::
+
+:::: {.column width="\"50%"}
+::: {.r-stack}
+
+![](t1_low_high.png){.fragment .fade-in-then-out}
+
+![](t1_recovery.jpg){.fragment .fade-in-then-out}
+
+:::
+::::
+:::::
+
+## Phase
+Signal in transverse plane
+Pulse - Phase Alignment
+Bo and Mz -> Mxy
+Rotating Mxy - induce current - MRI signal
 
 
+## Decay
+Precess rates
+Spin-spin interactions
+Dephase - decrease Mxy (still B1) - T2 decay
+Tissue rates
+T2 time
 
 
-## Signal - Transverse Plane
-
-Rotating B1 - induce current - MRI signal
-
-## Longitudinal recovery
-## Timescale (T1w)
-## Rates of recovery
-## Tissue contrast
-## Gray and white matter
+## Invert Pulse
+180 degree
+invert dephase
+Rephase - Fast catch up to slow
+Signal at TE
+spin vs gradient echo
+Tissue rates
 
 
-Proton align to Bo - Mz
+## Recap
+
+T1 properties
+T2 properites
+
+
+## T1 vs T2 contrast
+
+<!-- Proton align to Bo - Mz
 Known precession
 Resonant RF Pulse
 High energy state
@@ -75,4 +179,37 @@ T2 decay (dephase), decrease Mxy
 Tissue type in T2 decay (water slow, fat middle, muscle fast)
 180 Pulse - invert dephase -> rephase
 (Frequency encoding gradient, phase encoding gradient)
-Signal from fat (high), water (low)
+Signal from fat (high), water (low) -->
+
+
+
+## Sources
+:::: {.columns}
+::: {.column width="50%" style="font-size: 25%"}
+Data Types
+
+- [Radiopaedia](https://radiopaedia.org/articles/mri-sequences-overview?lang=us)
+
+Essential Principles
+
+- McRobbie, D. W., Moore, E. A., Graves, M. J., & Prince, M. R. (2017). MRI from Picture to Proton. Cambridge university press.
+
+Precession
+
+- [Research Gate](https://www.researchgate.net/figure/Precession-of-protons-in-a-magnetic-field-B-0-one-with-spin-up-and-the-other-with_fig11_341098754)
+<!-- - [Precession](https://mriquestions.com/why-precession.html) -->
+- Radue, E. W., Weigel, M., Wiest, R., & Urbach, H. (2016). Introduction to magnetic resonance imaging for neurologists. Continuum: Lifelong Learning in Neurology, 22(5, Neuroimaging), 1379-1398.
+
+Excitation
+
+- [T1 excitation](https://catalogimages.wiley.com/images/db/pdf/9781444337433.excerpt.pdf)
+
+- [T1 recovery](https://mri-2010.blogspot.com/2010/10/october-lecture-notes-1-image-density.html)
+
+:::
+::: {.column width="\"50%" style="font-size: 25%"}
+
+Proton Precession
+
+:::
+::::
