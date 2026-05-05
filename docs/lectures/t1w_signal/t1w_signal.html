@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.33">
 
   <meta name="author" content="Nathan M. Muncy">
-  <meta name="dcterms.date" content="2026-05-04">
+  <meta name="dcterms.date" content="2026-05-05">
   <title>Anatomic MRI – T1-Weighted Signal</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -138,7 +138,7 @@ Nathan M. Muncy
 </div>
 </div>
 
-  <p class="date">2026-05-04</p>
+  <p class="date">2026-05-05</p>
 </section>
 <section id="data-types" class="slide level2">
 <h2>Data Types</h2>
@@ -170,7 +170,30 @@ Nathan M. Muncy
 <p><img data-src="mri_dwi.png" class="fragment fade-in-then-out"></p>
 <p><img data-src="mri_swi.jpg" class="fragment fade-in-then-out"></p>
 </div>
-</div></div>
+</div><aside class="notes">
+<!-- Proton align to Bo - Mz
+Known precession
+Resonant RF Pulse
+High energy state
+Phase alignment
+Oscillating signal in B1, Mxy
+T2 decay (dephase), decrease Mxy
+Tissue type in T2 decay (water slow, fat middle, muscle fast)
+180 Pulse - invert dephase -> rephase
+(Frequency encoding gradient, phase encoding gradient)
+Signal from fat (high), water (low) -->
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
 </section>
 <section id="essentials-principles" class="slide level2">
 <h2>Essentials Principles</h2>
@@ -220,7 +243,6 @@ Nathan M. Muncy
 <p><img data-src="proton_B0_Mxyz.jpg" class="fragment fade-in-then-out"></p>
 </div>
 </div></div>
-<!-- TODO: Add interactive graphic -->
 </section>
 <section id="excitation" class="slide level2">
 <h2>Excitation</h2>
@@ -236,7 +258,7 @@ Nathan M. Muncy
 <li>Protons flip from low to high energy state</li>
 <li>Energy lost as thermal over time
 <ul>
-<li>T1 recovery</li>
+<li>T1, longitudinal recovery</li>
 <li>Differing rates</li>
 </ul></li>
 <li>Not sufficient for imaging
@@ -244,48 +266,134 @@ Nathan M. Muncy
 <li>Collect data only in transverse plain</li>
 </ul></li>
 </ul>
-<!-- Radiofrequency Pulse
-Resonant Frequency
-Low -> High Energy
-Longitudinal recovery
-Tissue rates
-T1 time -->
 </div><div class="column" style="width:&quot;50%;">
 <div class="r-stack">
 <p><img data-src="t1_low_high.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="phase_2.jpg" class="fragment fade-in-then-out"></p>
 <p><img data-src="t1_recovery.jpg" class="fragment fade-in-then-out"></p>
 </div>
 </div></div>
 </section>
 <section id="phase" class="slide level2">
 <h2>Phase</h2>
-<p>Signal in transverse plane Pulse - Phase Alignment Bo and Mz -&gt; Mxy Rotating Mxy - induce current - MRI signal</p>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="phase_2.jpg" class="fragment fade-in-then-out quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="phase_1.jpg" class="fragment fade-in-then-out quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="phase_4.jpg" class="fragment fade-in-then-out quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="phase_3.jpg" class="fragment fade-in-then-out quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+<!-- Signal in transverse plane
+Pulse - Phase Alignment
+Bo and Mz -> Mxy
+Rotating Mxy - induce current - MRI signal -->
 </section>
-<section id="decay" class="slide level2">
-<h2>Decay</h2>
-<p>Precess rates Spin-spin interactions Dephase - decrease Mxy (still B1) - T2 decay Tissue rates T2 time</p>
+<section id="dephase" class="slide level2">
+<h2>Dephase</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Protons have variable decay rates
+<ul>
+<li>Spin-spin interactions</li>
+<li>Field strength</li>
+<li>Tissue type</li>
+</ul></li>
+<li>Dephase - decrease Mxy signal
+<ul>
+<li>Transverse Decay</li>
+</ul></li>
+<li>Tissue types have different decay rates
+<ul>
+<li>Useful contrast!</li>
+</ul></li>
+<li>Different time scales:
+<ul>
+<li>T1, longitudinal recovery: seconds</li>
+<li>T2, transverse decay: milliseconds</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="t2_decay_1.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="t2_decay.jpg" class="fragment fade-in-then-out"></p>
+<p><img data-src="t1_t2_1.png" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
 </section>
-<section id="invert-pulse" class="slide level2">
-<h2>Invert Pulse</h2>
-<p>180 degree invert dephase Rephase - Fast catch up to slow Signal at TE spin vs gradient echo Tissue rates</p>
+<section id="inversion-pulse" class="slide level2">
+<h2>Inversion Pulse</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Tissue decay rates useful</li>
+<li>180<sup>o</sup> Pulse
+<ul>
+<li>Invert dephasing</li>
+<li>Resultant rephasing!</li>
+</ul></li>
+<li>Signal strength increases with rephasing
+<ul>
+<li>Read signal at peak = TE</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="rephase_2.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="rephase_1.jpg" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
 </section>
 <section id="recap" class="slide level2">
 <h2>Recap</h2>
-<p>T1 properties T2 properites</p>
-</section>
+
+<img data-src="t1_t2_2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="t1-vs-t2-contrast" class="slide level2">
 <h2>T1 vs T2 contrast</h2>
-<!-- Proton align to Bo - Mz
-Known precession
-Resonant RF Pulse
-High energy state
-Phase alignment
-Oscillating signal in B1, Mxy
-T2 decay (dephase), decrease Mxy
-Tissue type in T2 decay (water slow, fat middle, muscle fast)
-180 Pulse - invert dephase -> rephase
-(Frequency encoding gradient, phase encoding gradient)
-Signal from fat (high), water (low) -->
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>T2: Capitalize on T2 decay</li>
+<li>T1?
+<ul>
+<li>Wait for T1 recovery</li>
+<li>Inversion Pulse (repetition time)</li>
+<li>Short TE</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="t1_tr_te_1.png"></p>
+</div>
+<aside class="notes">
+<p>The basic IR pulse sequence with M z then M xy plotted against time. After the initial 90° pulse from the preceding cycle of the pulse sequence the longitudinal magnetization M z is zero. It recovers with time constant T 1 and is inverted by the 180° pulse. M z then recovers during TI. When the second 90° pulse shown is applied M z becomes M xy . This decays with time constant T 2 during TE and is detected during the data collection (dc). Plots for fat (F), white matter (W) and gray matter (G) are shown. The signal shown on the image is proportional to the magnitude of M xy for F, W and G at the time of the dc. Each cycle of the sequence is described as beginning with a 180° pulse which is then followed after TI by a 90° pulse.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div></div>
 </section>
 <section id="sources" class="slide level2">
 <h2>Sources</h2>
@@ -309,8 +417,31 @@ Signal from fat (high), water (low) -->
 <li><p><a href="https://catalogimages.wiley.com/images/db/pdf/9781444337433.excerpt.pdf">T1 excitation</a></p></li>
 <li><p><a href="https://mri-2010.blogspot.com/2010/10/october-lecture-notes-1-image-density.html">T1 recovery</a></p></li>
 </ul>
+<p>Phase</p>
+<ul>
+<li><p>Su, D., Wu, K., Saha, R., Liu, J., &amp; Wang, J. P. (2020). Magnetic nanotechnologies for early cancer diagnostics with liquid biopsies: a review. Journal of Cancer Metastasis and Treatment, 6, N-A.</p></li>
+<li><p><a href="https://radiologykey.com/basic-principles-of-cardiovascular-magnetic-resonance/">MR Basics</a></p></li>
+</ul>
+<p>Dephase</p>
+<ul>
+<li><p><a href="https://link.springer.com/chapter/10.1007/978-1-4614-1096-6_3">Dephase</a></p></li>
+<li><p>Liachenko, S., &amp; Ramu, J. (2017). Quantification and reproducibility assessment of the regional brain T2 relaxation in naive rats at 7T. Journal of Magnetic Resonance Imaging, 45(3), 700-709.</p></li>
+<li><p><a href="https://www.researchgate.net/publication/294764549_Dissertation_Developing_Neuroimaging_Methods_to_Disentangle_Mild_Traumatic_Brain_Injury">Dissertation</a></p></li>
+</ul>
 </div><div class="column" style="font-size: 25%">
-<p>Proton Precession</p>
+<p>Inversion Pulse</p>
+<ul>
+<li><p><a href="https://www.sprawls.org/mripmt/MRI06/index.html">Spin Echo</a></p></li>
+<li><p><a href="https://www.radcommons.org/residents/files/physics/20170209-MRI5-Pulse-sequences-1.pdf">Rephase</a></p></li>
+</ul>
+<p>Recap</p>
+<ul>
+<li>Mastrogiacomo, S., Dou, W., Jansen, J. A., &amp; Walboomers, X. F. (2019). Magnetic resonance imaging of hard tissues and hard tissue engineered bio-substitutes. Molecular imaging and biology, 21(6), 1003-1019.</li>
+</ul>
+<p>T1 vs T2 Contrast</p>
+<ul>
+<li>Ma, Y. J., Fan, S., Shao, H., Du, J., Szeverenyi, N. M., Young, I. R., &amp; Bydder, G. M. (2020). Use of multiplied, added, subtracted and/or fitted inversion recovery (MASTIR) pulse sequences. Quantitative Imaging in Medicine and Surgery, 10(6), 1334.</li>
+</ul>
 </div></div>
 
 

@@ -119,18 +119,18 @@
     "text": "Slides, Code, and Practices"
   },
   {
-    "objectID": "lectures/t1w_signal/t1w_signal.html#mri-data-types",
-    "href": "lectures/t1w_signal/t1w_signal.html#mri-data-types",
+    "objectID": "lectures/t1w_signal/t1w_signal.html#data-types",
+    "href": "lectures/t1w_signal/t1w_signal.html#data-types",
     "title": "T1-Weighted Signal",
-    "section": "MRI data types",
-    "text": "MRI data types\n\n\nAbility to gather different types of data\n\nTerm: MRI sequence\nCallibrated for distinct tissue properties\n\nExamples:\n\nT1w: gray vs white matter\nT2w: fat vs water\nFlair: white matter lesions\nDWI: diffusion of water molecules\nSWI: compounds that distort magnetic field"
+    "section": "Data Types",
+    "text": "Data Types\n\n\nMRI ability to gather different types of data\n\nTerm: MRI sequence\nCallibrated for distinct tissue properties\n\nExamples:\n\nT1w: gray vs white matter\nT2w: fat vs water\nFlair: white matter lesions\nDWI: diffusion of water molecules\nSWI: compounds that distort magnetic field"
   },
   {
-    "objectID": "lectures/t1w_signal/t1w_signal.html#protocols-and-contrast",
-    "href": "lectures/t1w_signal/t1w_signal.html#protocols-and-contrast",
+    "objectID": "lectures/t1w_signal/t1w_signal.html#essentials-principles",
+    "href": "lectures/t1w_signal/t1w_signal.html#essentials-principles",
     "title": "T1-Weighted Signal",
-    "section": "Protocols and contrast",
-    "text": "Protocols and contrast\nCalibrated protocol for tissue differences Contrast - Protons - Diffusion - Hb, dOHb Underlay - dynamics in field"
+    "section": "Essentials Principles",
+    "text": "Essentials Principles\n\n\n\nTypically capitalize on H+ properties\nFundamental to MRI sequences, control:\n\nPulse\nOrientation\nPhase\nFrequency\nRead time"
   },
   {
     "objectID": "lectures/t1w_signal/t1w_signal.html#precession",
@@ -144,76 +144,48 @@
     "href": "lectures/t1w_signal/t1w_signal.html#excitation",
     "title": "T1-Weighted Signal",
     "section": "Excitation",
-    "text": "Excitation\n\n\n\nEngage with protons\n\nProvide resonant electromagnetic radiation\nSame frequency as known precession (Larmor)\nRadiofrequency Pulse (42.58 MHz/T)\n\nProtons flip from low to high energy state\nEnergy lost as thermal over time\n\nT1 recovery\nDiffering rates\n\nNot sufficient for imaging\n\nCollect data only in transverse plain"
+    "text": "Excitation\n\n\n\nEngage with protons\n\nProvide resonant electromagnetic radiation\nSame frequency as known precession (Larmor)\nRadiofrequency Pulse (42.58 MHz/T)\n\nProtons flip from low to high energy state\nEnergy lost as thermal over time\n\nT1, longitudinal recovery\nDiffering rates\n\nNot sufficient for imaging\n\nCollect data only in transverse plain"
   },
   {
     "objectID": "lectures/t1w_signal/t1w_signal.html#phase",
     "href": "lectures/t1w_signal/t1w_signal.html#phase",
     "title": "T1-Weighted Signal",
     "section": "Phase",
-    "text": "Phase\nSignal in transverse plane Pulse - Phase Alignment Bo and Mz -&gt; Mxy Rotating Mxy - induce current - MRI signal"
+    "text": "Phase"
   },
   {
-    "objectID": "lectures/t1w_signal/t1w_signal.html#decay",
-    "href": "lectures/t1w_signal/t1w_signal.html#decay",
+    "objectID": "lectures/t1w_signal/t1w_signal.html#dephase",
+    "href": "lectures/t1w_signal/t1w_signal.html#dephase",
     "title": "T1-Weighted Signal",
-    "section": "Decay",
-    "text": "Decay\nPrecess rates Spin-spin interactions Dephase - decrease Mxy (still B1) - T2 decay Tissue rates T2 time"
+    "section": "Dephase",
+    "text": "Dephase\n\n\n\nProtons have variable decay rates\n\nSpin-spin interactions\nField strength\nTissue type\n\nDephase - decrease Mxy signal\n\nTransverse Decay\n\nTissue types have different decay rates\n\nUseful contrast!\n\nDifferent time scales:\n\nT1, longitudinal recovery: seconds\nT2, transverse decay: milliseconds"
   },
   {
-    "objectID": "lectures/t1w_signal/t1w_signal.html#invert-pulse",
-    "href": "lectures/t1w_signal/t1w_signal.html#invert-pulse",
+    "objectID": "lectures/t1w_signal/t1w_signal.html#inversion-pulse",
+    "href": "lectures/t1w_signal/t1w_signal.html#inversion-pulse",
     "title": "T1-Weighted Signal",
-    "section": "Invert Pulse",
-    "text": "Invert Pulse\n180 degree invert dephase Rephase - Fast catch up to slow Signal at TE spin vs gradient echo Tissue rates"
+    "section": "Inversion Pulse",
+    "text": "Inversion Pulse\n\n\n\nTissue decay rates useful\n180o Pulse\n\nInvert dephasing\nResultant rephasing!\n\nSignal strength increases with rephasing\n\nRead signal at peak = TE"
   },
   {
     "objectID": "lectures/t1w_signal/t1w_signal.html#recap",
     "href": "lectures/t1w_signal/t1w_signal.html#recap",
     "title": "T1-Weighted Signal",
     "section": "Recap",
-    "text": "Recap\nT1 properties T2 properites"
+    "text": "Recap"
   },
   {
     "objectID": "lectures/t1w_signal/t1w_signal.html#t1-vs-t2-contrast",
     "href": "lectures/t1w_signal/t1w_signal.html#t1-vs-t2-contrast",
     "title": "T1-Weighted Signal",
     "section": "T1 vs T2 contrast",
-    "text": "T1 vs T2 contrast"
+    "text": "T1 vs T2 contrast\n\n\n\nT2: Capitalize on T2 decay\nT1?\n\nWait for T1 recovery\nInversion Pulse (repetition time)\nShort TE\n\n\n\n\n\n\n\nThe basic IR pulse sequence with M z then M xy plotted against time. After the initial 90° pulse from the preceding cycle of the pulse sequence the longitudinal magnetization M z is zero. It recovers with time constant T 1 and is inverted by the 180° pulse. M z then recovers during TI. When the second 90° pulse shown is applied M z becomes M xy . This decays with time constant T 2 during TE and is detected during the data collection (dc). Plots for fat (F), white matter (W) and gray matter (G) are shown. The signal shown on the image is proportional to the magnitude of M xy for F, W and G at the time of the dc. Each cycle of the sequence is described as beginning with a 180° pulse which is then followed after TI by a 90° pulse."
   },
   {
     "objectID": "lectures/t1w_signal/t1w_signal.html#sources",
     "href": "lectures/t1w_signal/t1w_signal.html#sources",
     "title": "T1-Weighted Signal",
     "section": "Sources",
-    "text": "Sources\n\n\nData Types\n\nRadiopaedia\n\nEssential Principles\n\nMcRobbie, D. W., Moore, E. A., Graves, M. J., & Prince, M. R. (2017). MRI from Picture to Proton. Cambridge university press.\n\nPrecession\n\nResearch Gate \nRadue, E. W., Weigel, M., Wiest, R., & Urbach, H. (2016). Introduction to magnetic resonance imaging for neurologists. Continuum: Lifelong Learning in Neurology, 22(5, Neuroimaging), 1379-1398.\n\nExcitation\n\nT1 excitation\nT1 recovery\n\n\nProton Precession"
-  },
-  {
-    "objectID": "lectures/t1w_signal/t1w_signal.html#foundation",
-    "href": "lectures/t1w_signal/t1w_signal.html#foundation",
-    "title": "T1-Weighted Signal",
-    "section": "Foundation",
-    "text": "Foundation\nTypically capitalize on H+ properties\nFundamental to MRI sequences, control:\n\nOrientation\nPhase\nFrequency"
-  },
-  {
-    "objectID": "lectures/t1w_signal/t1w_signal.html#mri-essentials",
-    "href": "lectures/t1w_signal/t1w_signal.html#mri-essentials",
-    "title": "T1-Weighted Signal",
-    "section": "MRI Essentials",
-    "text": "MRI Essentials\nTypically capitalize on H+ properties\nFundamental to MRI sequences, control:\n\nOrientation\nPhase\nFrequency"
-  },
-  {
-    "objectID": "lectures/t1w_signal/t1w_signal.html#data-types",
-    "href": "lectures/t1w_signal/t1w_signal.html#data-types",
-    "title": "T1-Weighted Signal",
-    "section": "Data Types",
-    "text": "Data Types\n\n\nMRI ability to gather different types of data\n\nTerm: MRI sequence\nCallibrated for distinct tissue properties\n\nExamples:\n\nT1w: gray vs white matter\nT2w: fat vs water\nFlair: white matter lesions\nDWI: diffusion of water molecules\nSWI: compounds that distort magnetic field"
-  },
-  {
-    "objectID": "lectures/t1w_signal/t1w_signal.html#essentials-principles",
-    "href": "lectures/t1w_signal/t1w_signal.html#essentials-principles",
-    "title": "T1-Weighted Signal",
-    "section": "Essentials Principles",
-    "text": "Essentials Principles\n\n\n\nTypically capitalize on H+ properties\nFundamental to MRI sequences, control:\n\nPulse\nOrientation\nPhase\nFrequency\nRead time"
+    "text": "Sources\n\n\nData Types\n\nRadiopaedia\n\nEssential Principles\n\nMcRobbie, D. W., Moore, E. A., Graves, M. J., & Prince, M. R. (2017). MRI from Picture to Proton. Cambridge university press.\n\nPrecession\n\nResearch Gate \nRadue, E. W., Weigel, M., Wiest, R., & Urbach, H. (2016). Introduction to magnetic resonance imaging for neurologists. Continuum: Lifelong Learning in Neurology, 22(5, Neuroimaging), 1379-1398.\n\nExcitation\n\nT1 excitation\nT1 recovery\n\nPhase\n\nSu, D., Wu, K., Saha, R., Liu, J., & Wang, J. P. (2020). Magnetic nanotechnologies for early cancer diagnostics with liquid biopsies: a review. Journal of Cancer Metastasis and Treatment, 6, N-A.\nMR Basics\n\nDephase\n\nDephase\nLiachenko, S., & Ramu, J. (2017). Quantification and reproducibility assessment of the regional brain T2 relaxation in naive rats at 7T. Journal of Magnetic Resonance Imaging, 45(3), 700-709.\nDissertation\n\n\nInversion Pulse\n\nSpin Echo\nRephase\n\nRecap\n\nMastrogiacomo, S., Dou, W., Jansen, J. A., & Walboomers, X. F. (2019). Magnetic resonance imaging of hard tissues and hard tissue engineered bio-substitutes. Molecular imaging and biology, 21(6), 1003-1019.\n\nT1 vs T2 Contrast\n\nMa, Y. J., Fan, S., Shao, H., Du, J., Szeverenyi, N. M., Young, I. R., & Bydder, G. M. (2020). Use of multiplied, added, subtracted and/or fitted inversion recovery (MASTIR) pulse sequences. Quantitative Imaging in Medicine and Surgery, 10(6), 1334."
   }
 ]
