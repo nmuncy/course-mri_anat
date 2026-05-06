@@ -1,0 +1,7 @@
+---
+title: Schedule
+---
+
+| Lesson | Date | Material |
+|--------|------|-----------|
+| 1. MRI signal | TBD | TBD |

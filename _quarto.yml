@@ -15,12 +15,16 @@ website:
     title: false
     logo: media/nd_logo.png
     right:
-      - href: index.qmd
-        text: Home
-      - text: Course materials
+      - text: Navigate
         menu:
-        - href: materials.qmd
-          text: Slides, Code, and Practices
+        - text: Home
+          href: index.qmd
+        - text: About
+          href: pages/about.qmd
+        - text: Modules
+          href: pages/modules.qmd
+        - text: Schedule
+          href: pages/schedule.qmd
   page-footer:
     background: light
     center: "&copy; 2025 Nathan M. Muncy. Powered by <a href='https://www.quarto.org'>Quarto</a>."

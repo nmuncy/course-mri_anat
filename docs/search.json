@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "materials.html",
-    "href": "materials.html",
-    "title": "Course Slides, Code, and Practice Materials",
+    "objectID": "pages/schedule.html",
+    "href": "pages/schedule.html",
+    "title": "Schedule",
     "section": "",
-    "text": "Module 1: Signal and Files\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Magnetic Resonance Imaging\nSlides\nCode\nPractice\n\n\n\n\n2. T1-weighted signal\nSlides\nCode\nPractice\n\n\n\n\n3. DICOM\nSlides\nCode\nPractice\n\n\n\n\n4. NIfTI\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\n2. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\n3. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\n4. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\n2. ANTs\nSlides\nCode\nPractice\n\n\n\n\n3. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\n4. fMRIPrep\nSlides\nCode\nPractice"
+    "text": "Lesson\nDate\nMaterial\n\n\n\n\n1. MRI signal\nTBD\nTBD"
+  },
+  {
+    "objectID": "pages/about.html",
+    "href": "pages/about.html",
+    "title": "About",
+    "section": "",
+    "text": "Course Overview\nThis course offers a rigorous methodological foundation in the processing and analysis of T1-weighted (T1w) Magnetic Resonance Imaging data. Designed specifically for graduate-level researchers, the curriculum moves beyond push-button analysis to provide a deep understanding of the biophysical principles, mathematical transformations, and computational pipelines essential for modern neuroimaging. By the end of the term, students will possess the technical autonomy to transform raw scanner data into high-quality, reproducible anatomical insights.\n\n\nCurriculum & Objectives\nThe course is structured to follow the logical lifecycle of an MRI project, beginning with the physics of signal acquisition and ending with the implementation of standardized, large-scale pipelines. Students will engage with both the theoretical “why” and the practical “how” of structural processing through the following modules:\n\nData Fundamentals: Navigating the transition from clinical DICOM structures to research-standard NIfTI formats.\nPreprocessing & Signal Correction: Identifying and correcting for magnetic field inhomogeneity, and mastering the nuances of “brain extraction” (skull-stripping) using multiple algorithmic approaches.\nSpatial Normalization: A deep dive into the mathematics of rigid, affine, and diffeomorphic transformations, and the critical role of standardized templates (MNI and Talairach) in group-level analysis.\nAutomated Segmentation & Parcellation: Utilizing ANTs (Advanced Normalization Tools) and FreeSurfer to execute tissue segmentation, cortical reconstruction, and the generation of region-of-interest (ROI) maps.\n\n\n\nResearch Application\nThe primary goal of this course is to prepare students for the demands of contemporary, open-science research environments. We emphasize teaching students how to leverage robust, “best-practice” workflows that ensure transparency and reproducibility in their findings. Whether students are focusing on morphometric volume studies, surface-based cortical thickness analysis, or providing anatomical constraints for functional data, this course provides the necessary expertise to navigate the landscape of structural neuroimaging with precision and clinical relevance."
   },
   {
     "objectID": "lectures/mri_overview/mri_overview.html#studying-the-brain-is-hard",
@@ -109,14 +116,14 @@
     "href": "index.html",
     "title": "MRI Analyses: anatomic",
     "section": "",
-    "text": "Slides, Code, and Practices"
+    "text": "The transition from “running a script” to understanding a workflow is the defining leap for any serious neuroimaging researcher. In an era where black-box pipelines are ubiquitous, this course is designed to peel back the layers of T1-weighted processing to show you exactly how raw data is transformed into meaningful anatomical discovery.\n\n\nMRI data is inherently noisy, complex, and prone to artifact. Here, we don’t just teach you which buttons to push; we investigate the biophysical principles and mathematical transformations that make modern morphometry possible. Whether you are aiming to quantify cortical thinning in clinical populations or establish precise anatomical constraints for functional mapping, your work relies on the integrity of your structural pipeline.\n\n\n\nThe landscape of neuroimaging is shifting toward a mandate for transparency and reproducibility. Our goal is to move you beyond a passive role and toward technical autonomy. By mastering tools like ANTs and FreeSurfer and understanding the “why” behind every preprocessing step, from NIfTI conversion to diffeomorphic registration, you will gain the confidence to defend your methodological choices in any peer-review or clinical setting.\nWe are excited to have you join this cohort of researchers. Prepare to dive deep into the data, troubleshoot the edge cases, and emerge with a toolkit built for the next generation of open-science neuroimaging."
   },
   {
-    "objectID": "index.html#course-materials",
-    "href": "index.html#course-materials",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
     "title": "MRI Analyses: anatomic",
     "section": "",
-    "text": "Slides, Code, and Practices"
+    "text": "The transition from “running a script” to understanding a workflow is the defining leap for any serious neuroimaging researcher. In an era where black-box pipelines are ubiquitous, this course is designed to peel back the layers of T1-weighted processing to show you exactly how raw data is transformed into meaningful anatomical discovery.\n\n\nMRI data is inherently noisy, complex, and prone to artifact. Here, we don’t just teach you which buttons to push; we investigate the biophysical principles and mathematical transformations that make modern morphometry possible. Whether you are aiming to quantify cortical thinning in clinical populations or establish precise anatomical constraints for functional mapping, your work relies on the integrity of your structural pipeline.\n\n\n\nThe landscape of neuroimaging is shifting toward a mandate for transparency and reproducibility. Our goal is to move you beyond a passive role and toward technical autonomy. By mastering tools like ANTs and FreeSurfer and understanding the “why” behind every preprocessing step, from NIfTI conversion to diffeomorphic registration, you will gain the confidence to defend your methodological choices in any peer-review or clinical setting.\nWe are excited to have you join this cohort of researchers. Prepare to dive deep into the data, troubleshoot the edge cases, and emerge with a toolkit built for the next generation of open-science neuroimaging."
   },
   {
     "objectID": "lectures/t1w_signal/t1w_signal.html#data-types",
@@ -187,5 +194,12 @@
     "title": "T1-Weighted Signal",
     "section": "Sources",
     "text": "Sources\n\n\nData Types\n\nRadiopaedia\n\nEssential Principles\n\nMcRobbie, D. W., Moore, E. A., Graves, M. J., & Prince, M. R. (2017). MRI from Picture to Proton. Cambridge university press.\n\nPrecession\n\nResearch Gate \nRadue, E. W., Weigel, M., Wiest, R., & Urbach, H. (2016). Introduction to magnetic resonance imaging for neurologists. Continuum: Lifelong Learning in Neurology, 22(5, Neuroimaging), 1379-1398.\n\nExcitation\n\nT1 excitation\nT1 recovery\n\nPhase\n\nSu, D., Wu, K., Saha, R., Liu, J., & Wang, J. P. (2020). Magnetic nanotechnologies for early cancer diagnostics with liquid biopsies: a review. Journal of Cancer Metastasis and Treatment, 6, N-A.\nMR Basics\n\nDephase\n\nDephase\nLiachenko, S., & Ramu, J. (2017). Quantification and reproducibility assessment of the regional brain T2 relaxation in naive rats at 7T. Journal of Magnetic Resonance Imaging, 45(3), 700-709.\nDissertation\n\n\nInversion Pulse\n\nSpin Echo\nRephase\n\nRecap\n\nMastrogiacomo, S., Dou, W., Jansen, J. A., & Walboomers, X. F. (2019). Magnetic resonance imaging of hard tissues and hard tissue engineered bio-substitutes. Molecular imaging and biology, 21(6), 1003-1019.\n\nT1 vs T2 Contrast\n\nMa, Y. J., Fan, S., Shao, H., Du, J., Szeverenyi, N. M., Young, I. R., & Bydder, G. M. (2020). Use of multiplied, added, subtracted and/or fitted inversion recovery (MASTIR) pulse sequences. Quantitative Imaging in Medicine and Surgery, 10(6), 1334."
+  },
+  {
+    "objectID": "pages/modules.html",
+    "href": "pages/modules.html",
+    "title": "Modules",
+    "section": "",
+    "text": "Module 1: Signal and Files\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Magnetic Resonance Imaging\nSlides\nCode\nPractice\n\n\n\n\n2. T1-weighted signal\nSlides\nCode\nPractice\n\n\n\n\n3. DICOM\nSlides\nCode\nPractice\n\n\n\n\n4. NIfTI\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\n2. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\n3. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\n4. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\n2. ANTs\nSlides\nCode\nPractice\n\n\n\n\n3. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\n4. fMRIPrep\nSlides\nCode\nPractice"
   }
 ]
