@@ -1,5 +1,6 @@
 ---
 title: "MRI Analyses: anatomic"
+image: media/brain.png
 author:
   name: "Nathan Muncy"
   email: "nmuncy@nd.edu"
@@ -7,22 +8,31 @@ author:
 toc: false
 execute:
   freeze: auto
+about: # https://quarto.org/docs/websites/website-about.html
+  template: jolla
+  image-width: 15em
+  image-shape: round
+  # links:
+  #   - text: About
+  #     href: pages/about.qmd
+  #   - text: Modules
+  #     href: pages/modules.qmd
+  #   - text: Schedule
+  #     href: pages/schedule.qmd
 ---
 
-<!-- ## About
-TODO -->
+---
 
+## Welcome!
 
-## Course Materials
-- [Slides, Code, and Practices](materials.qmd)
-<!-- - Software
-- Resources
-- Data
+The leap from simply "running a script" to mastering a workflow is the hallmark of a serious neuroimaging researcher. This course demystifies T1-weighted processing, grounding your work in the biophysical principles and mathematical transformations, from NIfTI conversion to diffeomorphic registration, that turn raw data into anatomical discovery. By mastering tools like ANTs and FreeSurfer, you move beyond passive button-pushing toward true technical autonomy.
 
+Our mission is to equip you with the transparency and reproducibility required to defend your methodological choices with confidence in any peer-review or clinical setting.
 
-## (Tentative) Lesson Schedule
+[About](pages/about.qmd) | [Modules](pages/modules.qmd) | [Schedule](pages/schedule.qmd)
 
-| Lesson | Date | Material |
-|--------|------|-----------|
-| 1. MRI signal | TBD | TBD | -->
+---
 
+::: {style="font-size: 0.75em;"}
+Image Credit: [Radiopaedia](https://radiopaedia.org/cases/normal-brain-mri-tle-protocol)
+:::

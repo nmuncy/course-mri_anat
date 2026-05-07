@@ -1,0 +1,20 @@
+---
+title: About
+---
+
+### Course Overview
+
+This course offers a rigorous methodological foundation in the processing and analysis of T1-weighted (T1w) Magnetic Resonance Imaging data. Designed specifically for graduate-level researchers, the curriculum moves beyond push-button analysis to provide a deep understanding of the biophysical principles, mathematical transformations, and computational pipelines essential for modern neuroimaging. By the end of the term, students will possess the technical autonomy to transform raw scanner data into high-quality, reproducible anatomical insights.
+
+### Curriculum & Objectives
+
+The course is structured to follow the logical lifecycle of an MRI project, beginning with the physics of signal acquisition and ending with the implementation of standardized, large-scale pipelines. Students will engage with both the theoretical "why" and the practical "how" of structural processing through the following modules:
+
+- Data Fundamentals: Navigating the transition from clinical DICOM structures to research-standard NIfTI formats.
+- Preprocessing & Signal Correction: Identifying and correcting for magnetic field inhomogeneity, and mastering the nuances of "brain extraction" (skull-stripping) using multiple algorithmic approaches.
+- Spatial Normalization: A deep dive into the mathematics of rigid, affine, and diffeomorphic transformations, and the critical role of standardized templates (MNI and Talairach) in group-level analysis.
+- Automated Segmentation & Parcellation: Utilizing ANTs (Advanced Normalization Tools) and FreeSurfer to execute tissue segmentation, cortical reconstruction, and the generation of region-of-interest (ROI) maps.
+
+### Research Application
+
+The primary goal of this course is to prepare students for the demands of contemporary, open-science research environments. We emphasize teaching students how to leverage robust, "best-practice" workflows that ensure transparency and reproducibility in their findings. Whether students are focusing on morphometric volume studies, surface-based cortical thickness analysis, or providing anatomical constraints for functional data, this course provides the necessary expertise to navigate the landscape of structural neuroimaging with precision and clinical relevance.

@@ -1,0 +1,15 @@
+---
+title: "Articles"
+---
+
+- [Bloch, F. (1946). Nuclear induction. Physical review, 70(7-8), 460.](bloch_1946.pdf)
+- [Cheng, K., Waggoner, R. A., & Tanaka, K. (2001). Human ocular dominance columns as revealed by high-field functional magnetic resonance imaging. Neuron, 32(2), 359-374.](cheng_2001_human.pdf)
+- [Inaguma, K., Kotani, T., Kishida, S., Sakuma, T., Ueno, K., Iijima, Y., ... & Ohtori, S. (2023). Medical accidents related to ferromagnetic objects brought into the MRI room: analysis of the national multicenter database by orthopedic surgeons. Spine surgery and related research, 7(1), 96-102.](inaguma_2023_injuries.pdf)
+- [Harel, N., Lee, S. P., Nagaoka, T., Kim, D. S., & Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow & metabolism, 22(8), 908-917.](harel_2002_bold.pdf)
+- [Lankford, H. V. (2015). Dull brains, mountaineers, and Mosso: hypoxic words from on high. High Altitude Medicine & Biology, 16(4), 363-370.](mosso_dull_brains.pdf)
+- [Lauterbur, P. C. (1973). Image formation by induced local interactions: examples employing nuclear magnetic resonance. nature, 242(5394), 190-191.](lauterbur_1973_mri.pdf)
+- [Leeds, N. E., & Kieffer, S. A. (2000). Evolution of diagnostic neuroradiology from 1904 to 1999. Radiology, 217(2), 309-318.](leeds_imaging_1904_1999.pdf)
+- [Rabi, I. I., Zacharias, J. R., Millman, S., & Kusch, P. (1938). A new method of measuring nuclear magnetic moment. Physical review, 53(4), 318.](rabi_1938.pdf)
+- [Sandrone, S., Bacigaluppi, M., Galloni, M. R., Cappa, S. F., Moro, A., Catani, M., ... & Martino, G. (2014). Weighing brain activity with the balance: Angelo Mosso’s original manuscripts come to light. Brain, 137(2), 621-633.](mosso_weigh.pdf)
+- [White, Y. S., Bell, D. S., & Mellick, R. (1973). Sequelae to pneumoencephalography. Journal of Neurology, Neurosurgery & Psychiatry, 36(1), 146-151.](white_pneumo_sequelae.pdf)
+- [Zhang, N., Zhu, X. H., Zhang, Y., Park, J. K., & Chen, W. (2010). High-resolution fMRI mapping of ocular dominance layers in cat lateral geniculate nucleus. Neuroimage, 50(4), 1456-1463.](zhang_2010_cat.pdf)

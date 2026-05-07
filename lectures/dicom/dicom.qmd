@@ -1,0 +1,59 @@
+---
+title: "Digital Imaging and Communications in Medicine (DICOM)"
+author: Nathan M. Muncy
+date: today
+format:
+  revealjs:
+    footer: "MRI: DICOM"
+    logo: ../../media/nd_logo.png
+    transition: slide
+    slide-number: true
+engine: knitr
+---
+
+<!-- Aspects of DICOM
+- Data
+- Transfer
+- Request
+- Send
+
+Data
+Header (https://www.leadtools.com/help/sdk/v20/dicom/api/overview-basic-dicom-file-structure.html)
+Tags (https://www.dicomlibrary.com/dicom/dicom-tags/)
+Sections
+Data
+Software
+
+NIfTI
+Header
+Format -->
+
+## Overview
+- Standard
+- [Specification](articles/bidgood_1997_dicom.pdf)
+
+## Data: Organization
+
+## Header
+
+## Tags
+
+## Sections
+
+## Data Structure
+
+## Mining Header
+- AFNI
+- FSL
+
+## Research Formats
+
+- SPM (Analyze; img and hdr)
+- FreeSurfer (MGH, MGZ) (https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/MghFormat)
+- AFNI (BRIK, HEAD)
+- HDF5 (https://www.hdfgroup.org/solutions/hdf5/medicine/)
+- NIfTI
+
+## Anatomy of NIfTI
+
+## DICOM to NIfTI
