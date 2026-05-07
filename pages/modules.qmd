@@ -6,8 +6,10 @@ execute:
 
 <!--
 - Anatomical - signal source, image type utility (anatomy, parcellate, volume)
+- Software install - dcm2niix, FSL, AFNI, FreeSurfer
 - DICOM - structure, interacting, source
 - NIfTI - structure, creating, interacting (mango, afni, fsl)
+- BIDS - description, structure, validation
 - Inhomogeneity - signal distribution (and source), intensity vs anatomy, correcting
 - Brain extraction - bet, 3dskullstrip, ants
 - Tissue segmentation - ants
@@ -19,16 +21,21 @@ execute:
 -->
 
 
+<!-- TODO:
+- Add image type utility (anatomy, parcellate, volume)
+-->
+
+
 <details>
 
 <summary> Module 1: Signal and Files </summary>
 
 | Topic | Slides | Code | Exercises |
 |---------------|--------|--------|---------|------|-----------|
-| 1. Magnetic Resonance Imaging | [Slides](../lectures/mri_overview/mri_overview.qmd) | Code | Practice |
+| 1. Magnetic Resonance Imaging | [Slides](../lectures/mri_overview/mri_overview.qmd) | [Articles](../lectures/mri_overview/articles/articles.qmd) | Practice |
 | 2. T1-weighted signal | [Slides](../lectures/t1w_signal/t1w_signal.qmd) | Code | Practice |
-| 3. DICOM | Slides | Code | Practice |
-| 4. NIfTI | Slides | Code | Practice |
+| 3. DICOM | [Slides](../lectures/dicom/dicom.qmd) | [Articles](../lectures/dicom/articles/articles.qmd) | Practice |
+| 4. BIDS | Slides | Code | Practice |
 
 </details>
 

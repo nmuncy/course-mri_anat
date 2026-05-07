@@ -1,5 +1,6 @@
 ---
 title: "MRI Analyses: anatomic"
+image: media/brain.png
 author:
   name: "Nathan Muncy"
   email: "nmuncy@nd.edu"
@@ -7,18 +8,31 @@ author:
 toc: false
 execute:
   freeze: auto
+about: # https://quarto.org/docs/websites/website-about.html
+  template: jolla
+  image-width: 15em
+  image-shape: round
+  # links:
+  #   - text: About
+  #     href: pages/about.qmd
+  #   - text: Modules
+  #     href: pages/modules.qmd
+  #   - text: Schedule
+  #     href: pages/schedule.qmd
+---
+
 ---
 
 ## Welcome!
 
-The transition from "running a script" to understanding a workflow is the defining leap for any serious neuroimaging researcher. In an era where black-box pipelines are ubiquitous, this course is designed to peel back the layers of T1-weighted processing to show you exactly how raw data is transformed into meaningful anatomical discovery.
+The leap from simply "running a script" to mastering a workflow is the hallmark of a serious neuroimaging researcher. This course demystifies T1-weighted processing, grounding your work in the biophysical principles and mathematical transformations, from NIfTI conversion to diffeomorphic registration, that turn raw data into anatomical discovery. By mastering tools like ANTs and FreeSurfer, you move beyond passive button-pushing toward true technical autonomy.
 
-### From Voxel to Insight
+Our mission is to equip you with the transparency and reproducibility required to defend your methodological choices with confidence in any peer-review or clinical setting.
 
-MRI data is inherently noisy, complex, and prone to artifact. Here, we don't just teach you which buttons to push; we investigate the biophysical principles and mathematical transformations that make modern morphometry possible. Whether you are aiming to quantify cortical thinning in clinical populations or establish precise anatomical constraints for functional mapping, your work relies on the integrity of your structural pipeline.
+[About](pages/about.qmd) | [Modules](pages/modules.qmd) | [Schedule](pages/schedule.qmd)
 
-### Why This Course?
+---
 
-The landscape of neuroimaging is shifting toward a mandate for transparency and reproducibility. Our goal is to move you beyond a passive role and toward technical autonomy. By mastering tools like ANTs and FreeSurfer and understanding the "why" behind every preprocessing step, from NIfTI conversion to diffeomorphic registration, you will gain the confidence to defend your methodological choices in any peer-review or clinical setting.
-
-We are excited to have you join this cohort of researchers. Prepare to dive deep into the data, troubleshoot the edge cases, and emerge with a toolkit built for the next generation of open-science neuroimaging.
+::: {style="font-size: 0.75em;"}
+Image Credit: [Radiopaedia](https://radiopaedia.org/cases/normal-brain-mri-tle-protocol)
+:::

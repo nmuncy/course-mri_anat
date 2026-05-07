@@ -11,7 +11,7 @@
 
   <meta name="author" content="Nathan M. Muncy">
   <meta name="dcterms.date" content="2026-05-07">
-  <title>Anatomic MRI – Magnetic Resonance Imaging: Basics</title>
+  <title>Anatomic MRI – Digital Imaging and Communications in Medicine (DICOM)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,7 +128,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Magnetic Resonance Imaging: Basics</h1>
+  <h1 class="title">Digital Imaging and Communications in Medicine (DICOM)</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -140,429 +140,69 @@ Nathan M. Muncy
 
   <p class="date">2026-05-07</p>
 </section>
-<section id="studying-the-brain-is-hard" class="slide level2">
-<h2>Studying the brain is hard</h2>
-<!-- https://academic.oup.com/brain/article-abstract/137/2/621/280970?redirectedFrom=fulltext&login=false -->
-<!-- https://www.researchgate.net/publication/281682917_Dull_Brains_Mountaineers_and_Mosso_Hypoxic_Words_from_on_High -->
-<!-- https://pmc.ncbi.nlm.nih.gov/articles/PMC494289/ -->
-<!-- https://en.wikipedia.org/wiki/History_of_neuroimaging -->
-<!-- https://en.wikipedia.org/wiki/Pneumoencephalography -->
-<div class="columns">
-<div class="column" style="font-size: 65%;">
-<ul>
-<li>Soft tissue surrounded by bone</li>
-<li>Opening the skull is discouraged</li>
-<li><a href="articles/mosso_weigh.pdf">Angelo Mosso</a> (and <a href="articles/mosso_dull_brains.pdf">this</a> article)</li>
-<li>122 years of <a href="articles/leeds_imaging_1904_1999.pdf">Neuroimaging History</a></li>
-</ul>
-</div><div class="column" style="width:&quot;50%;">
-<div class="r-stack">
-<p><img data-src="trepan_1.png" class="fragment fade-in-then-out"></p>
-<p><img data-src="mosso_1.png" class="fragment"></p>
-</div>
-</div></div>
-<aside class="notes">
-<ul>
-<li>1882 Angelo Mosso invented ‘human circulation balance’</li>
-<li>Idea: Balance body at rest, then test</li>
-<li>Low replication, idea persisted</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="first-efforts" class="slide level2">
-<h2>First Efforts</h2>
-<div class="columns">
-<div class="column" style="font-size: 65%;">
-<ul>
-<li>X-ray</li>
-<li><a href="articles/white_pneumo_sequelae.pdf">Pneumoencephalography</a></li>
-<li>Limitations:
-<ul>
-<li>Resolution</li>
-<li>Health risks</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:&quot;50%;">
-<div class="r-stack">
-<p><img data-src="xray_1.jpeg" class="fragment fade-in-then-out"></p>
-<p><img data-src="pneumo_2.jpg" class="fragment fade-in-then-out"></p>
-<p><img data-src="pneumo_1.png" class="fragment"></p>
-</div>
-</div></div>
-<aside class="notes">
-<ul>
-<li>X-ray useful for visualizing bone, not helpful with tissue</li>
-<li>Pneumo:
-<ul>
-<li>invert person</li>
-<li>extract 35-50 ML CSF from lumbar</li>
-<li>reorient person - air bubble rises</li>
-<li>adjust orientation to visualize different regions</li>
-</ul></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="what-is-mri" class="slide level2">
-<h2>What is MRI?</h2>
-<div class="columns">
-<div class="column" style="font-size: 65%;">
-<ul>
-<li>Nuclear Magnetic Resonance Imaging:
-<ul>
-<li>Certain nuclei (H+) align with magnetic field</li>
-<li>Respond to secondary field</li>
-<li>Emit electromagnetic signal</li>
-</ul></li>
-<li>Number of discoveries:
-<ul>
-<li><a href="articles/rabi_1938.pdf">Rabi</a> - NMR (molecular beams)</li>
-<li><a href="articles/bloch_1946.pdf">Bloch</a> and Purcell - NMR (liquids, solids)</li>
-<li><a href="articles/lauterbur_1973_mri.pdf">Lauterbur</a> and Mansfield - MRI</li>
-</ul></li>
-<li>Intersection: Physics, Engineering, CompSci, Neuroscience, Psychology</li>
-</ul>
-</div><div class="column" style="width:&quot;50%;">
-<div class="r-stack">
-<p><img data-src="mri_1.jpg"></p>
-<p><img data-src="nmr_1.png" class="fragment"></p>
-</div>
-</div></div>
-<aside class="notes">
-<ul>
-<li>Isidor Rabi (1938) first described NMR; Nobel Prize 1944</li>
-<li>Felix Bloch, Edward Purcell extended to liquids, solids; Nobel Prize 1952</li>
-<li>Lauterbur, Mansfield; biologically useful MRI, EPI; Nobel Prize 2003</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="magnetic-field" class="slide level2">
-<h2>Magnetic Field</h2>
-<div class="columns">
-<div class="column" style="font-size: 65%;">
-<ul>
-<li>Principles of <a href="https://www.youtube.com/watch?v=tXI7Wd1ElF8">electromagnetism</a></li>
-<li>Superconductivity
-<ul>
-<li>Copper</li>
-<li>Liquid He+</li>
-</ul></li>
-<li>3 Tesla (<a href="https://www.youtube.com/watch?v=6BBx8BwLhqg">2000+</a> lbs attraction)
-<ul>
-<li>Smooth, consistent field</li>
-<li>Always ON!</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:&quot;50%;">
-<div class="r-stack">
-<p><img data-src="coil_1.png" class="fragment fade-in-then-out"></p>
-<p><img data-src="cold_1.png" class="fragment fade-in-then-out"></p>
-<p><img data-src="coil_2.jpg" class="fragment fade-in-then-out"></p>
-<p><img data-src="coil_3.png" class="fragment"></p>
-</div>
-</div></div>
-<aside class="notes">
-<p>(charge machine before strength)</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="safety-considerations" class="slide level2">
-<h2>Safety Considerations</h2>
-<div class="columns">
-<div class="column" style="font-size: 65%;">
-<ul>
-<li>Rarely are rooms <a href="https://smithchason.edu/mri-safety-lessons-1980-2001-2025/">fatal</a></li>
-<li>Strict <a href="https://mriquestions.com/acr-safety-zones.html">Zoning</a> helps</li>
-<li>Diligence: avoid complacency and <a href="https://en.wikipedia.org/wiki/Survivorship_bias">survivorship bias</a></li>
-<li>Magnetic field has significant <a href="https://www.youtube.com/watch?v=IF6CMrjGNN4">acceleration</a></li>
-<li>Injuries are more <a href="articles/inaguma_2023_injuries.pdf">common</a> than they should be</li>
-</ul>
-</div><div class="column" style="width:&quot;50%;">
-<div class="r-stack">
-<p><img data-src="zones_2.png"></p>
-<p><img data-src="zones_1.png" class="fragment fade-in-then-out"></p>
-</div>
-</div></div>
-<aside class="notes">
-<ul>
-<li>Survivor bias: seatbelts, climbing (Rope on chair)</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="proton-precession" class="slide level2">
-<h2>Proton Precession</h2>
-<div class="columns">
-<div class="column" style="font-size: 65%;">
-<ul>
-<li>Spin: <a href="https://www.quantumdiaries.org/2016/02/01/spun-out-of-proportion-the-proton-spin-crisis/">fundamental property</a>
-<ul>
-<li><a href="https://photonics101.com/magnetostatics-currents-and-fields/spin-is-not-a-rotation.html">Not classical rotation</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Proton_spin_crisis">Stressful</a></li>
-</ul></li>
-<li>Magnetic Alignment</li>
-<li>Larmor Frequency</li>
-</ul>
-</div><div class="column" style="width:&quot;50%;">
-<div class="r-stack">
-<p><img data-src="precess_1.png"></p>
-<p><img data-src="larmor_1.jpg" class="fragment fade-in-then-out"></p>
-</div>
-</div></div>
-</section>
-<section id="field-gradients" class="slide level2">
-<h2>Field Gradients</h2>
-<div class="columns">
-<div class="column" style="font-size: 65%;">
-<ul>
-<li>Micro adjustments to magentic field
-<ul>
-<li>Control precession!</li>
-</ul></li>
-<li>3 dimensions
-<ul>
-<li>Provide resolution</li>
-</ul></li>
-<li>Larmor frequency - ability to target specific regions</li>
-</ul>
-</div><div class="column" style="width:&quot;50%;">
-<p><img data-src="gradient_1.gif"> <!-- ![](nmr_2.jpg) --></p>
-</div></div>
-<!-- ## Excitation
-Pulse
-Energy states
+<section class="slide level2">
 
-## Recovery
-Longitudinal decay
-Transverse recovery
+<!-- Aspects of DICOM
+- Data
+- Transfer
+- Request
+- Send
 
-## Signal -->
+Data
+Header (https://www.leadtools.com/help/sdk/v20/dicom/api/overview-basic-dicom-file-structure.html)
+Tags (https://www.dicomlibrary.com/dicom/dicom-tags/)
+Sections
+Data
+Software
+
+NIfTI
+Header
+Format -->
 </section>
-<section id="t1-contrast" class="slide level2">
-<h2>T1 Contrast</h2>
-<div class="columns">
-<div class="column" style="font-size: 65%;">
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
 <ul>
-<li>Head composed of multiple materials
-<ul>
-<li>Skull</li>
-<li>CSF</li>
-<li>Brain</li>
-</ul></li>
-<li>Differing magnetic properties</li>
-<li>Identify useful tissue contrast</li>
+<li>Standard</li>
+<li><a href="articles/bidgood_1997_dicom.pdf">Specification</a></li>
 </ul>
-</div><div class="column" style="width:&quot;50%;">
-<div class="r-stack">
-<p><img data-src="long_recov_1.jpg"></p>
-<p><img data-src="t1_1.png" class="fragment fade-in-then-out"></p>
-</div>
-</div></div>
 </section>
-<section id="t2-contrast" class="slide level2">
-<h2>T2* Contrast</h2>
-<div class="columns">
-<div class="column" style="font-size: 65%;">
-<ul>
-<li>Hemoglobin
-<ul>
-<li>Oxygenated (Hb): Diamagnetic</li>
-<li>Deoxgenated (dHb): Paramagentic</li>
-</ul></li>
-<li>Contrast: Hb/dHb ratio</li>
-<li>All brain tissue always active
-<ul>
-<li>Increased neural metabolism: change in Hb/dHb</li>
-</ul></li>
-<li>Functional MRI
-<ul>
-<li>Blood Oxygen Level Dependent (BOLD) signal</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:&quot;50%;">
-<div class="r-stack">
-<p><img data-src="bold_1.gif" class="fragment fade-in-then-out"></p>
-<p><img data-src="bold_2.png" class="fragment fade-in-then-out"></p>
-</div>
-</div></div>
+<section id="data-organization" class="slide level2">
+<h2>Data: Organization</h2>
 </section>
-<section id="design" class="slide level2">
-<h2>Design</h2>
-<div class="columns">
-<div class="column" style="font-size: 65%;">
-<ul>
-<li>Contrast: neural or cognitive operations
-<ul>
-<li>Ocular dominance in <a href="articles/cheng_2001_human.pdf">humans</a> and <a href="articles/zhang_2010_cat.pdf">cats</a></li>
-<li>Poor vs Successful memory</li>
-</ul></li>
-<li>Think deeply about contrast
-<ul>
-<li>Memory + color, shape, label, use, experience</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:&quot;50%;">
-<p><img data-src="design_1.png"></p>
-</div></div>
-<aside class="notes">
-<p>Group differences - Miami and alligators</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<section id="header" class="slide level2">
+<h2>Header</h2>
 </section>
-<section id="limitations" class="slide level2">
-<h2>Limitations</h2>
-<div class="columns">
-<div class="column" style="font-size: 65%;">
-<ul>
-<li>Multiple levels removed from neural processes</li>
-<li>Speed of cognition (ms) vs haemodynamic response (s)</li>
-<li>Cost
-<ul>
-<li>Funding difficulties</li>
-<li>Power issues</li>
-<li>Hardware, compute infrastructure</li>
-</ul></li>
-<li>Compatibility</li>
-<li>Laboratory effect</li>
-</ul>
-</div><div class="column" style="width:&quot;50%;">
-<div class="r-stack">
-<p><img data-src="limit_1.png" class="fragment fade-in-then-out"></p>
-<p><img data-src="limit_2.png" class="fragment fade-in-then-out"></p>
-</div>
-</div></div>
+<section id="tags" class="slide level2">
+<h2>Tags</h2>
 </section>
-<section id="topologic-results" class="slide level2">
-<h2>Topologic Results</h2>
-<iframe src="topo_strength.html" style="width: 100%; height: 100%;" scrolling="no" allowfullscreen="">
-</iframe>
+<section id="sections" class="slide level2">
+<h2>Sections</h2>
 </section>
-<section id="diffusion-results" class="slide level2">
-<h2>Diffusion Results</h2>
-<iframe src="dwi_tracts.html" style="width: 100%; height: 100%;" scrolling="no" allowfullscreen="">
-</iframe>
+<section id="data-structure" class="slide level2">
+<h2>Data Structure</h2>
 </section>
-<section id="sources" class="slide level2">
-<h2>Sources</h2>
-<div class="columns">
-<div class="column" style="font-size: 25%">
-<p>Study is hard</p>
+<section id="mining-header" class="slide level2">
+<h2>Mining Header</h2>
 <ul>
-<li><a href="https://www.historyextra.com/period/prehistoric/what-trepanning-ancient-surgical-procedure-skulls-when-first">Trepanation</a></li>
-<li>Sandrone, S., Bacigaluppi, M., Galloni, M. R., Cappa, S. F., Moro, A., Catani, M., … &amp; Martino, G. (2014). Weighing brain activity with the balance: Angelo Mosso’s original manuscripts come to light. Brain, 137(2), 621-633.</li>
-<li>Lankford, H. V. (2015). Dull brains, mountaineers, and Mosso: hypoxic words from on high. High Altitude Medicine &amp; Biology, 16(4), 363-370.</li>
-<li>Leeds, N. E., &amp; Kieffer, S. A. (2000). Evolution of diagnostic neuroradiology from 1904 to 1999. Radiology, 217(2), 309-318.</li>
+<li>AFNI</li>
+<li>FSL</li>
 </ul>
-<p>First Efforts</p>
+</section>
+<section id="research-formats" class="slide level2">
+<h2>Research Formats</h2>
 <ul>
-<li><a href="https://radiopaedia.org/cases/normal-skull-radiograph">X-ray</a></li>
-<li><a href="https://www.americanscientist.org/article/the-early-years-of-brain-imaging">Pneumoencephalography</a></li>
-<li>White, Y. S., Bell, D. S., &amp; Mellick, R. (1973). Sequelae to pneumoencephalography. Journal of Neurology, Neurosurgery &amp; Psychiatry, 36(1), 146-151.</li>
+<li>SPM (Analyze; img and hdr)</li>
+<li>FreeSurfer (MGH, MGZ) (https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/MghFormat)</li>
+<li>AFNI (BRIK, HEAD)</li>
+<li>HDF5 (https://www.hdfgroup.org/solutions/hdf5/medicine/)</li>
+<li>NIfTI</li>
 </ul>
-<p>What is MRI</p>
-<ul>
-<li><a href="https://www.siemens-healthineers.com/en-us/magnetic-resonance-imaging/3t-mri-scanner/magnetom-cima-x">Siemens</a></li>
-<li>Rabi, I. I., Zacharias, J. R., Millman, S., &amp; Kusch, P. (1938). A new method of measuring nuclear magnetic moment. Physical review, 53(4), 318.</li>
-<li>Bloch, F. (1946). Nuclear induction. Physical review, 70(7-8), 460.</li>
-<li>Lauterbur, P. C. (1973). Image formation by induced local interactions: examples employing nuclear magnetic resonance. nature, 242(5394), 190-191.</li>
-<li>TODO: nmr_1</li>
-</ul>
-<p>Magnetic Field</p>
-<ul>
-<li>TODO: electromagnetism</li>
-<li><a href="https://mriquestions.com/superconductivity.html">Superconductivity</a>, <a href="https://www.sciencedirect.com/topics/engineering/superconducting-coil">Superconducting Coil</a>, <a href="https://mriquestions.com/superconductive-design.html">Magnet</a></li>
-</ul>
-<p>Safety Considerations</p>
-<ul>
-<li><a href="https://smithchason.edu/mri-safety-lessons-1980-2001-2025/">Fatalities</a>, <a href="https://www.purdue.edu/hhs/mri/MR%20Safety/MR%20Safety.html">Purdue</a>, <a href="https://mriquestions.com/acr-safety-zones.html">Zoning</a></li>
-<li>Inaguma, K., Kotani, T., Kishida, S., Sakuma, T., Ueno, K., Iijima, Y., … &amp; Ohtori, S. (2023). Medical accidents related to ferromagnetic objects brought into the MRI room: analysis of the national multicenter database by orthopedic surgeons. Spine surgery and related research, 7(1), 96-102.</li>
-</ul>
-</div><div class="column" style="font-size: 25%">
-<p>Proton Precession</p>
-<ul>
-<li><a href="https://www.quantumdiaries.org/2016/02/01/spun-out-of-proportion-the-proton-spin-crisis/">Fundamental Property</a>, <a href="https://photonics101.com/magnetostatics-currents-and-fields/spin-is-not-a-rotation.html">Not Rotation</a>, <a href="https://en.wikipedia.org/wiki/Proton_spin_crisis">Proton Crisis</a></li>
-<li><a href="https://www.semanticscholar.org/paper/Partial-Volume-Segmentation-in-Magnetic-Resonance-%28-Grande-Barreto/46b9cb055318c9cbd40a878ddd04112de4c429b5/figure/2">diagram</a>, <a href="https://x.com/NMRConcepts/status/978624450013868033">equation</a></li>
-</ul>
-<p>Field Gradients</p>
-<ul>
-<li><a href="https://mri-q.com/gradient-advanced.html">gradient</a></li>
-</ul>
-<p>T1 Contrast</p>
-<ul>
-<li><a href="https://mri-2010.blogspot.com/2010/10/october-lecture-notes-1-image-density.html">recovery</a>, <a href="https://mrimaster.com/index-2/">axial brain</a></li>
-</ul>
-<p>T2* Contrast</p>
-<ul>
-<li><a href="https://mriquestions.com/bold-contrast.html">Hb/dHb</a></li>
-<li>Harel, N., Lee, S. P., Nagaoka, T., Kim, D. S., &amp; Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow &amp; metabolism, 22(8), 908-917.</li>
-</ul>
-<p>Design</p>
-<ul>
-<li>Stark, S. M., Kirwan, C. B., &amp; Stark, C. E. (2019). Mnemonic similarity task: A tool for assessing hippocampal integrity. Trends in cognitive sciences, 23(11), 938-951.</li>
-<li>Harel, N., Lee, S. P., Nagaoka, T., Kim, D. S., &amp; Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow &amp; metabolism, 22(8), 908-917.</li>
-<li>Cheng, K., Waggoner, R. A., &amp; Tanaka, K. (2001). Human ocular dominance columns as revealed by high-field functional magnetic resonance imaging. Neuron, 32(2), 359-374.</li>
-</ul>
-<p>Limitations</p>
-<ul>
-<li><a href="https://imgs.xkcd.com/comics/fmri.png">XKCD 1</a>, <a href="https://imgs.xkcd.com/comics/fmri_billboard.png">XKCD 2</a></li>
-</ul>
-</div></div>
+</section>
+<section id="anatomy-of-nifti" class="slide level2">
+<h2>Anatomy of NIfTI</h2>
+</section>
+<section id="dicom-to-nifti" class="slide level2">
+<h2>DICOM to NIfTI</h2>
 
 
 </section>
@@ -570,7 +210,7 @@ Transverse recovery
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../media/nd_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>MRI: basics</p>
+<p>MRI: DICOM</p>
 </div>
 </div></div>
 

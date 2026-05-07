@@ -1,0 +1,5 @@
+---
+title: "Articles"
+---
+
+1. [Bidgood WD Jr, Horii SC, Prior FW, Van Syckle DE. Understanding and using DICOM, the data interchange standard for biomedical imaging. J Am Med Inform Assoc. 1997 May-Jun;4(3):199-212. doi: 10.1136/jamia.1997.0040199. PMID: 9147339; PMCID: PMC61235.](bidgood_1997_dicom.pdf)

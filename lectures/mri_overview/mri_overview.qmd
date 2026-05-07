@@ -21,8 +21,8 @@ engine: knitr
 :::: {.column width="50%" style="font-size: 65%;"}
 - Soft tissue surrounded by bone
 - Opening the skull is discouraged
-- [Angelo Mosso](../../articles/mosso_weigh.pdf) (and [this](../../articles/mosso_dull_brains.pdf) article)
-- 122 years of [Neuroimaging History](../../articles/leeds_imaging_1904_1999.pdf)
+- [Angelo Mosso](articles/mosso_weigh.pdf) (and [this](articles/mosso_dull_brains.pdf) article)
+- 122 years of [Neuroimaging History](articles/leeds_imaging_1904_1999.pdf)
 ::::
 
 :::: {.column width="\"50%"}
@@ -47,7 +47,7 @@ engine: knitr
 ::::: columns
 :::: {.column width="50%" style="font-size: 65%;"}
 - X-ray
-- [Pneumoencephalography](../../articles/white_pneumo_sequelae.pdf)
+- [Pneumoencephalography](articles/white_pneumo_sequelae.pdf)
 - Limitations:
     - Resolution
     - Health risks
@@ -83,9 +83,9 @@ engine: knitr
     - Respond to secondary field
     - Emit electromagnetic signal
 - Number of discoveries:
-    - [Rabi](../../articles/rabi_1938.pdf) - NMR (molecular beams)
-    - [Bloch](../../articles/bloch_1946.pdf) and Purcell - NMR (liquids, solids)
-    - [Lauterbur](../../articles/lauterbur_1973_mri.pdf) and Mansfield - MRI
+    - [Rabi](articles/rabi_1938.pdf) - NMR (molecular beams)
+    - [Bloch](articles/bloch_1946.pdf) and Purcell - NMR (liquids, solids)
+    - [Lauterbur](articles/lauterbur_1973_mri.pdf) and Mansfield - MRI
 - Intersection: Physics, Engineering, CompSci, Neuroscience, Psychology
 ::::
 
@@ -144,7 +144,7 @@ engine: knitr
 - Strict [Zoning](https://mriquestions.com/acr-safety-zones.html) helps
 - Diligence: avoid complacency and [survivorship bias](https://en.wikipedia.org/wiki/Survivorship_bias)
 - Magnetic field has significant [acceleration](https://www.youtube.com/watch?v=IF6CMrjGNN4)
-- Injuries are more [common](../../articles/inaguma_2023_injuries.pdf) than they should be
+- Injuries are more [common](articles/inaguma_2023_injuries.pdf) than they should be
 ::::
 
 :::: {.column width="\"50%"}
@@ -261,7 +261,7 @@ Transverse recovery
 :::: columns
 ::: {.column width="50%" style="font-size: 65%;"}
 - Contrast: neural or cognitive operations
-    - Ocular dominance in [humans](../../articles/cheng_2001_human.pdf) and [cats](../../articles/zhang_2010_cat.pdf)
+    - Ocular dominance in [humans](articles/cheng_2001_human.pdf) and [cats](articles/zhang_2010_cat.pdf)
     - Poor vs Successful memory
 - Think deeply about contrast
     - Memory + color, shape, label, use, experience

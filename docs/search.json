@@ -112,6 +112,76 @@
     "text": "Sources\n\n\nStudy is hard\n\nTrepanation\nSandrone, S., Bacigaluppi, M., Galloni, M. R., Cappa, S. F., Moro, A., Catani, M., … & Martino, G. (2014). Weighing brain activity with the balance: Angelo Mosso’s original manuscripts come to light. Brain, 137(2), 621-633.\nLankford, H. V. (2015). Dull brains, mountaineers, and Mosso: hypoxic words from on high. High Altitude Medicine & Biology, 16(4), 363-370.\nLeeds, N. E., & Kieffer, S. A. (2000). Evolution of diagnostic neuroradiology from 1904 to 1999. Radiology, 217(2), 309-318.\n\nFirst Efforts\n\nX-ray\nPneumoencephalography\nWhite, Y. S., Bell, D. S., & Mellick, R. (1973). Sequelae to pneumoencephalography. Journal of Neurology, Neurosurgery & Psychiatry, 36(1), 146-151.\n\nWhat is MRI\n\nSiemens\nRabi, I. I., Zacharias, J. R., Millman, S., & Kusch, P. (1938). A new method of measuring nuclear magnetic moment. Physical review, 53(4), 318.\nBloch, F. (1946). Nuclear induction. Physical review, 70(7-8), 460.\nLauterbur, P. C. (1973). Image formation by induced local interactions: examples employing nuclear magnetic resonance. nature, 242(5394), 190-191.\nTODO: nmr_1\n\nMagnetic Field\n\nTODO: electromagnetism\nSuperconductivity, Superconducting Coil, Magnet\n\nSafety Considerations\n\nFatalities, Purdue, Zoning\nInaguma, K., Kotani, T., Kishida, S., Sakuma, T., Ueno, K., Iijima, Y., … & Ohtori, S. (2023). Medical accidents related to ferromagnetic objects brought into the MRI room: analysis of the national multicenter database by orthopedic surgeons. Spine surgery and related research, 7(1), 96-102.\n\n\nProton Precession\n\nFundamental Property, Not Rotation, Proton Crisis\ndiagram, equation\n\nField Gradients\n\ngradient\n\nT1 Contrast\n\nrecovery, axial brain\n\nT2* Contrast\n\nHb/dHb\nHarel, N., Lee, S. P., Nagaoka, T., Kim, D. S., & Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow & metabolism, 22(8), 908-917.\n\nDesign\n\nStark, S. M., Kirwan, C. B., & Stark, C. E. (2019). Mnemonic similarity task: A tool for assessing hippocampal integrity. Trends in cognitive sciences, 23(11), 938-951.\nHarel, N., Lee, S. P., Nagaoka, T., Kim, D. S., & Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow & metabolism, 22(8), 908-917.\nCheng, K., Waggoner, R. A., & Tanaka, K. (2001). Human ocular dominance columns as revealed by high-field functional magnetic resonance imaging. Neuron, 32(2), 359-374.\n\nLimitations\n\nXKCD 1, XKCD 2"
   },
   {
+    "objectID": "lectures/dicom/dicom.html#overview",
+    "href": "lectures/dicom/dicom.html#overview",
+    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "section": "Overview",
+    "text": "Overview\n\nStandard\nSpecification"
+  },
+  {
+    "objectID": "lectures/dicom/dicom.html#data-organization",
+    "href": "lectures/dicom/dicom.html#data-organization",
+    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "section": "Data: Organization",
+    "text": "Data: Organization"
+  },
+  {
+    "objectID": "lectures/dicom/dicom.html#header",
+    "href": "lectures/dicom/dicom.html#header",
+    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "section": "Header",
+    "text": "Header"
+  },
+  {
+    "objectID": "lectures/dicom/dicom.html#tags",
+    "href": "lectures/dicom/dicom.html#tags",
+    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "section": "Tags",
+    "text": "Tags"
+  },
+  {
+    "objectID": "lectures/dicom/dicom.html#sections",
+    "href": "lectures/dicom/dicom.html#sections",
+    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "section": "Sections",
+    "text": "Sections"
+  },
+  {
+    "objectID": "lectures/dicom/dicom.html#data-structure",
+    "href": "lectures/dicom/dicom.html#data-structure",
+    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "section": "Data Structure",
+    "text": "Data Structure"
+  },
+  {
+    "objectID": "lectures/dicom/dicom.html#mining-header",
+    "href": "lectures/dicom/dicom.html#mining-header",
+    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "section": "Mining Header",
+    "text": "Mining Header\n\nAFNI\nFSL"
+  },
+  {
+    "objectID": "lectures/dicom/dicom.html#research-formats",
+    "href": "lectures/dicom/dicom.html#research-formats",
+    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "section": "Research Formats",
+    "text": "Research Formats\n\nSPM (Analyze; img and hdr)\nFreeSurfer (MGH, MGZ) (https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/MghFormat)\nAFNI (BRIK, HEAD)\nHDF5 (https://www.hdfgroup.org/solutions/hdf5/medicine/)\nNIfTI"
+  },
+  {
+    "objectID": "lectures/dicom/dicom.html#anatomy-of-nifti",
+    "href": "lectures/dicom/dicom.html#anatomy-of-nifti",
+    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "section": "Anatomy of NIfTI",
+    "text": "Anatomy of NIfTI"
+  },
+  {
+    "objectID": "lectures/dicom/dicom.html#dicom-to-nifti",
+    "href": "lectures/dicom/dicom.html#dicom-to-nifti",
+    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "section": "DICOM to NIfTI",
+    "text": "DICOM to NIfTI"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "MRI Analyses: anatomic",
@@ -122,8 +192,22 @@
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "MRI Analyses: anatomic",
+    "section": "Welcome!",
+    "text": "Welcome!\nThe leap from simply “running a script” to mastering a workflow is the hallmark of a serious neuroimaging researcher. This course demystifies T1-weighted processing, grounding your work in the biophysical principles and mathematical transformations, from NIfTI conversion to diffeomorphic registration, that turn raw data into anatomical discovery. By mastering tools like ANTs and FreeSurfer, you move beyond passive button-pushing toward true technical autonomy.\nOur mission is to equip you with the transparency and reproducibility required to defend your methodological choices with confidence in any peer-review or clinical setting.\nAbout | Modules | Schedule\n\n\nImage Credit: Radiopaedia"
+  },
+  {
+    "objectID": "lectures/dicom/articles/articles.html",
+    "href": "lectures/dicom/articles/articles.html",
+    "title": "Articles",
     "section": "",
-    "text": "The transition from “running a script” to understanding a workflow is the defining leap for any serious neuroimaging researcher. In an era where black-box pipelines are ubiquitous, this course is designed to peel back the layers of T1-weighted processing to show you exactly how raw data is transformed into meaningful anatomical discovery.\n\n\nMRI data is inherently noisy, complex, and prone to artifact. Here, we don’t just teach you which buttons to push; we investigate the biophysical principles and mathematical transformations that make modern morphometry possible. Whether you are aiming to quantify cortical thinning in clinical populations or establish precise anatomical constraints for functional mapping, your work relies on the integrity of your structural pipeline.\n\n\n\nThe landscape of neuroimaging is shifting toward a mandate for transparency and reproducibility. Our goal is to move you beyond a passive role and toward technical autonomy. By mastering tools like ANTs and FreeSurfer and understanding the “why” behind every preprocessing step, from NIfTI conversion to diffeomorphic registration, you will gain the confidence to defend your methodological choices in any peer-review or clinical setting.\nWe are excited to have you join this cohort of researchers. Prepare to dive deep into the data, troubleshoot the edge cases, and emerge with a toolkit built for the next generation of open-science neuroimaging."
+    "text": "Bidgood WD Jr, Horii SC, Prior FW, Van Syckle DE. Understanding and using DICOM, the data interchange standard for biomedical imaging. J Am Med Inform Assoc. 1997 May-Jun;4(3):199-212. doi: 10.1136/jamia.1997.0040199. PMID: 9147339; PMCID: PMC61235."
+  },
+  {
+    "objectID": "lectures/mri_overview/articles/articles.html",
+    "href": "lectures/mri_overview/articles/articles.html",
+    "title": "Articles",
+    "section": "",
+    "text": "Bloch, F. (1946). Nuclear induction. Physical review, 70(7-8), 460.\nCheng, K., Waggoner, R. A., & Tanaka, K. (2001). Human ocular dominance columns as revealed by high-field functional magnetic resonance imaging. Neuron, 32(2), 359-374.\nInaguma, K., Kotani, T., Kishida, S., Sakuma, T., Ueno, K., Iijima, Y., … & Ohtori, S. (2023). Medical accidents related to ferromagnetic objects brought into the MRI room: analysis of the national multicenter database by orthopedic surgeons. Spine surgery and related research, 7(1), 96-102.\nHarel, N., Lee, S. P., Nagaoka, T., Kim, D. S., & Kim, S. G. (2002). Origin of negative blood oxygenation level—dependent fMRI signals. Journal of cerebral blood flow & metabolism, 22(8), 908-917.\nLankford, H. V. (2015). Dull brains, mountaineers, and Mosso: hypoxic words from on high. High Altitude Medicine & Biology, 16(4), 363-370.\nLauterbur, P. C. (1973). Image formation by induced local interactions: examples employing nuclear magnetic resonance. nature, 242(5394), 190-191.\nLeeds, N. E., & Kieffer, S. A. (2000). Evolution of diagnostic neuroradiology from 1904 to 1999. Radiology, 217(2), 309-318.\nRabi, I. I., Zacharias, J. R., Millman, S., & Kusch, P. (1938). A new method of measuring nuclear magnetic moment. Physical review, 53(4), 318.\nSandrone, S., Bacigaluppi, M., Galloni, M. R., Cappa, S. F., Moro, A., Catani, M., … & Martino, G. (2014). Weighing brain activity with the balance: Angelo Mosso’s original manuscripts come to light. Brain, 137(2), 621-633.\nWhite, Y. S., Bell, D. S., & Mellick, R. (1973). Sequelae to pneumoencephalography. Journal of Neurology, Neurosurgery & Psychiatry, 36(1), 146-151.\nZhang, N., Zhu, X. H., Zhang, Y., Park, J. K., & Chen, W. (2010). High-resolution fMRI mapping of ocular dominance layers in cat lateral geniculate nucleus. Neuroimage, 50(4), 1456-1463."
   },
   {
     "objectID": "lectures/t1w_signal/t1w_signal.html#data-types",
@@ -200,6 +284,6 @@
     "href": "pages/modules.html",
     "title": "Modules",
     "section": "",
-    "text": "Module 1: Signal and Files\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Magnetic Resonance Imaging\nSlides\nCode\nPractice\n\n\n\n\n2. T1-weighted signal\nSlides\nCode\nPractice\n\n\n\n\n3. DICOM\nSlides\nCode\nPractice\n\n\n\n\n4. NIfTI\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\n2. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\n3. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\n4. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\n2. ANTs\nSlides\nCode\nPractice\n\n\n\n\n3. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\n4. fMRIPrep\nSlides\nCode\nPractice"
+    "text": "Module 1: Signal and Files\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Magnetic Resonance Imaging\nSlides\nArticles\nPractice\n\n\n\n\n2. T1-weighted signal\nSlides\nCode\nPractice\n\n\n\n\n3. DICOM\nSlides\nArticles\nPractice\n\n\n\n\n4. BIDS\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\n2. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\n3. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\n4. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\n2. ANTs\nSlides\nCode\nPractice\n\n\n\n\n3. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\n4. fMRIPrep\nSlides\nCode\nPractice"
   }
 ]
