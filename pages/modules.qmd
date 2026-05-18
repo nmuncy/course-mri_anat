@@ -30,11 +30,11 @@ execute:
 
 <summary> Module 1: Signal and Files </summary>
 
-| Topic | Slides | Code | Exercises |
+| Topic | Slides | Materials | Exercises |
 |---------------|--------|--------|---------|------|-----------|
-| 1. Magnetic Resonance Imaging | [Slides](../lectures/mri_overview/mri_overview.qmd) | [Articles](../lectures/mri_overview/articles/articles.qmd) | Practice |
-| 2. T1-weighted signal | [Slides](../lectures/t1w_signal/t1w_signal.qmd) | Code | Practice |
-| 3. DICOM | [Slides](../lectures/dicom/dicom.qmd) | [Articles](../lectures/dicom/articles/articles.qmd) | Practice |
+| 1. Magnetic Resonance Imaging | [Slides](../lectures/mri_overview/mri_overview.qmd){target="_blank"} | [Articles](../lectures/mri_overview/articles/articles.qmd){target="_blank"} | Practice |
+| 2. T1-weighted signal | [Slides](../lectures/t1w_signal/t1w_signal.qmd){target="_blank"} | Code | Practice |
+| 3. DICOM | [Slides](../lectures/dicom/dicom.qmd){target="_blank"} | [Articles](../lectures/dicom/articles/articles.qmd){target="_blank"} | Practice |
 | 4. BIDS | Slides | Code | Practice |
 
 </details>

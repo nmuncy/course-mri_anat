@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.33">
 
   <meta name="author" content="Nathan M. Muncy">
-  <meta name="dcterms.date" content="2026-05-07">
+  <meta name="dcterms.date" content="2026-05-18">
   <title>Anatomic MRI – Digital Imaging and Communications in Medicine (DICOM)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -138,71 +138,308 @@ Nathan M. Muncy
 </div>
 </div>
 
-  <p class="date">2026-05-07</p>
+  <p class="date">2026-05-18</p>
 </section>
-<section class="slide level2">
-
-<!-- Aspects of DICOM
-- Data
-- Transfer
-- Request
-- Send
-
-Data
-Header (https://www.leadtools.com/help/sdk/v20/dicom/api/overview-basic-dicom-file-structure.html)
-Tags (https://www.dicomlibrary.com/dicom/dicom-tags/)
-Sections
-Data
-Software
-
-NIfTI
-Header
-Format -->
+<section id="medical-image" class="slide level2">
+<h2>Medical Image</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<p>Three ways to conceptualize:</p>
+<ol type="1">
+<li>Representation of internal structure/function</li>
+<li>Mapping of numeric values to spatial position</li>
+<li>Data line converted to matrix projected to screen</li>
+</ol>
+<p>Important to maintain data integrity:</p>
+<ol type="1">
+<li>Surgery</li>
+<li>Diagnoses</li>
+<li>Investigation</li>
+</ol>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="../t1w_signal/mri_t1w.jpg" class="fragment fade-in-then-out"></p>
+<p><img data-src="numeric_space.jpg" class="fragment fade-in-then-out"></p>
+<p><img data-src="string_matrix.png" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
 </section>
-<section id="overview" class="slide level2">
-<h2>Overview</h2>
+<section id="medical-image-three-ps" class="slide level2">
+<h2>Medical Image: Three P’s</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
 <ul>
-<li>Standard</li>
-<li><a href="articles/bidgood_1997_dicom.pdf">Specification</a></li>
-</ul>
-</section>
-<section id="data-organization" class="slide level2">
-<h2>Data: Organization</h2>
-</section>
-<section id="header" class="slide level2">
-<h2>Header</h2>
-</section>
-<section id="tags" class="slide level2">
-<h2>Tags</h2>
-</section>
-<section id="sections" class="slide level2">
-<h2>Sections</h2>
-</section>
-<section id="data-structure" class="slide level2">
-<h2>Data Structure</h2>
-</section>
-<section id="mining-header" class="slide level2">
-<h2>Mining Header</h2>
+<li>Pixel Depth
 <ul>
-<li>AFNI</li>
-<li>FSL</li>
+<li>Number of bits per pixel</li>
+</ul></li>
+<li>Photometric Interpretation
+<ul>
+<li>Samples per pixel (number of channels)</li>
+</ul></li>
+<li>Pixel data
+<ul>
+<li>Stored as integer, float; Scaling factor</li>
+<li>Comes after header (metadata)</li>
+<li>Size = rows x columns x pixel depth (x time)</li>
+</ul></li>
 </ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="pixel_depth.jpg" class="fragment fade-in-then-out"></p>
+<p><img data-src="photometric_channel.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="image_data_metadata.png" class="fragment fade-in-then-out"></p>
+</div>
+</div><aside class="notes">
+<p>Pixel depth: 8 bits = 1 byte - 256 x 256 pixels at 16 bits - 2 bytes per pixel - 256 x 256 x 2 = 131,072 bytes for image Photo Interp: - Monochrome: one sample per pixel (black/white) - Pseudo-color: multiple samples, limited color palette - True color: 24 bits (e.g.&nbsp;RGB)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
 </section>
-<section id="research-formats" class="slide level2">
-<h2>Research Formats</h2>
+<section id="medical-image-metadata" class="slide level2">
+<h2>Medical Image: Metadata</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Beginning of data line</li>
+<li>Contains information to interpret data line
+<ul>
+<li>Image matrix dimensions</li>
+<li>Spatial resolution</li>
+<li>Pixel depth</li>
+<li>Photometric Interpretation</li>
+</ul></li>
+<li>Additional
+<ul>
+<li>Scan protocol</li>
+<li>Type of Scanner</li>
+<li>Patient Info</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="image_data_metadata.png"></p>
+</div>
+</div></div>
+</section>
+<section id="clinical-data-dicom" class="slide level2">
+<h2>Clinical Data: DICOM</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li><a href="articles/bidgood_1997_dicom.pdf">Digital Imaging and Communications in Medicine</a></li>
+<li>Details:
+<ul>
+<li>Acquisition</li>
+<li>Request</li>
+<li>Transfer</li>
+<li>File Structrure</li>
+<li>More …</li>
+</ul></li>
+<li>Complex
+<ul>
+<li><a href="https://www.dicomstandard.org/current">22 Parts</a></li>
+<li>4000+ pages</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="dicom_all.png"></p>
+</div>
+</div></div>
+</section>
+<section id="dicom-structure" class="slide level2">
+<h2>DICOM: Structure</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Single file format: <a href="https://www.dicomstandard.org/concepts">Header &amp; Data</a></li>
+<li>Comprehensive</li>
+<li><a href="https://www.leadtools.com/help/sdk/v20/dicom/api/overview-basic-dicom-file-structure.html">Header</a>
+<ul>
+<li>Scanner</li>
+<li>Patient</li>
+<li>Protocol</li>
+<li>Notes</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<!-- ![](dicom_file.gif){.fragment .fade-in-then-out} -->
+<p><img data-src="dicom_file_struct.svg"></p>
+</div>
+</div></div>
+</section>
+<section id="dicom-data-element" class="slide level2">
+<h2>DICOM: Data Element</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Header organized into Data Elements (called attributes)</li>
+<li>Four main parts:
+<ul>
+<li><a href="https://www.dicomlibrary.com/dicom/dicom-tags/">Tag</a></li>
+<li>VR: Coded datatype</li>
+<li>Length: Number of bytes in Value</li>
+<li>Value: Information</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="data_element.svg" class="fragment fade-in-then-out"></p>
+<p><img data-src="dicom_file.gif" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
+<aside class="notes">
+<p>Tags - (XXXX, XXXX) - Even = Standard - Odd = Private</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="dicom-header" class="slide level2">
+<h2>DICOM: Header</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Common Groups
+<ul>
+<li>0002: Meta information</li>
+<li>0008: Session information</li>
+<li>0010: Patient information</li>
+<li>0018: Protocol information</li>
+</ul></li>
+<li>Others …</li>
+<li>Notice: Tag, Length, Meaning, Information</li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="dcm_grp02.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="dcm_grp08.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="dcm_grp10.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="dcm_grp18.png" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
+</section>
+<section id="dicom-mining" class="slide level2">
+<h2>DICOM: Mining</h2>
+</section>
+<section id="research-data-multiple-formats" class="slide level2">
+<h2>Research Data: Multiple Formats</h2>
 <ul>
 <li>SPM (Analyze; img and hdr)</li>
 <li>FreeSurfer (MGH, MGZ) (https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/MghFormat)</li>
 <li>AFNI (BRIK, HEAD)</li>
 <li>HDF5 (https://www.hdfgroup.org/solutions/hdf5/medicine/)</li>
-<li>NIfTI</li>
+<li>Tower of Babel Problem</li>
 </ul>
+<!-- Find examples (maybe in documentation) of each time -->
 </section>
-<section id="anatomy-of-nifti" class="slide level2">
-<h2>Anatomy of NIfTI</h2>
+<section id="nifti" class="slide level2">
+<h2>NIfTI</h2>
+<p>Neuroimaging Informatics Technology Initiative (NIfTI) Simple https://nifti.nimh.nih.gov/ https://brainder.org/2012/09/23/the-nifti-file-format/</p>
 </section>
-<section id="dicom-to-nifti" class="slide level2">
-<h2>DICOM to NIfTI</h2>
+<section id="nifti-structure" class="slide level2">
+<h2>NIfTI: Structure</h2>
+<p>Header, Data (Analyze; img hdr) Combined (nii) Formal structure (easy for multiple packages)</p>
+</section>
+<section id="nifti-resolve-issues" class="slide level2">
+<h2>NIfTI: Resolve issues</h2>
+<p>Ambiguous left Embed orientation Dimensionality fMRI (4), DWI (6), Statistics (4-7)</p>
+</section>
+<section id="nifti-orientation" class="slide level2">
+<h2>NIfTI: Orientation</h2>
+<p>DICOM - LPS NIFTI - RAS MNI - LPI AFNI - RAI</p>
+
+<img data-src="lps_ras.png" class="r-stretch"></section>
+<section id="nifti-conversion" class="slide level2">
+<h2>NIfTI: Conversion</h2>
+</section>
+<section id="nifti-mining" class="slide level2">
+<h2>NIfTI: Mining</h2>
+</section>
+<section id="sources" class="slide level2">
+<h2>Sources</h2>
+<p>Medical Image - <a href="https://radiopaedia.org/articles/mri-sequences-overview?lang=us">Radiopaedia</a> - <a href="https://www.sprawls.org/mripmt/MRI09/index.html">Sprawls</a> - Atkinson, D. (2022). Geometry in medical imaging: DICOM and NIfTI formats.</p>
+<p>Medical Image: Three P’s</p>
+<ul>
+<li><a href="https://www.the-working-man.org/2014/12/bit-depth-color-precision-in-raster.html">Pixel Depth</a></li>
+<li><a href="https://www.renewedvision.com/blog/color-depth-and-channels-explained">Photometric</a></li>
+<li><a href="https://neubias.github.io/training-resources/image_file_formats/index.html">Pixel Data</a></li>
+</ul>
+<p>Medical Image: Metadata</p>
+<ul>
+<li><a href="https://neubias.github.io/training-resources/image_file_formats/index.html">Pixel Data</a></li>
+</ul>
+<p>Clinical Data: DICOM</p>
+<ul>
+<li><a href="https://dicom.offis.de/en/general/dicom-introduction/">DICOM</a></li>
+</ul>
+<p>DICOM: Structure</p>
+<ul>
+<li><a href="https://www.leadtools.com/help/sdk/v20/dicom/api/overview-basic-dicom-file-structure.html">Header</a></li>
+<li><a href="https://www.oak-tree.tech/blog/dicom-primer">Structure</a></li>
+</ul>
+<p>DICOM: Data Element</p>
+<ul>
+<li><a href="https://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_7.html">Data Element</a></li>
+</ul>
+<!-- Outline: Review larobina 2014
+Data string, medical image
+Pixel depth
+Photometric interpretation
+Metadata
+Pixel data
+
+Clinical
+DICOM
+File + network communication protocol
+Header + Data, no separation
+Comprehensive
+Header - protocol, patient info, variable
+Tags
+  Format
+  Order
+Phoenix
+LPS, 0 = iso
+
+Research
+Analyze
+Header, Data
+Simple
+Formal structure
+NIfTI
+Resolve issues (ambiguous left)
+Embed orietnation
+Multidim - fMRI (4), DWI (6), statistics (4-7)
+RAS, 0 = AC
+
+View DICOM
+Mine DICOM header
+dcm2niix
+View NIfTI
+Mine NIfti header
+-->
+<!-- Practice - Install AFNI, FSL. Mine DICOM header
+Practice - Install Mango, view DICOM stack
+Practice - Mine info from fruit
+-->
 
 
 </section>
