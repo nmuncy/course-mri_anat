@@ -20,7 +20,6 @@ execute:
 - fMRIPrep - https://fmriprep.org/en/stable/workflows.html#preprocessing-of-structural-mri
 -->
 
-
 <!-- TODO:
 - Add image type utility (anatomy, parcellate, volume)
 -->
@@ -34,7 +33,7 @@ execute:
 |---------------|--------|--------|---------|------|-----------|
 | 1. Magnetic Resonance Imaging | [Slides](../lectures/mri_overview/mri_overview.qmd){target="_blank"} | [Articles](../lectures/mri_overview/articles/articles.qmd){target="_blank"} | Practice |
 | 2. T1-weighted signal | [Slides](../lectures/t1w_signal/t1w_signal.qmd){target="_blank"} | Code | Practice |
-| 3. DICOM | [Slides](../lectures/dicom/dicom.qmd){target="_blank"} | [Articles](../lectures/dicom/articles/articles.qmd){target="_blank"} | Practice |
+| 3. MRI Data Formats | [Slides](../lectures/dicom/dicom.qmd){target="_blank"} | [Articles](../lectures/dicom/articles/articles.qmd){target="_blank"} | Practice |
 | 4. BIDS | Slides | Code | Practice |
 
 </details>

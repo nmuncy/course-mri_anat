@@ -1,10 +1,12 @@
 ---
-title: "Digital Imaging and Communications in Medicine (DICOM)"
+title: "MRI Data Formats"
 author: Nathan M. Muncy
 date: today
+execute:
+    freeze: auto
 format:
   revealjs:
-    footer: "MRI: DICOM"
+    footer: "MRI: data formats"
     logo: ../../media/nd_logo.png
     transition: slide
     slide-number: true
@@ -143,8 +145,6 @@ Photo Interp:
 :::: {.column width="\"50%"}
 ::: {.r-stack}
 
-<!-- ![](dicom_file.gif){.fragment .fade-in-then-out} -->
-
 ![](dicom_file_struct.svg)
 
 :::
@@ -211,53 +211,223 @@ Tags
 ::::
 :::::
 
+## DICOM: Mining Header
 
-## DICOM: Mining
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- Reporting protocols (manuscripts)
+- Parameters during workflows (DWI)
+- Identifying data
+- Useful tools:
+  - AFNI's [dicom_hdr](https://afni.nimh.nih.gov/pub/dist/doc/program_help/dicom_hdr.html) (shell)
+  - Pydicom's [dcmread](https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.filereader.dcmread.html#pydicom.filereader.dcmread) (python)
 
+::::
 
-## Research Data: Multiple Formats
-- SPM (Analyze; img and hdr)
-- FreeSurfer (MGH, MGZ) (https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/MghFormat)
-- AFNI (BRIK, HEAD)
-- HDF5 (https://www.hdfgroup.org/solutions/hdf5/medicine/)
-- Tower of Babel Problem
+:::: {.column width="\"50%"}
+::: {.r-stack}
 
-<!-- Find examples (maybe in documentation) of each time -->
+![](afni_dicom_hdr.png){.fragment .fade-in-then-out}
+
+![](pydicom_dicom_hdr.png){.fragment .fade-in-then-out}
+
+:::
+::::
+:::::
+
+## Research Data: Tower of Babel
+
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- Many formats, each with different use cases
+- Common:
+  - [Analyze](articles/analyze_7.5.pdf): Image & Header
+  - FreeSurfer: [MGH, MGZ]((https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/MghFormat))
+  - AFNI: [BRIK & HEAD](https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/nifti/notes.html)
+- Others:
+  - [HDF5](https://www.hdfgroup.org/solutions/hdf5/medicine/)
+  - [MINC](https://www.mcgill.ca/bic/software/minc)
+  - [CIFTI](https://www.nitrc.org/projects/cifti/)
+
+::::
+
+:::: {.column width="\"50%"}
+::: {.r-stack}
+
+![](standards.png)
+
+:::
+::::
+:::::
 
 ## NIfTI
-Neuroimaging Informatics Technology Initiative (NIfTI)
-Simple
-https://nifti.nimh.nih.gov/
-https://brainder.org/2012/09/23/the-nifti-file-format/
 
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- [Neuroimaging Informatics Technology Initiative (NIfTI)](https://nifti.nimh.nih.gov/)
+- Developed by [Data Format Working Group](https://nifti.nimh.nih.gov/dfwg/index.html)
+  - Supported by AFNI, FSL, SPM
+- Simple, standard, streamline
+- [Poster](articles/hbm_nifti_2004.pdf)
+::::
+
+:::: {.column width="\"50%"}
+::: {.r-stack}
+
+![](nifti_poster.png)
+
+:::
+::::
+:::::
 
 ## NIfTI: Structure
-Header, Data (Analyze; img hdr)
-Combined (nii)
-Formal structure (easy for multiple packages)
+
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- Modeled after Analyze 7.5 format
+  - Backwards compatible
+- Two formats supported:
+  - Multiple file: .hdr = Header, .img = Image
+  - Single file: .nii = Header & Image
+- [Defined structure](https://brainder.org/2012/09/23/the-nifti-file-format/)
+  - Eases use across modeling packages
+::::
+
+:::: {.column width="\"50%"}
+::: {.r-stack}
+
+![](nifti_struct.png)
+
+:::
+::::
+:::::
 
 ## NIfTI: Resolve issues
-Ambiguous left
-Embed orientation
-Dimensionality
-fMRI (4), DWI (6), Statistics (4-7)
+
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- Embed orientation
+  - QForm: Map voxel to scanner frame of reference
+  - SForm: Map voxel to common space (MNI)
+  - Resolves ambiguous left
+- Dimensionality
+  - 3: Anatomical
+  - 4: Functional
+  - 6: Diffusion
+  - 4-7: Statistical
+::::
+
+:::: {.column width="\"50%"}
+::: {.r-stack}
+
+![](ambig_LR.png){.fragment .fade-in-then-out}
+
+![](4d_data.png){.fragment .fade-in-then-out}
+
+:::
+::::
+:::::
 
 ## NIfTI: Orientation
-DICOM - LPS
-NIFTI - RAS
-MNI - LPI
-AFNI - RAI
 
-![](lps_ras.png)
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- Describe in 3 dimensions:
+  - 1: Left-Right (R)
+  - 2: Anterior-Posterior (P)
+  - 3: Superior-Inferior (S)
+- Voxel reference:
+  - 0 -> 256 (ref. corner)
+  - -128 -> 128 (ref. AC-PC)
+- Differing standards:
+  - NIfTI: RAS (lowest: LPI)
+  - DICOM: LPS
+  - MNI: LPI
+  - AFNI: RAI (highest: LPS)
+::::
+
+:::: {.column width="\"50%"}
+::: {.r-stack}
+
+![](lps_ras.png){.fragment .fade-in-then-out}
+
+![](coord_afni.png){.fragment .fade-in-then-out}
+
+![](coord_nifti.png){.fragment .fade-in-then-out}
+
+![](coord_dicom.png){.fragment .fade-in-then-out}
+
+:::
+::::
+:::::
 
 ## NIfTI: Conversion
 
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- [dcm2niix](https://github.com/rordenlab/dcm2niix): most common
+- [heudiconv](https://heudiconv.readthedocs.io/en/latest/): very common
+  - Wrapper of dcm2niix
+- Steps:
+  1. Read through DICOM metadata
+  2. Extract relevant data elements
+  3. Organize slices by data types
+  4. Combine slices into volumes
+  5. Organize volumes into matrix
+::::
 
-## NIfTI: Mining
+:::: {.column width="\"50%"}
+```{bash}
+#| echo: true
+#| eval: false
+#!/bin/bash
+dcm2niix \
+  -z y \
+  -f %p_%t_%s \
+  -o /path/output \
+  /path/to/dicom/folder
+```
+:::{style="font-size: 50%;"}
+- -z: GZip NIfTI file
+- -f: Output name uses protocol, acquisition, series
+- -o: Output location
+- last: Input DICOM directory
+:::
+::::
+:::::
 
+## NIfTI: Mining Header
+
+::::: columns
+:::: {.column width="50%" style="font-size: 65%;"}
+- Same reasons as DICOM mining
+  - NIfTI metadata has less information
+- Useful tools:
+  - AFNI's [3dinfo](https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dinfo.html)
+  - FSL's [fslhd](https://fsl.fmrib.ox.ac.uk/fsl/docs/utilities/fslutils.html#fslhd)
+  - NiBabel's [img.header](https://nipy.org/nibabel/nibabel_images.html)
+  - R's [RNifti::niftiHeader](https://cran.r-project.org/web/packages/RNifti/readme/README.html)
+  - Matlab [niftiinfo](https://www.mathworks.com/help/images/ref/niftiinfo.html)
+::::
+
+:::: {.column width="\"50%"}
+::: {.r-stack}
+
+![](afni_nifti_hdr.png){.fragment .fade-in-then-out}
+
+![](fsl_nifti_hdr.png){.fragment .fade-in-then-out}
+
+:::
+::::
+:::::
 
 ## Sources
+
+:::: {.columns}
+::: {.column width="50%" style="font-size: 30%"}
+
 Medical Image
+
 - [Radiopaedia](https://radiopaedia.org/articles/mri-sequences-overview?lang=us)
 - [Sprawls](https://www.sprawls.org/mripmt/MRI09/index.html)
 - Atkinson, D. (2022). Geometry in medical imaging: DICOM and NIfTI formats.
@@ -281,9 +451,30 @@ DICOM: Structure
 - [Header](https://www.leadtools.com/help/sdk/v20/dicom/api/overview-basic-dicom-file-structure.html)
 - [Structure](https://www.oak-tree.tech/blog/dicom-primer)
 
+:::
+::: {.column width="\"50%" style="font-size: 30%"}
+
 DICOM: Data Element
 
 - [Data Element](https://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_7.html)
+
+Research Data: Tower of Babel
+
+- [XKCD](https://xkcd.com/927)
+
+NIfTI: Structure
+
+- Althobaiti, N., Moria, K., Elrefaei, L., Alghamdi, J., & Tayeb, H. (2025). Construction of a Structurally Unbiased Brain Template with High Image Quality from MRI Scans of Saudi Adult Females. Bioengineering, 12(7), 722.
+
+NIfTI: Resolve Issues
+
+- Glen, D. R., Taylor, P. A., Buchsbaum, B. R., Cox, R. W., & Reynolds, R. C. (2020). Beware (surprisingly common) left-right flips in your MRI data: an efficient and robust method to check MRI dataset consistency using AFNI. Frontiers in neuroinformatics, 14, 18.
+
+- [4D Data](https://www.mathworks.com/help/matlab/visualize/visualizing-four-dimensional-data.html)
+
+NIfTI: Orientation
+
+- Li, X., Morgan, P. S., Ashburner, J., Smith, J., & Rorden, C. (2016). The first step for neuroimaging data analysis: DICOM to NIfTI conversion. Journal of neuroscience methods, 264, 47-56.
 
 
 <!-- Outline: Review larobina 2014
@@ -327,3 +518,5 @@ Mine NIfti header
 Practice - Install Mango, view DICOM stack
 Practice - Mine info from fruit
 -->
+:::
+::::

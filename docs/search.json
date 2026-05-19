@@ -114,114 +114,114 @@
   {
     "objectID": "lectures/dicom/dicom.html#medical-image",
     "href": "lectures/dicom/dicom.html#medical-image",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "Medical Image",
     "text": "Medical Image\n\n\nThree ways to conceptualize:\n\nRepresentation of internal structure/function\nMapping of numeric values to spatial position\nData line converted to matrix projected to screen\n\nImportant to maintain data integrity:\n\nSurgery\nDiagnoses\nInvestigation"
   },
   {
     "objectID": "lectures/dicom/dicom.html#medical-image-three-ps",
     "href": "lectures/dicom/dicom.html#medical-image-three-ps",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "Medical Image: Three P’s",
     "text": "Medical Image: Three P’s\n\n\n\nPixel Depth\n\nNumber of bits per pixel\n\nPhotometric Interpretation\n\nSamples per pixel (number of channels)\n\nPixel data\n\nStored as integer, float; Scaling factor\nComes after header (metadata)\nSize = rows x columns x pixel depth (x time)\n\n\n\n\n\n\n\n\n\nPixel depth: 8 bits = 1 byte - 256 x 256 pixels at 16 bits - 2 bytes per pixel - 256 x 256 x 2 = 131,072 bytes for image Photo Interp: - Monochrome: one sample per pixel (black/white) - Pseudo-color: multiple samples, limited color palette - True color: 24 bits (e.g. RGB)"
   },
   {
     "objectID": "lectures/dicom/dicom.html#medical-image-metadata",
     "href": "lectures/dicom/dicom.html#medical-image-metadata",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "Medical Image: Metadata",
     "text": "Medical Image: Metadata\n\n\n\nBeginning of data line\nContains information to interpret data line\n\nImage matrix dimensions\nSpatial resolution\nPixel depth\nPhotometric Interpretation\n\nAdditional\n\nScan protocol\nType of Scanner\nPatient Info"
   },
   {
     "objectID": "lectures/dicom/dicom.html#clinical-data-dicom",
     "href": "lectures/dicom/dicom.html#clinical-data-dicom",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "Clinical Data: DICOM",
     "text": "Clinical Data: DICOM\n\n\n\nDigital Imaging and Communications in Medicine\nDetails:\n\nAcquisition\nRequest\nTransfer\nFile Structrure\nMore …\n\nComplex\n\n22 Parts\n4000+ pages"
   },
   {
     "objectID": "lectures/dicom/dicom.html#dicom-structure",
     "href": "lectures/dicom/dicom.html#dicom-structure",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "DICOM: Structure",
     "text": "DICOM: Structure\n\n\n\nSingle file format: Header & Data\nComprehensive\nHeader\n\nScanner\nPatient\nProtocol\nNotes"
   },
   {
     "objectID": "lectures/dicom/dicom.html#dicom-data-element",
     "href": "lectures/dicom/dicom.html#dicom-data-element",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "DICOM: Data Element",
     "text": "DICOM: Data Element\n\n\n\nHeader organized into Data Elements (called attributes)\nFour main parts:\n\nTag\nVR: Coded datatype\nLength: Number of bytes in Value\nValue: Information\n\n\n\n\n\n\n\n\n\nTags - (XXXX, XXXX) - Even = Standard - Odd = Private"
   },
   {
     "objectID": "lectures/dicom/dicom.html#dicom-header",
     "href": "lectures/dicom/dicom.html#dicom-header",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "DICOM: Header",
     "text": "DICOM: Header\n\n\n\nCommon Groups\n\n0002: Meta information\n0008: Session information\n0010: Patient information\n0018: Protocol information\n\nOthers …\nNotice: Tag, Length, Meaning, Information"
   },
   {
-    "objectID": "lectures/dicom/dicom.html#dicom-mining",
-    "href": "lectures/dicom/dicom.html#dicom-mining",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
-    "section": "DICOM: Mining",
-    "text": "DICOM: Mining"
+    "objectID": "lectures/dicom/dicom.html#dicom-mining-header",
+    "href": "lectures/dicom/dicom.html#dicom-mining-header",
+    "title": "MRI Data Formats",
+    "section": "DICOM: Mining Header",
+    "text": "DICOM: Mining Header\n\n\n\nReporting protocols (manuscripts)\nParameters during workflows (DWI)\nIdentifying data\nUseful tools:\n\nAFNI’s dicom_hdr (shell)\nPydicom’s dcmread (python)"
   },
   {
-    "objectID": "lectures/dicom/dicom.html#research-data-multiple-formats",
-    "href": "lectures/dicom/dicom.html#research-data-multiple-formats",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
-    "section": "Research Data: Multiple Formats",
-    "text": "Research Data: Multiple Formats\n\nSPM (Analyze; img and hdr)\nFreeSurfer (MGH, MGZ) (https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/MghFormat)\nAFNI (BRIK, HEAD)\nHDF5 (https://www.hdfgroup.org/solutions/hdf5/medicine/)\nTower of Babel Problem"
+    "objectID": "lectures/dicom/dicom.html#research-data-tower-of-babel",
+    "href": "lectures/dicom/dicom.html#research-data-tower-of-babel",
+    "title": "MRI Data Formats",
+    "section": "Research Data: Tower of Babel",
+    "text": "Research Data: Tower of Babel\n\n\n\nMany formats, each with different use cases\nCommon:\n\nAnalyze: Image & Header\nFreeSurfer: MGH, MGZ\nAFNI: BRIK & HEAD\n\nOthers:\n\nHDF5\nMINC\nCIFTI"
   },
   {
     "objectID": "lectures/dicom/dicom.html#nifti",
     "href": "lectures/dicom/dicom.html#nifti",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "NIfTI",
-    "text": "NIfTI\nNeuroimaging Informatics Technology Initiative (NIfTI) Simple https://nifti.nimh.nih.gov/ https://brainder.org/2012/09/23/the-nifti-file-format/"
+    "text": "NIfTI\n\n\n\nNeuroimaging Informatics Technology Initiative (NIfTI)\nDeveloped by Data Format Working Group\n\nSupported by AFNI, FSL, SPM\n\nSimple, standard, streamline\nPoster"
   },
   {
     "objectID": "lectures/dicom/dicom.html#nifti-structure",
     "href": "lectures/dicom/dicom.html#nifti-structure",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "NIfTI: Structure",
-    "text": "NIfTI: Structure\nHeader, Data (Analyze; img hdr) Combined (nii) Formal structure (easy for multiple packages)"
+    "text": "NIfTI: Structure\n\n\n\nModeled after Analyze 7.5 format\n\nBackwards compatible\n\nTwo formats supported:\n\nMultiple file: .hdr = Header, .img = Image\nSingle file: .nii = Header & Image\n\nDefined structure\n\nEases use across modeling packages"
   },
   {
     "objectID": "lectures/dicom/dicom.html#nifti-resolve-issues",
     "href": "lectures/dicom/dicom.html#nifti-resolve-issues",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "NIfTI: Resolve issues",
-    "text": "NIfTI: Resolve issues\nAmbiguous left Embed orientation Dimensionality fMRI (4), DWI (6), Statistics (4-7)"
+    "text": "NIfTI: Resolve issues\n\n\n\nEmbed orientation\n\nQForm: Map voxel to scanner frame of reference\nSForm: Map voxel to common space (MNI)\nResolves ambiguous left\n\nDimensionality\n\n3: Anatomical\n4: Functional\n6: Diffusion\n4-7: Statistical"
   },
   {
     "objectID": "lectures/dicom/dicom.html#nifti-orientation",
     "href": "lectures/dicom/dicom.html#nifti-orientation",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "NIfTI: Orientation",
-    "text": "NIfTI: Orientation\nDICOM - LPS NIFTI - RAS MNI - LPI AFNI - RAI"
+    "text": "NIfTI: Orientation\n\n\n\nDescribe in 3 dimensions:\n\n1: Left-Right (R)\n2: Anterior-Posterior (P)\n3: Superior-Inferior (S)\n\nVoxel reference:\n\n0 -&gt; 256 (ref. corner)\n-128 -&gt; 128 (ref. AC-PC)\n\nDiffering standards:\n\nNIfTI: RAS (lowest: LPI)\nDICOM: LPS\nMNI: LPI\nAFNI: RAI (highest: LPS)"
   },
   {
     "objectID": "lectures/dicom/dicom.html#nifti-conversion",
     "href": "lectures/dicom/dicom.html#nifti-conversion",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "NIfTI: Conversion",
-    "text": "NIfTI: Conversion"
+    "text": "NIfTI: Conversion\n\n\n\ndcm2niix: most common\nheudiconv: very common\n\nWrapper of dcm2niix\n\nSteps:\n\nRead through DICOM metadata\nExtract relevant data elements\nOrganize slices by data types\nCombine slices into volumes\nOrganize volumes into matrix\n\n\n\n\n#!/bin/bash\ndcm2niix \\\n  -z y \\\n  -f %p_%t_%s \\\n  -o /path/output \\\n  /path/to/dicom/folder\n\n\n\n-z: GZip NIfTI file\n-f: Output name uses protocol, acquisition, series\n-o: Output location\nlast: Input DICOM directory"
   },
   {
-    "objectID": "lectures/dicom/dicom.html#nifti-mining",
-    "href": "lectures/dicom/dicom.html#nifti-mining",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
-    "section": "NIfTI: Mining",
-    "text": "NIfTI: Mining"
+    "objectID": "lectures/dicom/dicom.html#nifti-mining-header",
+    "href": "lectures/dicom/dicom.html#nifti-mining-header",
+    "title": "MRI Data Formats",
+    "section": "NIfTI: Mining Header",
+    "text": "NIfTI: Mining Header\n\n\n\nSame reasons as DICOM mining\n\nNIfTI metadata has less information\n\nUseful tools:\n\nAFNI’s 3dinfo\nFSL’s fslhd\nNiBabel’s img.header\nR’s RNifti::niftiHeader\nMatlab niftiinfo"
   },
   {
     "objectID": "lectures/dicom/dicom.html#sources",
     "href": "lectures/dicom/dicom.html#sources",
-    "title": "Digital Imaging and Communications in Medicine (DICOM)",
+    "title": "MRI Data Formats",
     "section": "Sources",
-    "text": "Sources\nMedical Image - Radiopaedia - Sprawls - Atkinson, D. (2022). Geometry in medical imaging: DICOM and NIfTI formats.\nMedical Image: Three P’s\n\nPixel Depth\nPhotometric\nPixel Data\n\nMedical Image: Metadata\n\nPixel Data\n\nClinical Data: DICOM\n\nDICOM\n\nDICOM: Structure\n\nHeader\nStructure\n\nDICOM: Data Element\n\nData Element"
+    "text": "Sources\n\n\nMedical Image\n\nRadiopaedia\nSprawls\nAtkinson, D. (2022). Geometry in medical imaging: DICOM and NIfTI formats.\n\nMedical Image: Three P’s\n\nPixel Depth\nPhotometric\nPixel Data\n\nMedical Image: Metadata\n\nPixel Data\n\nClinical Data: DICOM\n\nDICOM\n\nDICOM: Structure\n\nHeader\nStructure\n\n\nDICOM: Data Element\n\nData Element\n\nResearch Data: Tower of Babel\n\nXKCD\n\nNIfTI: Structure\n\nAlthobaiti, N., Moria, K., Elrefaei, L., Alghamdi, J., & Tayeb, H. (2025). Construction of a Structurally Unbiased Brain Template with High Image Quality from MRI Scans of Saudi Adult Females. Bioengineering, 12(7), 722.\n\nNIfTI: Resolve Issues\n\nGlen, D. R., Taylor, P. A., Buchsbaum, B. R., Cox, R. W., & Reynolds, R. C. (2020). Beware (surprisingly common) left-right flips in your MRI data: an efficient and robust method to check MRI dataset consistency using AFNI. Frontiers in neuroinformatics, 14, 18.\n4D Data\n\nNIfTI: Orientation\n\nLi, X., Morgan, P. S., Ashburner, J., Smith, J., & Rorden, C. (2016). The first step for neuroimaging data analysis: DICOM to NIfTI conversion. Journal of neuroscience methods, 264, 47-56."
   },
   {
     "objectID": "index.html#welcome",
@@ -235,7 +235,7 @@
     "href": "lectures/dicom/articles/articles.html",
     "title": "Articles",
     "section": "",
-    "text": "Bidgood WD Jr, Horii SC, Prior FW, Van Syckle DE. Understanding and using DICOM, the data interchange standard for biomedical imaging. J Am Med Inform Assoc. 1997 May-Jun;4(3):199-212. doi: 10.1136/jamia.1997.0040199. PMID: 9147339; PMCID: PMC61235."
+    "text": "Atkinson, D. (2022). Geometry in medical imaging: DICOM and NIfTI formats.\nBidgood WD Jr, Horii SC, Prior FW, Van Syckle DE. Understanding and using DICOM, the data interchange standard for biomedical imaging. J Am Med Inform Assoc. 1997 May-Jun;4(3):199-212. doi: 10.1136/jamia.1997.0040199. PMID: 9147339; PMCID: PMC61235.\nGlen, D. R., Taylor, P. A., Buchsbaum, B. R., Cox, R. W., & Reynolds, R. C. (2020). Beware (surprisingly common) left-right flips in your MRI data: an efficient and robust method to check MRI dataset consistency using AFNI. Frontiers in neuroinformatics, 14, 18.\nLarobina, M., & Murino, L. (2014). Medical image file formats. Journal of digital imaging, 27(2), 200-206.\nLi, X., Morgan, P. S., Ashburner, J., Smith, J., & Rorden, C. (2016). The first step for neuroimaging data analysis: DICOM to NIfTI conversion. Journal of neuroscience methods, 264, 47-56."
   },
   {
     "objectID": "lectures/mri_overview/articles/articles.html",
@@ -319,6 +319,6 @@
     "href": "pages/modules.html",
     "title": "Modules",
     "section": "",
-    "text": "Module 1: Signal and Files\n\n\n\n\nTopic\nSlides\nMaterials\nExercises\n\n\n\n\n\n\n1. Magnetic Resonance Imaging\nSlides\nArticles\nPractice\n\n\n\n\n2. T1-weighted signal\nSlides\nCode\nPractice\n\n\n\n\n3. DICOM\nSlides\nArticles\nPractice\n\n\n\n\n4. BIDS\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\n2. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\n3. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\n4. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\n2. ANTs\nSlides\nCode\nPractice\n\n\n\n\n3. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\n4. fMRIPrep\nSlides\nCode\nPractice"
+    "text": "Module 1: Signal and Files\n\n\n\n\nTopic\nSlides\nMaterials\nExercises\n\n\n\n\n\n\n1. Magnetic Resonance Imaging\nSlides\nArticles\nPractice\n\n\n\n\n2. T1-weighted signal\nSlides\nCode\nPractice\n\n\n\n\n3. MRI Data Formats\nSlides\nArticles\nPractice\n\n\n\n\n4. BIDS\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\n2. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\n3. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\n4. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\n2. ANTs\nSlides\nCode\nPractice\n\n\n\n\n3. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\n4. fMRIPrep\nSlides\nCode\nPractice"
   }
 ]

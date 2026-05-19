@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.7.33">
 
   <meta name="author" content="Nathan M. Muncy">
-  <meta name="dcterms.date" content="2026-05-18">
-  <title>Anatomic MRI – Digital Imaging and Communications in Medicine (DICOM)</title>
+  <meta name="dcterms.date" content="2026-05-19">
+  <title>Anatomic MRI – MRI Data Formats</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,6 +29,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -128,7 +194,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Digital Imaging and Communications in Medicine (DICOM)</h1>
+  <h1 class="title">MRI Data Formats</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,7 +204,7 @@ Nathan M. Muncy
 </div>
 </div>
 
-  <p class="date">2026-05-18</p>
+  <p class="date">2026-05-19</p>
 </section>
 <section id="medical-image" class="slide level2">
 <h2>Medical Image</h2>
@@ -274,7 +340,6 @@ Nathan M. Muncy
 </ul>
 </div><div class="column" style="width:&quot;50%;">
 <div class="r-stack">
-<!-- ![](dicom_file.gif){.fragment .fade-in-then-out} -->
 <p><img data-src="dicom_file_struct.svg"></p>
 </div>
 </div></div>
@@ -337,46 +402,228 @@ Nathan M. Muncy
 </div>
 </div></div>
 </section>
-<section id="dicom-mining" class="slide level2">
-<h2>DICOM: Mining</h2>
-</section>
-<section id="research-data-multiple-formats" class="slide level2">
-<h2>Research Data: Multiple Formats</h2>
+<section id="dicom-mining-header" class="slide level2">
+<h2>DICOM: Mining Header</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
 <ul>
-<li>SPM (Analyze; img and hdr)</li>
-<li>FreeSurfer (MGH, MGZ) (https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/MghFormat)</li>
-<li>AFNI (BRIK, HEAD)</li>
-<li>HDF5 (https://www.hdfgroup.org/solutions/hdf5/medicine/)</li>
-<li>Tower of Babel Problem</li>
+<li>Reporting protocols (manuscripts)</li>
+<li>Parameters during workflows (DWI)</li>
+<li>Identifying data</li>
+<li>Useful tools:
+<ul>
+<li>AFNI’s <a href="https://afni.nimh.nih.gov/pub/dist/doc/program_help/dicom_hdr.html">dicom_hdr</a> (shell)</li>
+<li>Pydicom’s <a href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.filereader.dcmread.html#pydicom.filereader.dcmread">dcmread</a> (python)</li>
+</ul></li>
 </ul>
-<!-- Find examples (maybe in documentation) of each time -->
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="afni_dicom_hdr.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="pydicom_dicom_hdr.png" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
+</section>
+<section id="research-data-tower-of-babel" class="slide level2">
+<h2>Research Data: Tower of Babel</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Many formats, each with different use cases</li>
+<li>Common:
+<ul>
+<li><a href="articles/analyze_7.5.pdf">Analyze</a>: Image &amp; Header</li>
+<li>FreeSurfer: <a href="(https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/MghFormat)">MGH, MGZ</a></li>
+<li>AFNI: <a href="https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/nifti/notes.html">BRIK &amp; HEAD</a></li>
+</ul></li>
+<li>Others:
+<ul>
+<li><a href="https://www.hdfgroup.org/solutions/hdf5/medicine/">HDF5</a></li>
+<li><a href="https://www.mcgill.ca/bic/software/minc">MINC</a></li>
+<li><a href="https://www.nitrc.org/projects/cifti/">CIFTI</a></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="standards.png"></p>
+</div>
+</div></div>
 </section>
 <section id="nifti" class="slide level2">
 <h2>NIfTI</h2>
-<p>Neuroimaging Informatics Technology Initiative (NIfTI) Simple https://nifti.nimh.nih.gov/ https://brainder.org/2012/09/23/the-nifti-file-format/</p>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li><a href="https://nifti.nimh.nih.gov/">Neuroimaging Informatics Technology Initiative (NIfTI)</a></li>
+<li>Developed by <a href="https://nifti.nimh.nih.gov/dfwg/index.html">Data Format Working Group</a>
+<ul>
+<li>Supported by AFNI, FSL, SPM</li>
+</ul></li>
+<li>Simple, standard, streamline</li>
+<li><a href="articles/hbm_nifti_2004.pdf">Poster</a></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="nifti_poster.png"></p>
+</div>
+</div></div>
 </section>
 <section id="nifti-structure" class="slide level2">
 <h2>NIfTI: Structure</h2>
-<p>Header, Data (Analyze; img hdr) Combined (nii) Formal structure (easy for multiple packages)</p>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Modeled after Analyze 7.5 format
+<ul>
+<li>Backwards compatible</li>
+</ul></li>
+<li>Two formats supported:
+<ul>
+<li>Multiple file: .hdr = Header, .img = Image</li>
+<li>Single file: .nii = Header &amp; Image</li>
+</ul></li>
+<li><a href="https://brainder.org/2012/09/23/the-nifti-file-format/">Defined structure</a>
+<ul>
+<li>Eases use across modeling packages</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="nifti_struct.png"></p>
+</div>
+</div></div>
 </section>
 <section id="nifti-resolve-issues" class="slide level2">
 <h2>NIfTI: Resolve issues</h2>
-<p>Ambiguous left Embed orientation Dimensionality fMRI (4), DWI (6), Statistics (4-7)</p>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Embed orientation
+<ul>
+<li>QForm: Map voxel to scanner frame of reference</li>
+<li>SForm: Map voxel to common space (MNI)</li>
+<li>Resolves ambiguous left</li>
+</ul></li>
+<li>Dimensionality
+<ul>
+<li>3: Anatomical</li>
+<li>4: Functional</li>
+<li>6: Diffusion</li>
+<li>4-7: Statistical</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="ambig_LR.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="4d_data.png" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
 </section>
 <section id="nifti-orientation" class="slide level2">
 <h2>NIfTI: Orientation</h2>
-<p>DICOM - LPS NIFTI - RAS MNI - LPI AFNI - RAI</p>
-
-<img data-src="lps_ras.png" class="r-stretch"></section>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Describe in 3 dimensions:
+<ul>
+<li>1: Left-Right (R)</li>
+<li>2: Anterior-Posterior (P)</li>
+<li>3: Superior-Inferior (S)</li>
+</ul></li>
+<li>Voxel reference:
+<ul>
+<li>0 -&gt; 256 (ref. corner)</li>
+<li>-128 -&gt; 128 (ref. AC-PC)</li>
+</ul></li>
+<li>Differing standards:
+<ul>
+<li>NIfTI: RAS (lowest: LPI)</li>
+<li>DICOM: LPS</li>
+<li>MNI: LPI</li>
+<li>AFNI: RAI (highest: LPS)</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="lps_ras.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="coord_afni.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="coord_nifti.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="coord_dicom.png" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
+</section>
 <section id="nifti-conversion" class="slide level2">
 <h2>NIfTI: Conversion</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li><a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>: most common</li>
+<li><a href="https://heudiconv.readthedocs.io/en/latest/">heudiconv</a>: very common
+<ul>
+<li>Wrapper of dcm2niix</li>
+</ul></li>
+<li>Steps:
+<ol type="1">
+<li>Read through DICOM metadata</li>
+<li>Extract relevant data elements</li>
+<li>Organize slices by data types</li>
+<li>Combine slices into volumes</li>
+<li>Organize volumes into matrix</li>
+</ol></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="co">#!/bin/bash</span></span>
+<span id="cb1-2"><a></a><span class="ex">dcm2niix</span> <span class="dt">\</span></span>
+<span id="cb1-3"><a></a>  <span class="at">-z</span> y <span class="dt">\</span></span>
+<span id="cb1-4"><a></a>  <span class="at">-f</span> %p_%t_%s <span class="dt">\</span></span>
+<span id="cb1-5"><a></a>  <span class="at">-o</span> /path/output <span class="dt">\</span></span>
+<span id="cb1-6"><a></a>  /path/to/dicom/folder</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div style="font-size: 50%;">
+<ul>
+<li>-z: GZip NIfTI file</li>
+<li>-f: Output name uses protocol, acquisition, series</li>
+<li>-o: Output location</li>
+<li>last: Input DICOM directory</li>
+</ul>
+</div>
+</div></div>
 </section>
-<section id="nifti-mining" class="slide level2">
-<h2>NIfTI: Mining</h2>
+<section id="nifti-mining-header" class="slide level2">
+<h2>NIfTI: Mining Header</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Same reasons as DICOM mining
+<ul>
+<li>NIfTI metadata has less information</li>
+</ul></li>
+<li>Useful tools:
+<ul>
+<li>AFNI’s <a href="https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dinfo.html">3dinfo</a></li>
+<li>FSL’s <a href="https://fsl.fmrib.ox.ac.uk/fsl/docs/utilities/fslutils.html#fslhd">fslhd</a></li>
+<li>NiBabel’s <a href="https://nipy.org/nibabel/nibabel_images.html">img.header</a></li>
+<li>R’s <a href="https://cran.r-project.org/web/packages/RNifti/readme/README.html">RNifti::niftiHeader</a></li>
+<li>Matlab <a href="https://www.mathworks.com/help/images/ref/niftiinfo.html">niftiinfo</a></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<div class="r-stack">
+<p><img data-src="afni_nifti_hdr.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="fsl_nifti_hdr.png" class="fragment fade-in-then-out"></p>
+</div>
+</div></div>
 </section>
 <section id="sources" class="slide level2">
 <h2>Sources</h2>
-<p>Medical Image - <a href="https://radiopaedia.org/articles/mri-sequences-overview?lang=us">Radiopaedia</a> - <a href="https://www.sprawls.org/mripmt/MRI09/index.html">Sprawls</a> - Atkinson, D. (2022). Geometry in medical imaging: DICOM and NIfTI formats.</p>
+<div class="columns">
+<div class="column" style="font-size: 30%">
+<p>Medical Image</p>
+<ul>
+<li><a href="https://radiopaedia.org/articles/mri-sequences-overview?lang=us">Radiopaedia</a></li>
+<li><a href="https://www.sprawls.org/mripmt/MRI09/index.html">Sprawls</a></li>
+<li>Atkinson, D. (2022). Geometry in medical imaging: DICOM and NIfTI formats.</li>
+</ul>
 <p>Medical Image: Three P’s</p>
 <ul>
 <li><a href="https://www.the-working-man.org/2014/12/bit-depth-color-precision-in-raster.html">Pixel Depth</a></li>
@@ -396,9 +643,27 @@ Nathan M. Muncy
 <li><a href="https://www.leadtools.com/help/sdk/v20/dicom/api/overview-basic-dicom-file-structure.html">Header</a></li>
 <li><a href="https://www.oak-tree.tech/blog/dicom-primer">Structure</a></li>
 </ul>
+</div><div class="column" style="font-size: 30%">
 <p>DICOM: Data Element</p>
 <ul>
 <li><a href="https://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_7.html">Data Element</a></li>
+</ul>
+<p>Research Data: Tower of Babel</p>
+<ul>
+<li><a href="https://xkcd.com/927">XKCD</a></li>
+</ul>
+<p>NIfTI: Structure</p>
+<ul>
+<li>Althobaiti, N., Moria, K., Elrefaei, L., Alghamdi, J., &amp; Tayeb, H. (2025). Construction of a Structurally Unbiased Brain Template with High Image Quality from MRI Scans of Saudi Adult Females. Bioengineering, 12(7), 722.</li>
+</ul>
+<p>NIfTI: Resolve Issues</p>
+<ul>
+<li><p>Glen, D. R., Taylor, P. A., Buchsbaum, B. R., Cox, R. W., &amp; Reynolds, R. C. (2020). Beware (surprisingly common) left-right flips in your MRI data: an efficient and robust method to check MRI dataset consistency using AFNI. Frontiers in neuroinformatics, 14, 18.</p></li>
+<li><p><a href="https://www.mathworks.com/help/matlab/visualize/visualizing-four-dimensional-data.html">4D Data</a></p></li>
+</ul>
+<p>NIfTI: Orientation</p>
+<ul>
+<li>Li, X., Morgan, P. S., Ashburner, J., Smith, J., &amp; Rorden, C. (2016). The first step for neuroimaging data analysis: DICOM to NIfTI conversion. Journal of neuroscience methods, 264, 47-56.</li>
 </ul>
 <!-- Outline: Review larobina 2014
 Data string, medical image
@@ -440,6 +705,7 @@ Mine NIfti header
 Practice - Install Mango, view DICOM stack
 Practice - Mine info from fruit
 -->
+</div></div>
 
 
 </section>
@@ -447,7 +713,7 @@ Practice - Mine info from fruit
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../media/nd_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>MRI: DICOM</p>
+<p>MRI: data formats</p>
 </div>
 </div></div>
 
