@@ -29,7 +29,7 @@ The leap from simply "running a script" to mastering a workflow is the hallmark 
 
 Our mission is to equip you with the transparency and reproducibility required to defend your methodological choices with confidence in any peer-review or clinical setting.
 
-[About](pages/about.qmd) | [Modules](pages/modules.qmd) | [Schedule](pages/schedule.qmd)
+[About](pages/about.qmd) | [Modules](pages/modules.qmd)
 
 ---
 

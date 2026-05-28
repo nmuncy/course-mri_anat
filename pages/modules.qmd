@@ -22,6 +22,7 @@ execute:
 
 <!-- TODO:
 - Add image type utility (anatomy, parcellate, volume)
+- add prep material (read article before class)
 -->
 
 
@@ -29,12 +30,12 @@ execute:
 
 <summary> Module 1: Signal and Files </summary>
 
-| Topic | Slides | Materials | Exercises |
-|---------------|--------|--------|---------|------|-----------|
-| 1. Magnetic Resonance Imaging | [Slides](../lectures/mri_overview/mri_overview.qmd){target="_blank"} | [Articles](../lectures/mri_overview/articles/articles.qmd){target="_blank"} | Practice |
-| 2. T1-weighted signal | [Slides](../lectures/t1w_signal/t1w_signal.qmd){target="_blank"} | Code | Practice |
-| 3. MRI Data Formats | [Slides](../lectures/dicom/dicom.qmd){target="_blank"} | [Articles](../lectures/dicom/articles/articles.qmd){target="_blank"} | Practice |
-| 4. BIDS | Slides | Code | Practice |
+| Date | Topic | Slides | Materials | Exercises |
+|--------|---------------|--------|--------|---------|------|-----------|
+| TBD | 1. Magnetic Resonance Imaging | [Slides](../lectures/mri_overview/mri_overview.qmd){target="_blank"} | [Articles](../lectures/mri_overview/articles/articles.qmd){target="_blank"} | |
+| TBD | 2. T1-weighted signal | [Slides](../lectures/t1w_signal/t1w_signal.qmd){target="_blank"} | | |
+| TBD | 3. MRI Data Formats | [Slides](../lectures/dicom/dicom.qmd){target="_blank"} | [Articles](../lectures/dicom/articles/articles.qmd){target="_blank"} | Practice |
+| TBD | 4. BIDS | [Slides](../lectures/bids/bids.qmd){target="_blank"} | Code | Practice |
 
 </details>
 
@@ -43,12 +44,12 @@ execute:
 
 <summary> Module 2: Pipeline Steps </summary>
 
-| Topic | Slides | Code | Exercises |
-|---------------|--------|--------|---------|------|-----------|
-| 1. Bias correction | Slides | Code | Practice |
-| 2. Brain extraction | Slides | Code | Practice |
-| 3. Tissue segmentation | Slides | Code | Practice |
-| 4. Transformation | Slides | Code | Practice |
+| Date | Topic | Slides | Materials | Exercises |
+|--------|---------------|--------|--------|---------|------|-----------|
+| TBD | 1. Bias correction | Slides | Code | Practice |
+| TBD | 2. Brain extraction | Slides | Code | Practice |
+| TBD | 3. Tissue segmentation | Slides | Code | Practice |
+| TBD | 4. Transformation | Slides | Code | Practice |
 
 </details>
 
@@ -57,12 +58,12 @@ execute:
 
 <summary> Module 3: Software Packages </summary>
 
-| Topic | Slides | Code | Exercises |
-|---------------|--------|--------|---------|------|-----------|
-| 1. ITK-snap | Slides | Code | Practice |
-| 2. ANTs | Slides | Code | Practice |
-| 3. FreeSurfer | Slides | Code | Practice |
-| 4. fMRIPrep | Slides | Code | Practice |
+| Date | Topic | Slides | Materials | Exercises |
+|--------|---------------|--------|--------|---------|------|-----------|
+| TBD | 1. ITK-snap | Slides | Code | Practice |
+| TBD | 2. ANTs | Slides | Code | Practice |
+| TBD | 3. FreeSurfer | Slides | Code | Practice |
+| TBD | 4. fMRIPrep | Slides | Code | Practice |
 
 </details>
 

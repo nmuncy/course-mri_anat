@@ -224,11 +224,102 @@
     "text": "Sources\n\n\nMedical Image\n\nRadiopaedia\nSprawls\nAtkinson, D. (2022). Geometry in medical imaging: DICOM and NIfTI formats.\n\nMedical Image: Three P’s\n\nPixel Depth\nPhotometric\nPixel Data\n\nMedical Image: Metadata\n\nPixel Data\n\nClinical Data: DICOM\n\nDICOM\n\nDICOM: Structure\n\nHeader\nStructure\n\n\nDICOM: Data Element\n\nData Element\n\nResearch Data: Tower of Babel\n\nXKCD\n\nNIfTI: Structure\n\nAlthobaiti, N., Moria, K., Elrefaei, L., Alghamdi, J., & Tayeb, H. (2025). Construction of a Structurally Unbiased Brain Template with High Image Quality from MRI Scans of Saudi Adult Females. Bioengineering, 12(7), 722.\n\nNIfTI: Resolve Issues\n\nGlen, D. R., Taylor, P. A., Buchsbaum, B. R., Cox, R. W., & Reynolds, R. C. (2020). Beware (surprisingly common) left-right flips in your MRI data: an efficient and robust method to check MRI dataset consistency using AFNI. Frontiers in neuroinformatics, 14, 18.\n4D Data\n\nNIfTI: Orientation\n\nLi, X., Morgan, P. S., Ashburner, J., Smith, J., & Rorden, C. (2016). The first step for neuroimaging data analysis: DICOM to NIfTI conversion. Journal of neuroscience methods, 264, 47-56."
   },
   {
+    "objectID": "lectures/bids/bids.html#mri-big-data",
+    "href": "lectures/bids/bids.html#mri-big-data",
+    "title": "Brain Imaging Data Structure",
+    "section": "MRI: Big Data",
+    "text": "MRI: Big Data\n\n\nMRI research data is complex:\n\nFile types (anatomic, diffusion, functional)\nFile stages (original, intermediate, final)\nMany for each subject, session\n\nResearchers need to manage:\n\nMultiple projects (from same data set)\nMultiple data sets (collected across time, labs)\n\nModern studies involve 200+ participants!\n\nMillions of files\nTerabytes of data\nE.g. Human Connectome Project"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#researcher-organization",
+    "href": "lectures/bids/bids.html#researcher-organization",
+    "title": "Brain Imaging Data Structure",
+    "section": "Researcher Organization",
+    "text": "Researcher Organization\n\n\nCritical question: how do we keep it straight?\nNotes:\n\nEvery researcher organizes their data reasonably\nEvery researcher organizes their data differently\n\nThis makes things impossible:\n\nLabs differ in their organization\nResearchers differ within a lab\nProjects differ within a researcher"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#software-organization",
+    "href": "lectures/bids/bids.html#software-organization",
+    "title": "Brain Imaging Data Structure",
+    "section": "Software Organization",
+    "text": "Software Organization\n\n\nSoftware suites organize data differently (recall pre-NIfTI file types):\n\nAFNI\nFSL\nFreeSurfer\nOthers …\n\nImplications:\n\nNeed to learn multiple file structures\nPipeline construction unwieldy\nFun: guess how someone trained based on data"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#bids-the-specification",
+    "href": "lectures/bids/bids.html#bids-the-specification",
+    "title": "Brain Imaging Data Structure",
+    "section": "BIDS: The Specification",
+    "text": "BIDS: The Specification\n\n\n\n2016: The Brain Imaging Data Structure\nPurpose:\n\nMinimize data curation\nReduce errors\nOptimize data usage\nFacilitate automated tools\n\nDetailed:\n\nThe Specification\nBIDS Homepage"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#bids-high-level",
+    "href": "lectures/bids/bids.html#bids-high-level",
+    "title": "Brain Imaging Data Structure",
+    "section": "BIDS: High Level",
+    "text": "BIDS: High Level\n\n\n\nSystem of naming and organizing files\nAdopts key-value pairs in names\nSupports multiple data modalities\nPreempts stranded files"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#bids-file-structure",
+    "href": "lectures/bids/bids.html#bids-file-structure",
+    "title": "Brain Imaging Data Structure",
+    "section": "BIDS: File structure",
+    "text": "BIDS: File structure\nRawdata (original) Subject Session File type Side car (NIfTI limitations) dataset_description participants.tsv"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#bids-file-name",
+    "href": "lectures/bids/bids.html#bids-file-name",
+    "title": "Brain Imaging Data Structure",
+    "section": "BIDS: File name",
+    "text": "BIDS: File name\nCommon fields Specific fields"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#bids-file-types",
+    "href": "lectures/bids/bids.html#bids-file-types",
+    "title": "Brain Imaging Data Structure",
+    "section": "BIDS: File types",
+    "text": "BIDS: File types\nAnat DWI, bvec, bval Func, task TSV"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#validator",
+    "href": "lectures/bids/bids.html#validator",
+    "title": "Brain Imaging Data Structure",
+    "section": "Validator",
+    "text": "Validator"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#software",
+    "href": "lectures/bids/bids.html#software",
+    "title": "Brain Imaging Data Structure",
+    "section": "Software",
+    "text": "Software\nfMRIPrep"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#outside-rawdata",
+    "href": "lectures/bids/bids.html#outside-rawdata",
+    "title": "Brain Imaging Data Structure",
+    "section": "Outside rawdata",
+    "text": "Outside rawdata\nDerivatives sourcedata"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#best-practices",
+    "href": "lectures/bids/bids.html#best-practices",
+    "title": "Brain Imaging Data Structure",
+    "section": "Best practices",
+    "text": "Best practices\nrawdata derivatives - pipeline - subject analyses - final files prune"
+  },
+  {
+    "objectID": "lectures/bids/bids.html#sources",
+    "href": "lectures/bids/bids.html#sources",
+    "title": "Brain Imaging Data Structure",
+    "section": "Sources",
+    "text": "Sources\nMRI: Big Data\n\nAzam, M. A., Khan, K. B., Salahuddin, S., Rehman, E., Khan, S. A., Khan, M. A., … & Gandomi, A. H. (2022). A review on multimodal medical image fusion: Compendious analysis of medical modalities, multimodal databases, fusion techniques and quality metrics. Computers in biology and medicine, 144, 105253.\n\nOrganizing Data\n\nhttps://filwd.substack.com/p/a-takeaway-message-model-for-data\n\nBIDS: The Specification\n\nGorgolewski, K. J., Auer, T., Calhoun, V. D., Craddock, R. C., Das, S., Duff, E. P., … & Poldrack, R. A. (2016). The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments. Scientific data, 3(1), 1-9.\nTutorial\n\nBIDS: High Level\n\nPoldrack, R. A., Markiewicz, C. J., Appelhoff, S., Ashar, Y. K., Auer, T., Baillet, S., … & Gorgolewski, K. J. (2024). The past, present, and future of the brain imaging data structure (BIDS). Imaging Neuroscience, 2, imag-2."
+  },
+  {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "MRI Analyses: anatomic",
     "section": "Welcome!",
-    "text": "Welcome!\nThe leap from simply “running a script” to mastering a workflow is the hallmark of a serious neuroimaging researcher. This course demystifies T1-weighted processing, grounding your work in the biophysical principles and mathematical transformations, from NIfTI conversion to diffeomorphic registration, that turn raw data into anatomical discovery. By mastering tools like ANTs and FreeSurfer, you move beyond passive button-pushing toward true technical autonomy.\nOur mission is to equip you with the transparency and reproducibility required to defend your methodological choices with confidence in any peer-review or clinical setting.\nAbout | Modules | Schedule\n\n\nImage Credit: Radiopaedia"
+    "text": "Welcome!\nThe leap from simply “running a script” to mastering a workflow is the hallmark of a serious neuroimaging researcher. This course demystifies T1-weighted processing, grounding your work in the biophysical principles and mathematical transformations, from NIfTI conversion to diffeomorphic registration, that turn raw data into anatomical discovery. By mastering tools like ANTs and FreeSurfer, you move beyond passive button-pushing toward true technical autonomy.\nOur mission is to equip you with the transparency and reproducibility required to defend your methodological choices with confidence in any peer-review or clinical setting.\nAbout | Modules\n\n\nImage Credit: Radiopaedia"
   },
   {
     "objectID": "lectures/dicom/articles/articles.html",
@@ -319,6 +410,6 @@
     "href": "pages/modules.html",
     "title": "Modules",
     "section": "",
-    "text": "Module 1: Signal and Files\n\n\n\n\nTopic\nSlides\nMaterials\nExercises\n\n\n\n\n\n\n1. Magnetic Resonance Imaging\nSlides\nArticles\nPractice\n\n\n\n\n2. T1-weighted signal\nSlides\nCode\nPractice\n\n\n\n\n3. MRI Data Formats\nSlides\nArticles\nPractice\n\n\n\n\n4. BIDS\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\n2. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\n3. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\n4. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\nTopic\nSlides\nCode\nExercises\n\n\n\n\n\n\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\n2. ANTs\nSlides\nCode\nPractice\n\n\n\n\n3. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\n4. fMRIPrep\nSlides\nCode\nPractice"
+    "text": "Module 1: Signal and Files\n\n\n\n\nDate\nTopic\nSlides\nMaterials\nExercises\n\n\n\n\n\n\nTBD\n1. Magnetic Resonance Imaging\nSlides\nArticles\n\n\n\n\n\nTBD\n2. T1-weighted signal\nSlides\n\n\n\n\n\n\nTBD\n3. MRI Data Formats\nSlides\nArticles\nPractice\n\n\n\n\nTBD\n4. BIDS\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 2: Pipeline Steps\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nTopic\nSlides\nMaterials\nExercises\n\n\n\n\n\n\nTBD\n1. Bias correction\nSlides\nCode\nPractice\n\n\n\n\nTBD\n2. Brain extraction\nSlides\nCode\nPractice\n\n\n\n\nTBD\n3. Tissue segmentation\nSlides\nCode\nPractice\n\n\n\n\nTBD\n4. Transformation\nSlides\nCode\nPractice\n\n\n\n\n\n\n\n\nModule 3: Software Packages\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nTopic\nSlides\nMaterials\nExercises\n\n\n\n\n\n\nTBD\n1. ITK-snap\nSlides\nCode\nPractice\n\n\n\n\nTBD\n2. ANTs\nSlides\nCode\nPractice\n\n\n\n\nTBD\n3. FreeSurfer\nSlides\nCode\nPractice\n\n\n\n\nTBD\n4. fMRIPrep\nSlides\nCode\nPractice"
   }
 ]

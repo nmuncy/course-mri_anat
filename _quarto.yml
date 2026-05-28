@@ -23,8 +23,8 @@ website:
           href: pages/about.qmd
         - text: Modules
           href: pages/modules.qmd
-        - text: Schedule
-          href: pages/schedule.qmd
+        # - text: Schedule
+        #   href: pages/schedule.qmd
   page-footer:
     background: light
     center: "&copy; 2025 Nathan M. Muncy. Powered by <a href='https://www.quarto.org'>Quarto</a>."
